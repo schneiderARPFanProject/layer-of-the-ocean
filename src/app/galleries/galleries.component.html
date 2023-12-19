@@ -1,0 +1,14 @@
+<div>
+  <a routerLink="/">back to surface</a>
+  <button type="button" (click)="goBack()">back</button>
+  <h3> {{ level }} </h3>
+</div>
+<div *ngIf="!galleriesMessages.length">
+  no messages
+</div>
+<div class="galleriesMessage" *ngFor="let galleriesMessage of galleriesMessages">
+  <div>{{ galleriesMessage.name | uppercase }}</div>
+  <div>{{ galleriesMessage.message }}</div>
+  <div *ngIf="galleriesMessage.imgUrl">
+    <img src="{{galleriesMessage.imgUrl}}">
+</div>

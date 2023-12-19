@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'layer-of-the-ocean';
+  title = 'Layer Of The Ocean';
 }

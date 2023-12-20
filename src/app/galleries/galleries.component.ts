@@ -1,5 +1,4 @@
 import { Component, Input } from '@angular/core';
-import { Location } from '@angular/common';
 import { GalleriesMessage } from '../galleries/galleries-message';
 import { MessageService } from '../galleries/services/message.service';
 
@@ -14,8 +13,7 @@ export class GalleriesComponent {
   @Input() level?: string;
 
   constructor(
-    private messageService: MessageService,
-    private location: Location
+    private messageService: MessageService
   ) {}
 
   ngOnInit(): void {
@@ -25,9 +23,5 @@ export class GalleriesComponent {
   getGalleriesMessages(): void {
     this.messageService.getMessages(this.level!).subscribe(messages => this.galleriesMessages = messages);
     console.log("get galleries of", this.level);
-  }
-
-  goBack(): void {
-    this.location.back();
   }
 }

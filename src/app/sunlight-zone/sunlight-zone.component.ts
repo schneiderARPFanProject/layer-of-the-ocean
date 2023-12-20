@@ -6,5 +6,4 @@ import { Component } from '@angular/core';
   styleUrl: './sunlight-zone.component.css'
 })
 export class SunlightZoneComponent {
-
 }

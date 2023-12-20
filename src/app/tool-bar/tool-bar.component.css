@@ -1,0 +1,8 @@
+.toolBar {
+  background-color: green;
+  display: flex;
+  align-items: center;
+}
+.toolBar > h3 {
+  flex: auto;
+}

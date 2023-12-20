@@ -1,11 +1,15 @@
-<div class="menu">
-  Main page of "{{ title }}"
+<div class="titleModal">
+  <img class="titleTypo" src="../assets/images/typo.png"/>
 </div>
-<nav>
-  <a routerLink="/sunlight">The Sunlight Zone</a>
-  <a aria-disabled="true">The Twilight Zone</a>
-  <a aria-disabled="true">The Midnight Zone</a>
-  <a aria-disabled="true">The Abyss</a>
-  <a aria-disabled="true">The Trenches</a>
-</nav>
+<div class="handsomeSchneider"></div>
+<div id="layerNav">
+  <nav>
+    <a routerLink="/sunlight" (click)="onLayerSelect()">{{ levelDisplayText['sunlight'] }}</a>
+    <a aria-disabled="true">{{ levelDisplayText['twilight'] }}</a>
+    <a aria-disabled="true">{{ levelDisplayText['midnight'] }}</a>
+    <a aria-disabled="true">{{ levelDisplayText['abyss'] }}</a>
+    <a aria-disabled="true">{{ levelDisplayText['trenches'] }}</a>
+  </nav>
+</div>
+<div id="layerContentBegin"></div>
 <router-outlet></router-outlet>

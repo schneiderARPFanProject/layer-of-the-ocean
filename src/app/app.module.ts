@@ -6,12 +6,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GalleriesComponent } from './galleries/galleries.component';
 import { SunlightZoneComponent } from './sunlight-zone/sunlight-zone.component';
+import { ToolBarComponent } from './tool-bar/tool-bar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     GalleriesComponent,
-    SunlightZoneComponent
+    SunlightZoneComponent,
+    ToolBarComponent
   ],
   imports: [
     BrowserModule,

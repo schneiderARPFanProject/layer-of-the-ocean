@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { ActivatedRoute, ParamMap } from '@angular/router'
 import { GalleriesMessage } from '../galleries/galleries-message';
 import { MessageService } from '../galleries/services/message.service';
 
@@ -13,10 +14,12 @@ export class GalleriesComponent {
   @Input() level?: string;
 
   constructor(
-    private messageService: MessageService
+    private messageService: MessageService,
+    private route: ActivatedRoute
   ) {}
 
   ngOnInit(): void {
+    this.level = this.route.snapshot.params['level'];
     this.getGalleriesMessages();
   }
 

@@ -1,0 +1,54 @@
+
+.galleriesContainer {
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  display: inline-block;
+  position: relative;
+}
+.galleriesList {
+  width: 90%;
+  margin: 0 auto;
+  column-count: 5;
+  gap: 30px;
+  transform: translateX(-15px);
+}
+.galleriesMessage {
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  background-color: grey;
+  margin: 10px;
+  padding: 10px;
+}
+
+.messageName {
+  padding: 10px 0px;
+}
+.messageText {
+  width: 100%;
+  height: auto;
+  padding-bottom: 20px;
+}
+.galleriesMessage img {
+  width: 100%;
+  height: auto;
+}
+
+
+@media only screen  and (max-width: 1024px) {
+  .galleriesList {
+    column-count: 3;
+  }
+  .galleriesMessage img {
+    width: 100%;
+  }
+}
+@media only screen  and (max-width: 800px) {
+  .galleriesList {
+    column-count: 3;
+  }
+  .galleriesMessage img {
+    max-width: 100%;
+  }
+}

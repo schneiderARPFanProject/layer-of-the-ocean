@@ -9,9 +9,19 @@
         <div class="messageName">{{ galleriesMessage.name | uppercase }}</div>
         <div class="messageText" *ngIf="galleriesMessage.message">{{ galleriesMessage.message }}</div>
         <div *ngIf="galleriesMessage.imgUrl">
-          <img src="{{galleriesMessage.imgUrl}}">
+          <img src="{{galleriesMessage.imgUrl}}" (click)="onPreviewImage(galleriesMessage.imgUrl)">
         </div>
       </div>
+    </div>
+  </div>
+  <div *ngIf="showPreview"
+       [@animation]="{value: 'visible'}"
+       class="lightBox">
+    <button class="closeBtn" (click)="onClosePreview()">
+      close
+    </button>
+    <div class="lightBoxContainer">
+      <img class="lightBoxImage" [src]="lightBoxImageUrl">
     </div>
   </div>
 </div>

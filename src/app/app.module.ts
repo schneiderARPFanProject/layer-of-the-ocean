@@ -8,13 +8,17 @@ import { AppComponent } from './app.component';
 import { GalleriesComponent } from './galleries/galleries.component';
 import { SunlightZoneComponent } from './sunlight-zone/sunlight-zone.component';
 import { ToolBarComponent } from './tool-bar/tool-bar.component';
+import { TmpProject1Component } from './projects/tmp-project1/tmp-project1.component';
+import { TmpProject2Component } from './projects/tmp-project2/tmp-project2.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     GalleriesComponent,
     SunlightZoneComponent,
-    ToolBarComponent
+    ToolBarComponent,
+    TmpProject1Component,
+    TmpProject2Component
   ],
   imports: [
     BrowserModule,

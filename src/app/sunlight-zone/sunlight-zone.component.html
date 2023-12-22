@@ -1,6 +1,14 @@
 <div class="layerContainer">
-  <app-tool-bar [level]="'sunlight'"></app-tool-bar>
+  <app-tool-bar [level]="level"></app-tool-bar>
   <nav>
     <a routerLink="galleries">Galleries</a>
+    <button class="projectListBtn" (click)="showProjectList()">projects</button>
+    <div *ngIf="showList" class="projectModal">
+      <button (click)="closeProjectList()">projects</button>
+      <div class="projectList" *ngFor="let projectName of projectList">
+        <a [routerLink]="projectName">{{ projectName }}
+        </a>
+      </div>
+    </div>
   </nav>
 </div>

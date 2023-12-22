@@ -10,4 +10,8 @@ export const LEVEL_DISPLAY_TEXT: Record<string, string> = {
   'trenches': 'The Trenches',
 }
 
+export const PROJECT_LIST: Record<string, string[]> = {
+  'sunlight': ['tmp-project1', 'tmp-project2']
+}
+
 export const GALLERY_IMG_URL: string = 'https://drive.google.com/uc?export=view&id=${imgId}';

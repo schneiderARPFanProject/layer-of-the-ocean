@@ -1,8 +1,44 @@
 .toolBar {
-  background-color: green;
-  display: flex;
-  align-items: center;
+  background-color: black;
+  display: block;
+  width: 100%;
+  height: 50px;
 }
 .toolBar > h3 {
   flex: auto;
+}
+.backButtons {
+  position: absolute;
+  left: 5px;
+  top: 25px;
+  transform: translateY(-50%);
+}
+.credits {
+  position: absolute;
+  right: 5px;
+  top: 25px;
+  transform: translateY(-50%);
+}
+.levelDisplay {
+  position: absolute;
+  left: 50%;
+  top: 25px;
+  transform: translate(-50%, -50%);
+}
+
+
+
+@media only screen  and (max-height: 600px) and (orientation: landscape) {
+  .toolBar {
+    height: 30px;
+  }
+  .backButtons {
+    top: 15px;
+  }
+  .credits {
+    top: 15px;
+  }
+  .levelDisplay {
+    top: 15px;
+  }
 }

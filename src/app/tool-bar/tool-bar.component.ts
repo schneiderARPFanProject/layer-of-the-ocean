@@ -10,6 +10,7 @@ import { LEVEL_DISPLAY_TEXT } from '../app.properties';
 export class ToolBarComponent {
 
   @Input() level?: string;
+  @Input() showBack: boolean = true;
 
   levelDisplayText = LEVEL_DISPLAY_TEXT;
 

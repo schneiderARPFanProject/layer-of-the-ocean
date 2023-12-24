@@ -1,8 +1,14 @@
 <div class="titleModal">
-  <img class="titleTypo" src="../assets/images/typo.png"/>
+  <div>
+    <img class="titleTypo" src="../assets/images/typo.GIF"/>
+    <div class="dropDiv">
+      <img class="drop" src="../assets/images/drop.PNG"/>
+    </div>
+  </div>
 </div>
 <div class="handsomeSchneider"></div>
 <div id="layerNav">
+  <app-tool-bar [showBack]="false"></app-tool-bar>
   <nav>
     <a routerLink="/sunlight" (click)="onLayerSelect()">{{ levelDisplayText['sunlight'] }}</a>
     <a aria-disabled="true">{{ levelDisplayText['twilight'] }}</a>

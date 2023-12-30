@@ -1,4 +1,4 @@
-<div class="toolBar">
+<div class="toolBar" [class.toolBarWithShadow] = "showBack">
   <div class="backButtons toolBarIcon" *ngIf="showBack">
     <a routerLink="/" (click)="onBackToTopSelect()"><img class="homeBtn" /></a>
     <img class="backBtn" type="button" (click)="goBack()" />

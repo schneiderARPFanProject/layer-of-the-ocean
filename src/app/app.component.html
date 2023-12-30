@@ -8,14 +8,15 @@
 </div>
 <div class="handsomeSchneider"></div>
 <div id="layerNav">
-  <app-tool-bar [showBack]="false"></app-tool-bar>
-  <nav>
+  <div class="layerNavBG"></div>
+  <div class="layerNavLink">
     <a routerLink="/sunlight" (click)="onLayerSelect()">{{ levelDisplayText['sunlight'] }}</a>
     <a aria-disabled="true">{{ levelDisplayText['twilight'] }}</a>
     <a aria-disabled="true">{{ levelDisplayText['midnight'] }}</a>
     <a aria-disabled="true">{{ levelDisplayText['abyss'] }}</a>
     <a aria-disabled="true">{{ levelDisplayText['trenches'] }}</a>
-  </nav>
+  </div>
+  <app-tool-bar [showBack]="false"></app-tool-bar>
 </div>
 <div id="layerContentBegin"></div>
 <router-outlet></router-outlet>

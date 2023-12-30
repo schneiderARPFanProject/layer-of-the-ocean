@@ -1,10 +1,10 @@
-<div class="layerContainer">
+<div class="layerContainer sunlightLayerContainer">
   <app-tool-bar [level]="level"></app-tool-bar>
   <div class="galleriesContainer">
+    <div *ngIf="!galleriesMessages.length" class="loadingDiv">
+      <img src="../../assets/images/loading-icon.PNG" />
+    </div>
     <div class="galleriesList">
-      <div *ngIf="!galleriesMessages.length">
-        no messages
-      </div>
       <div class="galleriesMessage" *ngFor="let galleriesMessage of galleriesMessages">
         <div class="messageName">{{ galleriesMessage.name | uppercase }}</div>
         <div class="messageText" *ngIf="galleriesMessage.message">{{ galleriesMessage.message }}</div>

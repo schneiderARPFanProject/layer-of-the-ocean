@@ -1,10 +1,10 @@
 <div class="toolBar">
-  <div class="backButtons" *ngIf="showBack">
-    <a routerLink="/" (click)="onBackToTopSelect()">back to surface</a>
-    <button type="button" (click)="goBack()">back</button>
+  <div class="backButtons toolBarIcon" *ngIf="showBack">
+    <a routerLink="/" (click)="onBackToTopSelect()"><img class="homeBtn" /></a>
+    <img class="backBtn" type="button" (click)="goBack()" />
   </div>
   <div class="levelDisplay" *ngIf="showBack">
     <h3 > {{ level ? levelDisplayText[level] : 'The Unknown' }} </h3>
   </div>
-  <div class="credits" (click)="onOpenCredits()">Credits</div>
+  <img class="creditsBtn toolBarIcon" (click)="onOpenCredits()" />
 </div>

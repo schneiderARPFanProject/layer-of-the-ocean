@@ -46,7 +46,7 @@
 }
 
 #layerNav {
-  background-color: orange;
+  background-color: #030216;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -55,7 +55,6 @@
   z-index: 0;
 }
 #layerContentBegin {
-  background-color: #ffcb87;
   position: absolute;
   top: 100%;
   left: 0px;

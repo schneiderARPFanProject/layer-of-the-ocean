@@ -1,5 +1,4 @@
 .toolBar {
-  background-color: black;
   display: block;
   width: 100%;
   height: 50px;
@@ -9,15 +8,12 @@
 }
 .backButtons {
   position: absolute;
-  left: 5px;
+  left: 20px;
   top: 25px;
   transform: translateY(-50%);
 }
-.credits {
-  position: absolute;
-  right: 5px;
-  top: 25px;
-  transform: translateY(-50%);
+.toolBarIcon {
+  height: 45px;
 }
 .levelDisplay {
   position: absolute;
@@ -26,6 +22,35 @@
   transform: translate(-50%, -50%);
 }
 
+.homeBtn {
+  content:url("../../assets/images/home-icon.PNG");
+  height: 100%;
+  width: auto;
+}
+.homeBtn:hover {
+  content:url("../../assets/images/home-icon-hover.PNG");
+}
+
+.backBtn {
+  content:url("../../assets/images/back-icon.PNG");
+  height: 100%;
+  width: auto;
+}
+.backBtn:hover {
+  content:url("../../assets/images/back-icon-hover.PNG");
+}
+
+.creditsBtn {
+  position: absolute;
+  right: 5px;
+  top: 25px;
+  transform: translateY(-50%);
+  content:url("../../assets/images/credit-icon.PNG");
+  width: auto;
+}
+.creditsBtn:hover {
+  content:url("../../assets/images/credit-icon-hover.PNG");
+}
 
 
 @media only screen  and (max-height: 600px) and (orientation: landscape) {
@@ -35,10 +60,13 @@
   .backButtons {
     top: 15px;
   }
-  .credits {
+  .creditsBtn {
     top: 15px;
   }
   .levelDisplay {
     top: 15px;
+  }
+  .toolBarIcon {
+    height: 25px;
   }
 }

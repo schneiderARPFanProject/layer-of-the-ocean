@@ -1,19 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
 @import '../node_modules/@angular/material/prebuilt-themes/indigo-pink.css';
 body {
-  background-color: #3f3f59;
+  background-color: black;
   color: white;
   overflow: hidden;
   text-align: center;
 }
+a:link, a:visited, a:hover, a:active {
+  color: white;
+  text-decoration: none;
+}
 .appBlock {
-  position: absolute;
   z-index: 10;
   top: 0px;
   left: 0px;
   width: 100%;
   height: 100%;
-  background-color: red;
   text-align: center;
   display: none;
 }
@@ -34,7 +36,6 @@ body {
   transform: translate(-50%, -50%);
 }
 .layerContainer {
-  background-color: #ffcb87;
   position: absolute;
   width: 100%;
   height: 100%;

@@ -46,6 +46,12 @@ dd {
   .titleTypo {
     width: 300px;
   }
+  .closeBtn {
+    height: 40px;
+  }
+  .closeBtn:hover {
+    height: 40px;
+  }
 }
 
 @media only screen  and (min-height: 1100px) and (orientation: landscape) {

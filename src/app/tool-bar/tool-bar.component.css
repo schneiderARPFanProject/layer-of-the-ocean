@@ -38,6 +38,7 @@
 }
 .backBtn:hover {
   content:url("../../assets/images/back-icon-hover.PNG");
+  cursor: pointer;
 }
 
 .creditsBtn {
@@ -50,6 +51,7 @@
 }
 .creditsBtn:hover {
   content:url("../../assets/images/credit-icon-hover.PNG");
+  cursor: pointer;
 }
 
 

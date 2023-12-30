@@ -6,5 +6,5 @@
   <div class="levelDisplay" *ngIf="showBack">
     <h3 > {{ level ? levelDisplayText[level] : 'The Unknown' }} </h3>
   </div>
-  <div class="credits">Credits</div>
+  <div class="credits" (click)="onOpenCredits()">Credits</div>
 </div>

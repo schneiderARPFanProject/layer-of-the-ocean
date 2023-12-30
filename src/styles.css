@@ -1,4 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+@import '../node_modules/@angular/material/prebuilt-themes/indigo-pink.css';
 body {
   background-color: #3f3f59;
   color: white;
@@ -55,6 +56,11 @@ body {
   padding: 10px;
   margin-bottom: 100px;
 }
+
+.mat-mdc-dialog-surface, .mdc-dialog__surface {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+}
+
 
 /* -- scrollbar ----------------------------------------*/
 

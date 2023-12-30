@@ -5,9 +5,11 @@
   width: 100%;
   height: 100%;
   text-align: center;
-  animation: slideUp 1s linear;
   animation-fill-mode: forwards;
-  animation-delay: 11s;
+  animation-name: slideUp, hideTypo;
+  animation-duration: 1s, 100ms;
+  animation-delay: 11s, 14s;
+  animation-iteration-count: 1, 1;
   z-index: 5;
 }
 .titleModal > div {
@@ -95,6 +97,14 @@
   }
 }
 
+@keyframes hideTypo {
+  from {
+    display: block;
+  }
+  to {
+    display: none;
+  }
+}
 
 
 
@@ -108,5 +118,18 @@
       width: 80px;
       height: auto;
       transform: translate(91px, 48px);
+  }
+}
+
+@media only screen  and (min-height: 1100px) and (orientation: landscape) {
+  .titleModal > div {
+    display: block;
+    width: 800px;
+    height: auto;
+  }
+  .dropDiv {
+    width: 150px;
+    height: auto;
+    transform: translate(187px, 99px);
   }
 }

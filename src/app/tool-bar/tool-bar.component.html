@@ -1,10 +1,25 @@
 <div class="toolBar" [class.toolBarWithShadow] = "showBack">
   <div class="backButtons toolBarIcon" *ngIf="showBack">
-    <a routerLink="/" (click)="onBackToTopSelect()"><img class="homeBtn" /></a>
-    <img class="backBtn" type="button" (click)="goBack()" />
+    <a routerLink="/"
+       (click)="onBackToTopSelect()"
+       matTooltip="Back to Surface"
+       matTooltipPosition="below"
+       matTooltipShowDelay="1000">
+      <img class="homeBtn" />
+    </a>
+    <img class="backBtn"
+         type="button"
+         (click)="goBack()"
+         matTooltip="Back"
+         matTooltipPosition="below"
+         matTooltipShowDelay="1000"/>
   </div>
   <div class="levelDisplay" *ngIf="showBack">
     <h3 > {{ level ? levelDisplayText[level] : 'The Unknown' }} </h3>
   </div>
-  <img class="creditsBtn toolBarIcon" (click)="onOpenCredits()" />
+  <img class="creditsBtn toolBarIcon"
+       (click)="onOpenCredits()"
+       matTooltip="Credits"
+       matTooltipPosition="below"
+       matTooltipShowDelay="1000"/>
 </div>

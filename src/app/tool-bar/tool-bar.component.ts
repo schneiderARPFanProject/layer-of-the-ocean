@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { Location } from '@angular/common';
 import { MatDialog } from '@angular/material/dialog';
+import { MatTooltipModule } from '@angular/material/tooltip';
 import { LEVEL_DISPLAY_TEXT } from '../app.properties';
 import { CreditsComponent } from '../credits/credits.component';
 

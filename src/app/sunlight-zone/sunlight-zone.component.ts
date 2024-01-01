@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MatTooltipModule } from '@angular/material/tooltip';
 import { PROJECT_LIST } from '../app.properties';
 
 @Component({

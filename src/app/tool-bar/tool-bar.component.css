@@ -36,6 +36,7 @@
 }
 .homeBtn:hover {
   content:url("../../assets/images/home-icon-hover.PNG");
+  transform: scale(1.1);
 }
 
 .backBtn {
@@ -46,6 +47,7 @@
 .backBtn:hover {
   content:url("../../assets/images/back-icon-hover.PNG");
   cursor: pointer;
+  transform: scale(1.1);
 }
 
 .creditsBtn {
@@ -59,6 +61,7 @@
 .creditsBtn:hover {
   content:url("../../assets/images/credit-icon-hover.PNG");
   cursor: pointer;
+  transform: scale(1.1) translateY(-50%);
 }
 
 

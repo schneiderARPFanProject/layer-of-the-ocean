@@ -40,7 +40,7 @@
     width: 100%;
     height: 100%;
     opacity: 0;
-    animation: dropping 3s linear;
+    animation: dropping 1800ms linear;
     animation-fill-mode: forwards;
     animation-delay: 11s;
 }
@@ -105,15 +105,15 @@
 @keyframes dropping {
   0% {
     opacity: 1;
-    transform: translateY(+0%);
+    transform: translateY(+0vh);
   }
   30% {
     opacity: 1;
-    transform: translateY(+300%);
+    transform: translateY(+30vh);
   }
   100% {
-    opacity: 1;
-    transform: translateY(+1000%);
+    opacity: 0;
+    transform: translateY(+100vh);
     display: none;
   }
 }

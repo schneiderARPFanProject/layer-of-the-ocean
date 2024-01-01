@@ -6,6 +6,31 @@ body {
   overflow: hidden;
   text-align: center;
 }
+body::after {
+   position:absolute;
+   width:0;
+   height:0;
+   overflow:hidden;
+   z-index:-50;
+   content: url("assets/images/back-icon.PNG")
+            url("assets/images/back-icon-hover.PNG")
+            url("assets/images/close-icon.PNG")
+            url("assets/images/close-icon-hover.PNG")
+            url("assets/images/credit-icon.PNG")
+            url("assets/images/credit-icon-hover.PNG")
+            url("assets/images/drop.PNG")
+            url("assets/images/galleries-icon.PNG")
+            url("assets/images/galleries-icon-hover.PNG")
+            url("assets/images/home-icon.PNG")
+            url("assets/images/home-icon-hover.PNG")
+            url("assets/images/loading-icon.PNG")
+            url("assets/images/projects-icon.PNG")
+            url("assets/images/projects-icon-hover.PNG")
+            url("assets/images/schneider-layer-dive.GIF")
+            url("assets/images/schneider-layer-float.PNG")
+            url("assets/images/typo.GIF")
+            url("assets/images/typo.PNG");
+}
 a:link, a:visited, a:hover, a:active {
   color: white;
   text-decoration: none;

@@ -1,8 +1,20 @@
 <div class="layerContainer sunlightLayerContainer">
   <app-tool-bar [level]="level"></app-tool-bar>
-  <nav>
-    <a routerLink="galleries">Galleries</a>
-    <button class="projectListBtn" (click)="showProjectList()">projects</button>
+  <nav class="sunlightLayerNav">
+    <a routerLink="galleries"
+       class="galleriesLink"
+       matTooltip="Letters to Schneider"
+       matTooltipPosition="above"
+       matTooltipShowDelay="1000">
+      <img src="../../assets/images/galleries-icon.PNG">
+    </a>
+    <div class="projectListBtn"
+         (click)="showProjectList()"
+         matTooltip="Birthday Projects"
+         matTooltipPosition="above"
+         matTooltipShowDelay="1000">
+      <img src="../../assets/images/projects-icon.PNG">
+    </div>
     <div *ngIf="showList" class="projectModal">
       <button (click)="closeProjectList()">projects</button>
       <div class="projectList" *ngFor="let projectName of projectList">
@@ -11,4 +23,7 @@
       </div>
     </div>
   </nav>
+  <div class="schneiderDiv">
+    <img src="../../assets/images/schneider-layer-dive.GIF"/>
+  </div>
 </div>

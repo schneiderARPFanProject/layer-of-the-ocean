@@ -27,7 +27,10 @@ body::after {
             url("assets/images/projects-icon.PNG")
             url("assets/images/projects-icon-hover.PNG")
             url("assets/images/schneider-layer-dive.GIF")
-            url("assets/images/schneider-layer-float.PNG")
+            url("assets/images/schneider-layer-float.GIF")
+            url("assets/images/sunlight-bg1.PNG")
+            url("assets/images/sunlight-bg2.PNG")
+            url("assets/images/sunlight-bg3.PNG")
             url("assets/images/typo.GIF")
             url("assets/images/typo.PNG");
 }
@@ -78,6 +81,39 @@ a:link, a:visited, a:hover, a:active {
     radial-gradient(ellipse at 20% 0%, #472ea6 0%, transparent 55%),
     radial-gradient(ellipse at 80% 20%, #472ea6 0%, transparent 55%);
 }
+.sunlightBgDiv {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -15;
+}
+
+.sunlightBgDiv > img {
+  position: absolute;
+  height: auto;
+}
+.sunlightBgDiv #bg1 {
+  width: 100%;
+  right: 0;
+  top: 38%;
+  filter: blur(5px);
+}
+.sunlightBgDiv #bg2 {
+  width: 70%;
+  left: 0;
+  bottom: 0;
+  filter: blur(1px);
+}
+.sunlightBgDiv #bg3 {
+  width: 40%;
+  right: 0;
+  bottom: 0;
+  opacity: 0.5;
+  filter: blur(2px);
+}
+
 .projectContainer {
   height: 100%;
   width: 100%;

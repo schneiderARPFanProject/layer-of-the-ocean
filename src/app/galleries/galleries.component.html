@@ -17,11 +17,14 @@
   <div *ngIf="showPreview"
        [@animation]="{value: 'visible'}"
        class="lightBox">
-    <button class="closeBtn" (click)="onClosePreview()">
-      close
-    </button>
+    <img class="closeBtn" (click)="onClosePreview()" />
     <div class="lightBoxContainer">
       <img class="lightBoxImage" [src]="lightBoxImageUrl">
     </div>
+  </div>
+  <div class="sunlightBgDiv">
+    <img id="bg3" src="../../assets/images/sunlight-bg3.PNG"/>
+    <img id="bg2" src="../../assets/images/sunlight-bg2.PNG"/>
+    <img id="bg1" src="../../assets/images/sunlight-bg1.PNG"/>
   </div>
 </div>

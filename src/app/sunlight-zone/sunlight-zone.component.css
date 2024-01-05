@@ -20,7 +20,7 @@
 }
 .galleriesLink {
   position: absolute;
-  width: 360px;
+  width: 280px;
   height: auto;
   top: 10%;
   left: 50%;
@@ -39,10 +39,10 @@
 }
 .projectListBtn {
   position: absolute;
-  width: 360px;
+  width: 280px;
   height: auto;
   top: 30%;
-  left: 65%;
+  left: 67%;
   animation: floating 2s ease-in-out infinite alternate;
 }
 .projectListBtn > img {
@@ -72,17 +72,30 @@
   position: absolute;
   top: 0;
   left: 2%;
-  animation: hiding 1ms linear;
   animation-fill-mode: forwards;
-  animation-delay: 1110ms;
+  animation-name: hiding;
+  animation-duration: 1ms;
+  animation-delay: 1108ms;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
 }
 
 @keyframes hiding {
-  from {
+  0, 48%% {
     content:url("../../assets/images/schneider-layer-dive.GIF");
+    opacity: 1;
   }
-  to {
-    content:url("../../assets/images/schneider-layer-float.PNG");
+  49% {
+    content:url("../../assets/images/schneider-layer-dive.GIF");
+    opacity: 0;
+  }
+  50% {
+    content:url("../../assets/images/schneider-layer-float.GIF");
+    opacity: 0;
+  }
+  51%, 100% {
+    content:url("../../assets/images/schneider-layer-float.GIF");
+    opacity: 1;
   }
 }
 
@@ -101,10 +114,10 @@
     left: 5%;
   }
   .galleriesLink {
-    width: 240px;
+    width: 170px;
   }
   .projectListBtn {
-    width: 240px;
+    width: 170px;
   }
 }
 
@@ -113,9 +126,9 @@
     width: 1100px;
   }
   .galleriesLink {
-    width: 530px;
+    width: 395px;
   }
   .projectListBtn {
-    width: 530px;
+    width: 395px;
   }
 }

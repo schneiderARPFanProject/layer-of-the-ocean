@@ -75,10 +75,22 @@
   height: auto;
   border-radius: .35rem;
 }
+
 .closeBtn {
-  position: absolute;
+  position: fixed;
   top: 10px;
-  right: 15px;
+  right: 10px;
+  content:url("../../assets/images/close-icon.PNG");
+  z-index: 1;
+  height: 70px;
+  width: auto;
+}
+.closeBtn:hover {
+  content:url("../../assets/images/close-icon-hover.PNG");
+  height: 70px;
+  width: auto;
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 @keyframes spin {

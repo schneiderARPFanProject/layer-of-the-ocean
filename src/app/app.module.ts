@@ -14,6 +14,8 @@ import { TmpProject1Component } from './projects/tmp-project1/tmp-project1.compo
 import { TmpProject2Component } from './projects/tmp-project2/tmp-project2.component';
 import { CreditsComponent } from './credits/credits.component';
 import { StarsComponent } from './stars/stars.component';
+import { BubblesComponent } from './bubbles/bubbles.component';
+import { SunlightZoneBgComponent } from './sunlight-zone-bg/sunlight-zone-bg.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { StarsComponent } from './stars/stars.component';
     TmpProject1Component,
     TmpProject2Component,
     CreditsComponent,
-    StarsComponent
+    StarsComponent,
+    BubblesComponent,
+    SunlightZoneBgComponent
   ],
   imports: [
     BrowserModule,

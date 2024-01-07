@@ -112,7 +112,7 @@
 }
 
 @keyframes hiding {
-  0, 48%% {
+  0%, 48% {
     content:url("../../assets/images/schneider-layer-dive.GIF");
     opacity: 1;
   }

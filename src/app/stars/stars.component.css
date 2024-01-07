@@ -7,7 +7,7 @@
 }
 
 .stars {
-  background: url("../assets/images/stars.PNG") repeat;
+  background: url("../../assets/images/stars.PNG") repeat;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -28,31 +28,6 @@
   bottom: 0;
   z-index: 2;
   animation: move-background 70s linear infinite;
-}
-
-.clouds {
-  width: 10000px;
-  height: 100%;
-  background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/clouds_repeat.png") repeat;
-  background-size: 1000px 1000px;
-  position: absolute;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  z-index: 3;
-  -moz-animation: move-background 150s linear infinite;
-  -ms-animation: move-background 150s linear infinite;
-  -o-animation: move-background 150s linear infinite;
-  -webkit-animation: move-background 150s linear infinite;
-  animation: move-background 150s linear infinite;
-}
-
-img {
-  height: 70vh;
-  width: 70vh;
-  position: absolute;
-  z-index: 3;
-  right: 20px;
 }*/
 
 @keyframes move-background {
@@ -61,5 +36,136 @@ img {
   }
   to {
     transform: translate3d(1000px, 0px, 0px);
+  }
+}
+
+
+
+/* Shooting stars */
+.shootingStars {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120%;
+  transform: rotate(-45deg);
+}
+
+.shootingStar {
+  --star-color: white;
+  --star-tail-length: 6em;
+  --star-tail-height: 2px;
+  --star-width: calc(var(--star-tail-length) / 6);
+  --fall-duration: 9s;
+  --tail-fade-duration: calc(var(--fall-duration) / 4);
+  position: absolute;
+  top: var(--top-offset);
+  left: 0;
+  width: var(--star-tail-length);
+  height: var(--star-tail-height);
+  color: var(--star-color);
+  background: linear-gradient(45deg, currentColor, transparent);
+  border-radius: 50%;
+  filter: drop-shadow(0 0 6px currentColor);
+  transform: translate3d(120vw, 0, 0);
+  animation: fall var(--fall-duration) var(--fall-delay) linear infinite, tail-fade var(--tail-fade-duration) var(--fall-delay) ease-out infinite;
+}
+@media screen and (max-width: 750px) {
+  .shootingStar {
+    animation: fall var(--fall-duration) var(--fall-delay) linear infinite;
+  }
+}
+.shootingStar:nth-child(1) {
+  --star-tail-length: 6.22em;
+  --top-offset: 30.45vh;
+  --fall-duration: 18.356s;
+  --fall-delay: 40s;
+}
+.shootingStar:nth-child(2) {
+  --star-tail-length: 7.42em;
+  --top-offset: 26.44vh;
+  --fall-duration: 18.788;
+  --fall-delay: 21s;
+}
+.shootingStar:nth-child(3) {
+  --star-tail-length: 7.12em;
+  --top-offset: 18.65vh;
+  --fall-duration: 17.928s;
+  --fall-delay: 27s;
+}
+.shootingStar:nth-child(4) {
+   --star-tail-length: 5.85em;
+   --top-offset: 9.55vh;
+   --fall-duration: 22.656s;
+   --fall-delay: 15.24s;
+ }
+.shootingStar:nth-child(5) {
+   --star-tail-length: 6.12em;
+   --top-offset: 85.89vh;
+   --fall-duration: 31.04s;
+   --fall-delay: 16.472s;
+}
+.shootingStar::before, .shootingStar::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: calc(var(--star-width) / -2);
+  width: var(--star-width);
+  height: 100%;
+  background: linear-gradient(45deg, transparent, currentColor, transparent);
+  border-radius: inherit;
+  animation: blink 2s linear infinite;
+}
+.shootingStar::before {
+  transform: rotate(45deg);
+}
+.shootingStar::after {
+  transform: rotate(-45deg);
+}
+
+@keyframes fall {
+  0% {
+    transform: translate3d(120vw, 0, 0);
+  }
+  24% {
+    transform: translate3d(30vw, 0, 0);
+  }
+  25%, 100% {
+    transform: translate3d(30vw, 0, 0);
+    display: none;
+  }
+}
+@keyframes tail-fade {
+  0%, 50% {
+    width: var(--star-tail-length);
+    opacity: 1;
+  }
+  70%, 80% {
+    width: var(--star-tail-length);
+    opacity: 0.4;
+  }
+  100% {
+    width: 0;
+    opacity: 0;
+  }
+}
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes delay-animation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  50.01% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
   }
 }

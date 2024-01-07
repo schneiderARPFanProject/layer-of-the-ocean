@@ -6,9 +6,26 @@
     </div>
   </div>
 </div>
-<div class="handsomeSchneider"></div>
-<div id="layerNav">
-  <div class="layerNavBG"></div>
+
+<div class="oceanBg">
+  <div id="layerNav">
+    <div class="layerNavBG"></div>
+  </div>
+  <app-stars></app-stars>
+  <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+    <defs>
+      <path id="gentle-wave" d="M-160 44c30 0 58-5 88-5s 58 5 88 5 58-5 88-5 58 5 88 5 v44h-352z" />
+    </defs>
+    <g class="parallax">
+      <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.1" />
+      <use xlink:href="#gentle-wave" x="48" y="1" fill="rgba(255,255,255,0.2)" />
+      <use xlink:href="#gentle-wave" x="48" y="2" fill="rgba(255,255,255,0.3)" />
+    </g>
+  </svg>
+  <div class="handsomeSchneider"></div>
+</div>
+<div id="layerNavContent">
+  <app-tool-bar [showBack]="false"></app-tool-bar>
   <div class="layerNavLink">
     <a routerLink="/sunlight" (click)="onLayerSelect()">{{ levelDisplayText['sunlight'] }}</a>
     <a aria-disabled="true">{{ levelDisplayText['twilight'] }}</a>
@@ -16,7 +33,7 @@
     <a aria-disabled="true">{{ levelDisplayText['abyss'] }}</a>
     <a aria-disabled="true">{{ levelDisplayText['trenches'] }}</a>
   </div>
-  <app-tool-bar [showBack]="false"></app-tool-bar>
 </div>
+
 <div id="layerContentBegin"></div>
 <router-outlet></router-outlet>

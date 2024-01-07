@@ -6,11 +6,11 @@
     </div>
     <div class="galleriesList">
       <div class="galleriesMessage" *ngFor="let galleriesMessage of galleriesMessages">
-        <div class="messageName">{{ galleriesMessage.name | uppercase }}</div>
-        <div class="messageText" *ngIf="galleriesMessage.message">{{ galleriesMessage.message }}</div>
-        <div *ngIf="galleriesMessage.imgUrl">
-          <img src="{{galleriesMessage.imgUrl}}" (click)="onPreviewImage(galleriesMessage.imgUrl)">
-        </div>
+        <div class="messageText" *ngIf="galleriesMessage.message">Dear Schneider, <br><br>{{ galleriesMessage.message }}</div>
+        <div class="messageName">{{ galleriesMessage.name }}</div>
+<!--        <div *ngIf="galleriesMessage.imgUrl">-->
+<!--          <img src="{{galleriesMessage.imgUrl}}" (click)="onPreviewImage(galleriesMessage.imgUrl)">-->
+<!--        </div>-->
       </div>
     </div>
   </div>

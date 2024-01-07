@@ -13,6 +13,7 @@ import { ToolBarComponent } from './tool-bar/tool-bar.component';
 import { TmpProject1Component } from './projects/tmp-project1/tmp-project1.component';
 import { TmpProject2Component } from './projects/tmp-project2/tmp-project2.component';
 import { CreditsComponent } from './credits/credits.component';
+import { StarsComponent } from './stars/stars.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { CreditsComponent } from './credits/credits.component';
     ToolBarComponent,
     TmpProject1Component,
     TmpProject2Component,
-    CreditsComponent
+    CreditsComponent,
+    StarsComponent
   ],
   imports: [
     BrowserModule,

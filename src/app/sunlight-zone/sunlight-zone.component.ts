@@ -11,13 +11,17 @@ export class SunlightZoneComponent {
   level: string = 'sunlight';
   projectList: string[] = [];
   showList: boolean = false;
+  projectContentX: string = '';
+  projectContentY: string = '';
 
   ngOnInit(): void {
     this.projectList = PROJECT_LIST[this.level];
   }
 
-  showProjectList(): void {
+  showProjectList(e: MouseEvent): void {
     this.showList = true;
+    this.projectContentX = e.clientX + 'px';
+    this.projectContentY = e.clientY + 'px';
   }
 
   closeProjectList(): void {

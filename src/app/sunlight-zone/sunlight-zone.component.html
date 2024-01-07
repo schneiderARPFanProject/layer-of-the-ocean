@@ -9,17 +9,24 @@
       <img src="../../assets/images/galleries-icon.PNG">
     </a>
     <div class="projectListBtn"
-         (click)="showProjectList()"
+         (click)="showProjectList($event)"
          matTooltip="Birthday Projects"
          matTooltipPosition="above"
          matTooltipShowDelay="1000">
       <img src="../../assets/images/projects-icon.PNG">
     </div>
-    <div *ngIf="showList" class="projectModal">
-      <button (click)="closeProjectList()">projects</button>
-      <div class="projectList" *ngFor="let projectName of projectList">
-        <a [routerLink]="projectName">{{ projectName }}
-        </a>
+    <div *ngIf="showList" class="projectModal" (click)="closeProjectList()">
+      <div class="projectModalContent"  [ngStyle]="{'top': projectContentY, 'left': projectContentX}">
+        <div>
+          <img class="projectListCloseBtn" />
+        </div>
+        <div class="projectModalList" (click)="$event.stopPropagation()">
+          <div class="diamondDeco">⟡</div>
+          <div class="projectList" *ngFor="let projectName of projectList">
+            <a [routerLink]="projectName">{{ projectName }}</a>
+            <div class="diamondDeco">⟡</div>
+          </div>
+        </div>
       </div>
     </div>
   </nav>

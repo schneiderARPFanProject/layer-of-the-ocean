@@ -6,10 +6,41 @@
   top: 0px;
   left: 0px;
   z-index: 5;
+}
+.projectModalContent {
+  position: absolute;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  transform: translate(-45px, -50%);
 }
+.projectModalList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  border: solid 3px black;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.projectList > a:hover {
+  color: #edd3ba;
+}
+.projectListCloseBtn {
+  width: 90px;
+  height: auto;
+  content: url("../../assets/images/projects-close-icon.PNG");
+}
+.projectListCloseBtn:hover {
+  content: url("../../assets/images/projects-close-icon-hover.PNG");
+  cursor: pointer;
+}
+.diamondDeco {
+  margin: 10px 0;
+}
+
 .sunlightLayerNav {
   position: absolute;
   width: 100%;
@@ -119,6 +150,20 @@
   .projectListBtn {
     width: 170px;
   }
+  .projectModalContent {
+    transform: translate(-25px, -50%);
+  }
+  .projectListCloseBtn {
+    width: 50px;
+  }
+  .projectModalList {
+    padding: 5px;
+    border: solid 2px black;
+    border-radius: 10px;
+  }
+  .diamondDeco {
+    margin: 2px 0;
+  }
 }
 
 @media only screen  and (min-height: 1100px) and (orientation: landscape) {
@@ -130,5 +175,19 @@
   }
   .projectListBtn {
     width: 395px;
+  }
+  .projectModalContent {
+    transform: translate(-55px, -50%);
+  }
+  .projectListCloseBtn {
+    width: 110px;
+  }
+  .projectModalList {
+    padding: 10px;
+    border: solid 5px black;
+    border-radius: 25px;
+  }
+  .diamondDeco {
+    margin: 15px 0;
   }
 }

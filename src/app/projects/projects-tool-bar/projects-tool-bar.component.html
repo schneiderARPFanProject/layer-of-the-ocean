@@ -1,0 +1,7 @@
+<div class="projectsToolBar">
+  <div class="project" *ngFor="let projectName of projectList">
+    <a routerLink="../{{projectName}}" [class.selected] = "projectName === currentProject">
+      {{ projectNameList[projectName] }}
+    </a>
+  </div>
+</div>

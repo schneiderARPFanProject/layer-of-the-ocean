@@ -14,4 +14,9 @@ export const PROJECT_LIST: Record<string, string[]> = {
   'sunlight': ['tmp-project1', 'tmp-project2']
 }
 
+export const PROJECT_NAME_LIST: Record<string, string> = {
+  'tmp-project1': 'Tmp Project1',
+  'tmp-project2': 'Tmp Project2',
+}
+
 export const GALLERY_IMG_URL: string = 'https://drive.google.com/uc?export=view&id=${imgId}';

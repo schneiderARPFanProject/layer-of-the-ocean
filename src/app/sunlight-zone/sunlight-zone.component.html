@@ -23,7 +23,7 @@
         <div class="projectModalList" (click)="$event.stopPropagation()">
           <div class="diamondDeco">⟡</div>
           <div class="projectList" *ngFor="let projectName of projectList">
-            <a [routerLink]="projectName">{{ projectName }}</a>
+            <a [routerLink]="projectName">{{ projectNameList[projectName] }}</a>
             <div class="diamondDeco">⟡</div>
           </div>
         </div>

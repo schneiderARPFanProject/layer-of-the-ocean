@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { MatTooltipModule } from '@angular/material/tooltip';
-import { PROJECT_LIST } from '../app.properties';
+import { PROJECT_LIST, PROJECT_NAME_LIST } from '../app.properties';
 
 @Component({
   selector: 'app-sunlight-zone',
@@ -10,12 +10,14 @@ import { PROJECT_LIST } from '../app.properties';
 export class SunlightZoneComponent {
   level: string = 'sunlight';
   projectList: string[] = [];
+  projectNameList: Record<string, string> = {};
   showList: boolean = false;
   projectContentX: string = '';
   projectContentY: string = '';
 
   ngOnInit(): void {
     this.projectList = PROJECT_LIST[this.level];
+    this.projectNameList = PROJECT_NAME_LIST;
   }
 
   showProjectList(e: MouseEvent): void {

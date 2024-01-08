@@ -20,16 +20,18 @@
   height: auto;
 }
 .sunlightBgDiv #bg1 {
-  width: 100%;
-  right: 0;
+  width: 102vw;
+  left: -1vw;
   top: 38%;
   filter: blur(5px);
+  animation: slightMove1 8s 1s infinite ease-in-out;
 }
 .sunlightBgDiv #bg2 {
-  width: 70%;
-  left: 0;
-  bottom: 0;
+  width: 72vw;
+  left: -1vw;
+  bottom: -1vw;
   filter: blur(1px);
+  animation: slightMove2 8s 1s infinite ease-in-out;
 }
 .sunlightBgDiv #bg3 {
   width: 40%;
@@ -37,4 +39,22 @@
   bottom: 0;
   opacity: 0.5;
   filter: blur(2px);
+}
+
+@keyframes slightMove1 {
+  0%, 100% {
+      transform: translateY(0vw);
+  }
+  50% {
+      transform: translateY(-1vw);
+  }
+}
+
+@keyframes slightMove2 {
+  0%, 100% {
+      transform: translateY(0vw);
+  }
+  50% {
+      transform: translateY(-0.5vw);
+  }
 }

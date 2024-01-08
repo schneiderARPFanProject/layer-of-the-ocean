@@ -16,6 +16,7 @@ import { CreditsComponent } from './credits/credits.component';
 import { StarsComponent } from './stars/stars.component';
 import { BubblesComponent } from './bubbles/bubbles.component';
 import { SunlightZoneBgComponent } from './sunlight-zone-bg/sunlight-zone-bg.component';
+import { ProjectsToolBarComponent } from './projects/projects-tool-bar/projects-tool-bar.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { SunlightZoneBgComponent } from './sunlight-zone-bg/sunlight-zone-bg.com
     CreditsComponent,
     StarsComponent,
     BubblesComponent,
-    SunlightZoneBgComponent
+    SunlightZoneBgComponent,
+    ProjectsToolBarComponent
   ],
   imports: [
     BrowserModule,

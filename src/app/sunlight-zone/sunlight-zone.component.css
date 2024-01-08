@@ -25,6 +25,13 @@
   border-radius: 20px;
   background-color: rgba(0, 0, 0, 0.7);
 }
+.projectList {
+  border-top: solid 2px white;
+  padding: 10px 5px;
+}
+.projectList:nth-child(1) {
+  border: none;
+}
 .projectList > a:hover {
   color: #edd3ba;
 }
@@ -37,10 +44,6 @@
   content: url("../../assets/images/projects-close-icon-hover.PNG");
   cursor: pointer;
 }
-.diamondDeco {
-  margin: 10px 0;
-}
-
 .sunlightLayerNav {
   position: absolute;
   width: 100%;

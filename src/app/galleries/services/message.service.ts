@@ -24,7 +24,8 @@ export class MessageService {
           postedDate: record[0].trim(),
           name: record[1].trim(),
           imgUrl: imgId ? GALLERY_IMG_URL.replace('${imgId}', imgId) : '',
-          message: message
+          message: message,
+          dear: ''
         }
         galleriesMessages.push(galleriesMessage);
       }

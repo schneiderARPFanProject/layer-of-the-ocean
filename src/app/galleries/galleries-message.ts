@@ -3,4 +3,5 @@ export interface GalleriesMessage {
   message: string;
   imgUrl: string;
   postedDate: string;
+  dear: string;
 }

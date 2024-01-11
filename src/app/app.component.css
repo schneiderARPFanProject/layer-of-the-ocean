@@ -104,14 +104,27 @@
   left: 0;
   z-index: -1;
 }
+.handsome {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.handsome > img {
+  position: absolute;
+  bottom: -80px;
+  left: 5%;
+  width: 640px;
+  animation: floating 21s 5s ease-in-out infinite;
+}
 
 .waves {
   position: absolute;
   width: 100%;
-  height: 35vh;
+  height: 40vh;
   margin-bottom:-7px; /*Fix for safari gap*/
   min-height:25vh;
-  max-height:35vh;
+  max-height:40vh;
   bottom: 0;
   left: 0;
 }
@@ -192,7 +205,17 @@
   }
 }
 
-
+@keyframes floating {
+  25% {
+    transform: translate(1vw, -2vh) rotate(2deg);
+  }
+  50% {
+    transform: translateY(-4vh);
+  }
+  75% {
+    transform: translate(-1vw, -2vh) rotate(-2deg);
+  }
+}
 
 @media only screen  and (max-height: 600px) and (orientation: landscape) {
   .titleModal > div {
@@ -206,8 +229,12 @@
       transform: translate(91px, 48px);
   }
   .waves {
-      height:30vh;
-      min-height:30vh;
+      height:35vh;
+      min-height:35vh;
+  }
+  .handsome > img {
+    width: 390px;
+    bottom: -55px;
   }
 }
 
@@ -223,7 +250,11 @@
     transform: translate(187px, 99px);
   }
   .waves {
-      height:35vh;
-      min-height:35vh;
+      height:45vh;
+      min-height:40vh;
+  }
+  .handsome > img {
+    width: 1000px;
+    bottom: -120px;
   }
 }

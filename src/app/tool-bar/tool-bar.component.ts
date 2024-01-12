@@ -28,7 +28,7 @@ export class ToolBarComponent {
   }
 
   onBackToTopSelect(): void {
-    document.getElementById("layerNav")?.scrollIntoView({
+    document.getElementById("oceanBaseBg")?.scrollIntoView({
         behavior: "smooth",
         block: "start",
         inline: "nearest"

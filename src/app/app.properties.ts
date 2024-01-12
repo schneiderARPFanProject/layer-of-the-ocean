@@ -3,11 +3,11 @@ export const MESSAGE_URL: Record<string, string> = {
 }
 
 export const LEVEL_DISPLAY_TEXT: Record<string, string> = {
-  'sunlight': 'The Sunlight Zone',
-  'twilight': 'The Twilight Zone',
-  'midnight': 'The Midnight Zone',
-  'abyss': 'The Abyss',
-  'trenches': 'The Trenches',
+  'sunlight': 'Layer I : The Sunlight Zone',
+  'twilight': 'Layer II : The Twilight Zone',
+  'midnight': 'Layer III : The Midnight Zone',
+  'abyss': 'Layer IV : The Abyss',
+  'trenches': 'Layer V : The Trenches',
 }
 
 export const PROJECT_LIST: Record<string, string[]> = {

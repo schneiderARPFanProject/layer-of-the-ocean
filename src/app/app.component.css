@@ -45,7 +45,7 @@
     animation-delay: 11s;
 }
 
-#layerNav {
+#oceanBaseBg {
   background-color: #030216;
   background-image:
     radial-gradient(ellipse at 10% 10%, #0e0f24 0%, transparent 55%),
@@ -60,9 +60,9 @@
   left: 0px;
   width: 100%;
   height: 100%;
-  z-index: 0;
+  z-index: -1;
 }
-.layerNavBG {
+.oceanBaseBgInner {
   position: absolute;
   top: 0px;
   left: 0px;
@@ -72,6 +72,35 @@
       radial-gradient(ellipse at 30% 55%, #0e0f24 0%, transparent 55%),
       radial-gradient(ellipse at 70% 40%, #5257b0 0%, transparent 55%);
 }
+.ripples {
+  position:absolute;
+  z-index:5;
+  top: 50%;
+  left: 50%;
+}
+.ripple {
+  display:block;
+  border-radius: 50%;
+  width:15px;
+  height:15px;
+  background: rgba(255, 255, 255, 0.8);
+  animation: rip 3s ease-out ;
+  animation-iteration-count: infinite;
+}
+.ripple {
+  transform: translate(-15px, -15px);
+}
+.ripple:before {
+  animation-delay: .2s;
+  top: 5px;
+  left: 25px;
+}
+.ripple:after {
+  animation-delay: .5s;
+  top: 25px;
+  left: 0;
+}
+
 .layerNavContent {
   position: absolute;
   top: 0;
@@ -80,11 +109,108 @@
   height: 100%;
   z-index: 5;
 }
-.layerNavLink {
+.selectedLayerName {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: absolute;
+  top: 600px;
+}
+.constellation {
+  width: 600px;
+  margin: 0 auto;
+  position: relative;
+}
+.constellation > img {
+  width: 100%;
+  opacity: 0.3;
+}
+.layerStar {
+  position: absolute;
+  width: 70px;
+  height: auto;
+  transform: scale(1.5);
+  animation: sizeUpDown 6s ease-in-out infinite;
+}
+.layerStar > img {
+  width: 100%;
+}
+.layerStar > img:hover {
+  transform: scale(1.3);
+  cursor: pointer;
+}
+.inactiveStar {
+  position: absolute;
+  width: 70px;
+  height: auto;
+  opacity: 0.6;
+}
+.inactiveStar > img {
+  content: url("../assets/images/close-icon.PNG");
+  width: 100%;
+}
+.inactiveStar > img:hover {
+  cursor: default;
+}
+.sunlightStar {
+  top: 90px;
+  left: 110px;
+}
+  .layerLine {
+    position: absolute;
+    border-bottom: 3px solid #ffffffa6;
+    height: 5px;
+  }
+  .inactiveLine {
+    position: absolute;
+    border-bottom: 3px solid #808080a6;
+    height: 5px;
+  }
+  .sunlightToTwilight {
+    left: 50px;
+    top: 280px;
+    transform-origin: bottom left;
+    width: 200px;
+    rotate: -60deg;
+  }
+.twilightStar {
+  top: 255px;
+  left: 10px;
+}
+  .twilightToMidnight {
+    left: 50px;
+    top: 280px;
+    transform-origin: bottom left;
+    width: 270px;
+    rotate: 23deg;
+  }
+.midnightStar {
+  top: 360px;
+  left: 300px;
+  transform: translateX(-50%);
+}
+  .midnightToAbyss {
+    right: 50px;
+    top: 280px;
+    transform-origin: bottom right;
+    width: 270px;
+    rotate: -23deg;
+  }
+.abyssStar {
+  top: 255px;
+  right: 10px;
+}
+  .abyssToTrenches {
+    right: 50px;
+    top: 280px;
+    transform-origin: bottom right;
+    width: 200px;
+    rotate: 60deg;
+  }
+.trenchesStar {
+  top: 90px;
+  right: 110px;
 }
 #layerContentBegin {
   position: absolute;
@@ -217,6 +343,32 @@
   }
 }
 
+@keyframes sizeUpDown {
+  5% {
+    transform: scale(1.8);
+  }
+  20% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.6);
+  }
+  27% {
+    transform: scale(1.5);
+  }
+}
+
+@keyframes rip {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(5);
+    opacity: 0;
+  }
+}
+
 @media only screen  and (max-height: 600px) and (orientation: landscape) {
   .titleModal > div {
     display: block;
@@ -235,6 +387,62 @@
   .handsome > img {
     width: 390px;
     bottom: -55px;
+  }
+  .constellation {
+    width: 400px;
+  }
+  .layerStar {
+    width: 50px;
+  }
+  .inactiveStar {
+    width: 50px;
+  }
+  .sunlightStar {
+    top: 60px;
+    left: 70px;
+  }
+    .sunlightToTwilight {
+      left: 32px;
+      top: 185px;
+      width: 130px;
+      rotate: -60deg;
+    }
+  .twilightStar {
+    top: 167px;
+    left: 7px;
+  }
+    .twilightToMidnight {
+      left: 32px;
+      top: 184px;
+      width: 180px;
+      rotate: 23deg;
+    }
+  .midnightStar {
+    top: 237px;
+    left: 200px;
+  }
+    .midnightToAbyss {
+      right: 32px;
+      top: 184px;
+      width: 180px;
+      rotate: -23deg;
+    }
+  .abyssStar {
+    top: 167px;
+    right: 7px;
+  }
+    .abyssToTrenches {
+      right: 32px;
+      top: 185px;
+      width: 130px;
+      rotate: 60deg;
+    }
+  .trenchesStar {
+    top: 60px;
+    right: 70px;
+  }
+  .selectedLayerName {
+    top: 400px;
   }
 }
 
@@ -256,5 +464,61 @@
   .handsome > img {
     width: 1000px;
     bottom: -120px;
+  }
+  .constellation {
+    width: 800px;
+  }
+  .layerStar {
+    width: 100px;
+  }
+  .inactiveStar {
+    width: 100px;
+  }
+  .sunlightStar {
+    top: 120px;
+    left: 140px;
+  }
+    .sunlightToTwilight {
+      left: 70px;
+      top: 365px;
+      width: 240px;
+      rotate: -60deg;
+    }
+  .twilightStar {
+    top: 335px;
+    left: 10px;
+  }
+    .twilightToMidnight {
+      left: 65px;
+      top: 374px;
+      width: 360px;
+      rotate: 23deg;
+    }
+  .midnightStar {
+    top: 475px;
+    left: 400px;
+  }
+    .midnightToAbyss {
+      right: 65px;
+      top: 374px;
+      width: 360px;
+      rotate: -23deg;
+    }
+  .abyssStar {
+    top: 335px;
+    right: 10px;
+  }
+    .abyssToTrenches {
+      right: 70px;
+      top: 365px;
+      width: 240px;
+      rotate: 60deg;
+    }
+  .trenchesStar {
+    top: 120px;
+    right: 140px;
+  }
+  .selectedLayerName {
+    top: 800px;
   }
 }

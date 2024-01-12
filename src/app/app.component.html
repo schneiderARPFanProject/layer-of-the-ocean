@@ -8,8 +8,8 @@
 </div>
 
 <div class="oceanBg">
-  <div id="layerNav">
-    <div class="layerNavBG"></div>
+  <div id="oceanBaseBg">
+    <div class="oceanBaseBgInner"></div>
   </div>
   <app-stars></app-stars>
   <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
@@ -22,18 +22,46 @@
       <use xlink:href="#gentle-wave" x="48" y="2" fill="rgba(255,255,255,0.3)" />
     </g>
   </svg>
+  <div class="ripples">
+    <span class="ripple"></span>
+    <span class="ripple"></span>
+    <span class="ripple"></span>
+  </div>
   <div class="handsome">
     <img src="../assets/images/schneider-main-float.GIF"/>
   </div>
 </div>
 <div id="layerNavContent">
   <app-tool-bar [showBack]="false"></app-tool-bar>
-  <div class="layerNavLink">
-    <a routerLink="/sunlight" (click)="onLayerSelect()">{{ levelDisplayText['sunlight'] }}</a>
-    <a aria-disabled="true">{{ levelDisplayText['twilight'] }}</a>
-    <a aria-disabled="true">{{ levelDisplayText['midnight'] }}</a>
-    <a aria-disabled="true">{{ levelDisplayText['abyss'] }}</a>
-    <a aria-disabled="true">{{ levelDisplayText['trenches'] }}</a>
+  <div class="constellation">
+    <img src="../assets/images/schneider-constellation.PNG" />
+    <div class="sunlightToTwilight" [ngClass]="false ? 'layerLine' : 'inactiveLine'"></div>
+    <div class="twilightToMidnight" [ngClass]="false ? 'layerLine' : 'inactiveLine'"></div>
+    <div class="midnightToAbyss" [ngClass]="false ? 'layerLine' : 'inactiveLine'"></div>
+    <div class="abyssToTrenches" [ngClass]="false ? 'layerLine' : 'inactiveLine'"></div>
+    <div class="sunlightStar" routerLink="/sunlight" [ngClass]="true ? 'layerStar' : 'inactiveStar'"
+         (click)="onLayerSelect(true)" (mouseover)="layerHover('sunlight')" (mouseout)='layerHoverOut()'>
+      <img src="../assets/images/close-icon-hover.PNG" />
+    </div>
+    <div class="twilightStar" [ngClass]="false ? 'layerStar' : 'inactiveStar'"
+         (click)="onLayerSelect(false)" (mouseover)="layerHover('twilight')" (mouseout)='layerHoverOut()'>
+      <img src="../assets/images/close-icon-hover.PNG" />
+    </div>
+    <div class="midnightStar" [ngClass]="false ? 'layerStar' : 'inactiveStar'"
+         (click)="onLayerSelect(false)" (mouseover)="layerHover('midnight')" (mouseout)='layerHoverOut()'>
+      <img src="../assets/images/close-icon-hover.PNG" />
+    </div>
+    <div class="abyssStar" [ngClass]="false ? 'layerStar' : 'inactiveStar'"
+         (click)="onLayerSelect(false)" (mouseover)="layerHover('abyss')" (mouseout)='layerHoverOut()'>
+      <img src="../assets/images/close-icon-hover.PNG" />
+    </div>
+    <div class="trenchesStar" [ngClass]="false ? 'layerStar' : 'inactiveStar'"
+         (click)="onLayerSelect(false)" (mouseover)="layerHover('trenches')" (mouseout)='layerHoverOut()'>
+      <img src="../assets/images/close-icon-hover.PNG" />
+    </div>
+  </div>
+  <div class="selectedLayerName">
+    <h1>{{ levelDisplayText[hoveredLayer] || '' }}</h1>
   </div>
 </div>
 

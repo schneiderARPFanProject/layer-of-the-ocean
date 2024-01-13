@@ -37,6 +37,8 @@ body::after {
             url("assets/images/sunlight-bg1.PNG")
             url("assets/images/sunlight-bg2.PNG")
             url("assets/images/sunlight-bg3.PNG")
+            url("assets/images/timeline-icon.PNG")
+            url("assets/images/timeline-icon-hover.PNG")
             url("assets/images/typo.PNG");
 }
 a:link, a:visited, a:hover, a:active {

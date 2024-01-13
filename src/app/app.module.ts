@@ -17,6 +17,7 @@ import { StarsComponent } from './stars/stars.component';
 import { BubblesComponent } from './bubbles/bubbles.component';
 import { SunlightZoneBgComponent } from './sunlight-zone-bg/sunlight-zone-bg.component';
 import { ProjectsToolBarComponent } from './projects/projects-tool-bar/projects-tool-bar.component';
+import { TimeLineComponent } from './time-line/time-line.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ProjectsToolBarComponent } from './projects/projects-tool-bar/projects-
     StarsComponent,
     BubblesComponent,
     SunlightZoneBgComponent,
-    ProjectsToolBarComponent
+    ProjectsToolBarComponent,
+    TimeLineComponent
   ],
   imports: [
     BrowserModule,

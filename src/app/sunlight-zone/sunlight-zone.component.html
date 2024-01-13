@@ -1,7 +1,7 @@
 <div class="layerContainer sunlightLayerContainer" onload="testFunction()">
   <app-tool-bar [level]="level" [showBack]="false"></app-tool-bar>
   <nav class="sunlightLayerNav">
-    <a routerLink="galleries"
+    <a routerLink="letters-to-schneider"
        class="galleriesLink"
        matTooltip="Letters to Schneider"
        matTooltipPosition="above"
@@ -15,9 +15,9 @@
          matTooltipShowDelay="1000">
       <img src="../../assets/images/projects-icon.PNG">
     </div>
-    <a routerLink="timeLine"
+    <a routerLink="schneider-cruise"
        class="timeLineLink"
-       matTooltip="Journey of Schneider"
+       matTooltip="Schneider's Cruise"
        matTooltipPosition="above"
        matTooltipShowDelay="1000">
       <img src="../../assets/images/timeline-icon.PNG">
@@ -29,7 +29,7 @@
         </div>
         <div class="projectModalList" (click)="$event.stopPropagation()">
           <div class="projectList" *ngFor="let projectName of projectList">
-            <a [routerLink]="projectName">{{ projectNameList[projectName] }}</a>
+            <a [routerLink]="['presents-to-schneider', projectName]">{{ projectNameList[projectName] }}</a>
           </div>
         </div>
       </div>

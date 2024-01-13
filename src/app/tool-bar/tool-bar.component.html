@@ -1,10 +1,11 @@
-<div class="toolBar" [class.toolBarWithShadow] = "showBack">
-  <div class="backButtons toolBarIcon" *ngIf="showBack">
+<div class="toolBar" [class.toolBarWithShadow] = "showBack || showBackToTop">
+  <div class="backButtons toolBarIcon">
     <a routerLink="/"
        (click)="onBackToTopSelect()"
        matTooltip="Back to Surface"
        matTooltipPosition="below"
-       matTooltipShowDelay="1000">
+       matTooltipShowDelay="1000"
+       *ngIf="showBackToTop">
       <img class="homeBtn" />
     </a>
     <img class="backBtn"
@@ -12,9 +13,10 @@
          (click)="goBack()"
          matTooltip="Back"
          matTooltipPosition="below"
-         matTooltipShowDelay="1000"/>
+         matTooltipShowDelay="1000"
+         *ngIf="showBack"/>
   </div>
-  <div class="levelDisplay" *ngIf="showBack">
+  <div class="levelDisplay" *ngIf="showBack || showBackToTop">
     <h3 > {{ level ? levelDisplayText[level] : 'The Unknown' }} </h3>
   </div>
   <img class="creditsBtn toolBarIcon"

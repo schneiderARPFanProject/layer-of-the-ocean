@@ -13,6 +13,7 @@ import { CreditsComponent } from '../credits/credits.component';
 export class ToolBarComponent {
 
   @Input() level?: string;
+  @Input() showBackToTop: boolean = true;
   @Input() showBack: boolean = true;
 
   levelDisplayText = LEVEL_DISPLAY_TEXT;

@@ -9,7 +9,7 @@ import { TmpProject2Component } from './projects/tmp-project2/tmp-project2.compo
 const routes: Routes = [
   { path: 'sunlight', component: SunlightZoneComponent },
   { path: ':level/letters-to-schneider', component: GalleriesComponent },
-  { path: ':level/schneider-cruise', component: TimeLineComponent },
+  { path: ':level/schneider-journey', component: TimeLineComponent },
   { path: ':level/presents-to-schneider/tmp-project1', component: TmpProject1Component },
   { path: ':level/presents-to-schneider/tmp-project2', component: TmpProject2Component }
 ];

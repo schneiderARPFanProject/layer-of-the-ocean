@@ -5,21 +5,21 @@
        class="galleriesLink"
        matTooltip="Letters to Schneider"
        matTooltipPosition="above"
-       matTooltipShowDelay="1000">
+       matTooltipShowDelay="0">
       <img src="../../assets/images/galleries-icon.PNG">
     </a>
     <div class="projectListBtn"
          (click)="showProjectList($event)"
          matTooltip="Presents to Schneider"
          matTooltipPosition="above"
-         matTooltipShowDelay="1000">
+         matTooltipShowDelay="0">
       <img src="../../assets/images/projects-icon.PNG">
     </div>
-    <a routerLink="schneider-cruise"
+    <a routerLink="schneider-journey"
        class="timeLineLink"
-       matTooltip="Schneider's Cruise"
+       matTooltip="Schneider's Journey"
        matTooltipPosition="above"
-       matTooltipShowDelay="1000">
+       matTooltipShowDelay="0">
       <img src="../../assets/images/timeline-icon.PNG">
     </a>
     <div *ngIf="showList" class="projectModal" (click)="closeProjectList()">

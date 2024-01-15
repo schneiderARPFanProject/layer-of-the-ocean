@@ -13,6 +13,7 @@ import { CreditsComponent } from '../credits/credits.component';
 export class ToolBarComponent {
 
   @Input() level?: string;
+  @Input() sublevel: string = '';
   @Input() showBackToTop: boolean = true;
   @Input() showBack: boolean = true;
 

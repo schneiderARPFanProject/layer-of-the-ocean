@@ -17,7 +17,7 @@
          *ngIf="showBack"/>
   </div>
   <div class="levelDisplay" *ngIf="showBack || showBackToTop">
-    <h3 > {{ level ? levelDisplayText[level] : 'The Unknown' }} </h3>
+    <h3 > {{ level ? levelDisplayText[level] : 'The Unknown' }}{{ sublevel ? ' | ' + sublevel : '' }} </h3>
   </div>
   <img class="creditsBtn toolBarIcon"
        (click)="onOpenCredits()"

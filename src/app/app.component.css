@@ -177,7 +177,7 @@
   width: 100%;
 }
 .inactiveStar > img:hover {
-  cursor: default;
+  cursor: not-allowed;
 }
 .sunlightStar {
   top: 90px;

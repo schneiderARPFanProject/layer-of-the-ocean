@@ -54,7 +54,7 @@
 }
 .galleriesLink {
   position: absolute;
-  width: 280px;
+  width: 250px;
   height: auto;
   top: 8%;
   left: 55%;
@@ -73,7 +73,7 @@
 }
 .timeLineLink {
   position: absolute;
-  width: 280px;
+  width: 250px;
   height: auto;
   top: 42%;
   left: 48%;
@@ -92,7 +92,7 @@
 }
 .projectListBtn {
   position: absolute;
-  width: 280px;
+  width: 250px;
   height: auto;
   top: 30%;
   left: 67%;

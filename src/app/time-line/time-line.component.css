@@ -10,7 +10,7 @@
   width: 60vw;
   margin: 0 auto;
   padding: 10px;
-  margin-bottom: 100px;
+  margin-bottom: 200px;
   text-align: left;
   display: flex;
   flex-direction: column;
@@ -44,7 +44,7 @@
 .timeLineContent ul li {
   position: relative;
   margin-left: 30px;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.35);
   padding: 14px;
   border-radius: 6px;
   width: 100%;
@@ -118,7 +118,7 @@
 }
 
 .monthHead {
-  margin-top: 35px;
+  margin-top: 50px;
 }
 
 .underline {
@@ -151,6 +151,16 @@
 
 .member {
   content: url("../../assets/images/member-icon.PNG");
+  width: 50px;
+  height: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(15px, -15px);
+}
+
+.goods {
+  content: url("../../assets/images/goods-icon.PNG");
   width: 50px;
   height: auto;
   position: absolute;

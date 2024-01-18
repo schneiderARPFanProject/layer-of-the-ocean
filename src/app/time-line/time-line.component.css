@@ -1,0 +1,212 @@
+.timeLineContainer {
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  position: relative;
+  margin-top: 10px;
+}
+.timeLineContent {
+  height: auto;
+  width: 60vw;
+  margin: 0 auto;
+  padding: 10px;
+  margin-bottom: 100px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.timeLineContent h2 {
+  text-align: left;
+}
+
+.timeLineContent ul {
+  margin: 0;
+  margin-top: 1rem;
+  list-style: none;
+  position: relative;
+  padding: 1px 100px;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.timeLineContent ul:last-of-type {
+  margin-bottom: 100px;
+}
+.timeLineContent ul:before {
+  content: "";
+  width: 1px;
+  height: 100%;
+  position: absolute;
+  border-left: 2px dashed #fff;
+}
+.timeLineContent ul li {
+  position: relative;
+  margin-left: 30px;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 14px;
+  border-radius: 6px;
+  width: 100%;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.08);
+}
+.highlight {
+  border: 5px solid #dfcdff;
+  background-color: rgb(71 66 79 / 64%) !important;
+}
+.timeLineContent ul .highlight {
+  margin-left: 25px;
+}
+.timeLineContent .highlight div .title{
+  font-size: 1.2rem;
+}
+
+.timeLineContent ul li:not(:first-child) {
+  margin-top: 30px;
+}
+.timeLineContent ul li > span {
+  width: 2px;
+  height: 100%;
+  background: #fff;
+  left: -30px;
+  top: 0;
+  position: absolute;
+}
+
+.timeLineContent ul li > span:before { /*, .timeLineContent ul li > span:after {*/
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  position: absolute;
+  background: #86b7e7;
+  left: -5px;
+  top: 0;
+}
+.timeLineContent ul li span:after {
+  top: 100%;
+}
+.timeLineContent ul li > div {
+  margin-left: 10px;
+}
+.timeLineContent div .title {
+  font-weight: 600;
+  font-size: 1rem;
+  margin: 3px 0;
+}
+.timeLineContent div .info {
+  font-weight: 300;
+}
+.timeLineContent div > div {
+  /*margin-top: 5px;*/
+}
+.timeLineContent span.number {
+  height: 100%;
+}
+.timeLineContent span.number span {
+  position: absolute;
+  font-size: 1rem;
+  left: -4rem;
+  font-weight: bold;
+}
+.timeLineContent span.number span:first-child {
+  top: 0;
+}
+.timeLineContent span.number span:last-child {
+  top: 100%;
+}
+
+.monthHead {
+  margin-top: 35px;
+}
+
+.underline {
+  display: inline-block;
+  position: absolute;
+  font-size: 0.85rem;
+  transform: rotate(-8deg) translate(0.5rem, 0px);
+  width: max-content;
+}
+
+.underline::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ff878dca;
+}
+
+.music {
+  content: url("../../assets/images/music-icon.PNG");
+  width: 50px;
+  height: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(15px, -15px);
+}
+
+.member {
+  content: url("../../assets/images/member-icon.PNG");
+  width: 50px;
+  height: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(15px, -15px);
+}
+
+.collab {
+  content: url("../../assets/images/collab-icon.PNG");
+  width: 65px;
+  height: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(18px, -18px);
+}
+
+.congrats {
+  content: url("../../assets/images/congrats-icon.PNG");
+  width: 90px;
+  height: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(60px, -23px) rotate(11deg);
+}
+
+
+
+
+
+.timeLineToolBar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+  margin: 10px 0;
+}
+.monthDiv {
+  border-left: solid 2px white;
+  padding-left: 10px;
+  width: max-content;
+}
+.monthDiv:nth-child(1) {
+  border: none;
+}
+.monthDiv > a {
+  padding: 5px;
+  display: flex;
+}
+.monthDiv > a:hover {
+  color: #ebebeb;
+  cursor: pointer;
+}
+.selected {
+  border-top: solid 2px white;
+  border-bottom: solid 2px white;
+}

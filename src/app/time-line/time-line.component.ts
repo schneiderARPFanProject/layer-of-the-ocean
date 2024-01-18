@@ -16,4 +16,14 @@ export class TimeLineComponent {
   ngOnInit(): void {
     this.level = this.route.snapshot.params['level'];
   }
+
+  monthSelect(monthId: string): void {
+    const monthIdDiv =  document.getElementById(monthId);
+    if (monthIdDiv != null) {
+      document.getElementById('timeLineContainer')?.scrollTo({
+          top: monthIdDiv.offsetTop - 30,
+          behavior: "smooth"
+      });
+    }
+  }
 }

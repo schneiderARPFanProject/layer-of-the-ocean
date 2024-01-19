@@ -223,3 +223,41 @@
   border-top: solid 2px white;
   border-bottom: solid 2px white;
 }
+
+
+@media only screen  and (max-width: 1024px) {
+  .timeLineContent {
+    width: 75vw;
+  }
+  .timeLineToolBar {
+    column-gap: 0px;
+  }
+  .congrats {
+    width: 70px;
+    transform: translate(45px, -23px) rotate(11deg);
+  }
+  .music {
+     content: url("../../assets/images/music-icon.PNG");
+     width: 40px;
+   }
+
+   .member {
+     content: url("../../assets/images/member-icon.PNG");
+     width: 40px;
+   }
+
+   .goods {
+     content: url("../../assets/images/goods-icon.PNG");
+     width: 40px;
+   }
+
+   .collab {
+     content: url("../../assets/images/collab-icon.PNG");
+     width: 60px;
+   }
+}
+@media only screen  and (max-width: 900px) {
+  .timeLineContent {
+    width: 90vw;
+  }
+}

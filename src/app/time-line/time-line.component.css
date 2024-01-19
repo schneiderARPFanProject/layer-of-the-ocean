@@ -93,7 +93,10 @@
 .timeLineContent div .title {
   font-weight: 600;
   font-size: 1rem;
-  margin: 3px 0;
+  margin-top: 10px;
+}
+.timeLineContent div .title:nth-of-type(1) {
+  margin-top: 0px;
 }
 .timeLineContent div .info {
   font-weight: 300;

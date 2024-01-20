@@ -7,7 +7,7 @@ import { ActivatedRoute, ParamMap } from '@angular/router'
   styleUrl: './time-line.component.css'
 })
 export class TimeLineComponent {
-  @Input() level?: string;
+  level?: string;
 
   constructor(
     private route: ActivatedRoute

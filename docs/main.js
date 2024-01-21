@@ -52977,7 +52977,7 @@ var _AppComponent = class _AppComponent {
 _AppComponent.\u0275fac = function AppComponent_Factory(t) {
   return new (t || _AppComponent)();
 };
-_AppComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _AppComponent, selectors: [["app-root"]], decls: 47, vars: 12, consts: [[1, "titleModal"], ["src", "#", 1, "titleTypo"], [1, "dropDiv"], [1, "drop"], [1, "oceanBg"], ["id", "oceanBaseBg"], [1, "oceanBaseBgInner"], ["xmlns", "http://www.w3.org/2000/svg", 0, "xmlns", "xlink", "http://www.w3.org/1999/xlink", "viewBox", "0 24 150 28", "preserveAspectRatio", "none", "shape-rendering", "auto", 1, "waves"], ["id", "gentle-wave", "d", "M-160 44c30 0 58-5 88-5s 58 5 88 5 58-5 88-5 58 5 88 5 v44h-352z"], [1, "parallax"], [0, "xlink", "href", "#gentle-wave", "x", "48", "y", "0", "fill", "rgba(255,255,255,0.1"], [0, "xlink", "href", "#gentle-wave", "x", "48", "y", "1", "fill", "rgba(255,255,255,0.2)"], [0, "xlink", "href", "#gentle-wave", "x", "48", "y", "2", "fill", "rgba(255,255,255,0.3)"], [1, "ripples"], [1, "ripple"], [1, "handsome"], ["id", "layerNavContent"], [3, "showBack", "showBackToTop"], [1, "constellation"], [1, "sunlightToTwilight", 3, "ngClass"], [1, "twilightToMidnight", 3, "ngClass"], [1, "midnightToAbyss", 3, "ngClass"], [1, "abyssToTrenches", 3, "ngClass"], ["routerLink", "/sunlight", 1, "sunlightStar", 3, "ngClass", "click", "mouseover", "mouseout"], [1, "twilightStar", 3, "ngClass", "click", "mouseover", "mouseout"], [1, "midnightStar", 3, "ngClass", "click", "mouseover", "mouseout"], [1, "abyssStar", 3, "ngClass", "click", "mouseover", "mouseout"], [1, "trenchesStar", 3, "ngClass", "click", "mouseover", "mouseout"], [1, "selectedLayerName"], ["id", "layerContentBegin"]], template: function AppComponent_Template(rf, ctx) {
+_AppComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _AppComponent, selectors: [["app-root"]], decls: 47, vars: 12, consts: [[1, "titleModal"], ["src", "#", 1, "titleTypo"], [1, "dropDiv"], [1, "drop"], [1, "oceanBg"], ["id", "oceanBaseBg"], [1, "oceanBaseBgInner"], ["xmlns", "http://www.w3.org/2000/svg", 0, "xmlns", "xlink", "http://www.w3.org/1999/xlink", "viewBox", "0 24 150 28", "preserveAspectRatio", "none", "shape-rendering", "auto", 1, "waves"], ["id", "gentle-wave", "d", "M-160 44c30 0 58-5 88-5s 58 5 88 5 58-5 88-5 58 5 88 5 v44h-352z"], [1, "parallax"], [0, "xlink", "href", "#gentle-wave", "x", "48", "y", "0", "fill", "rgba(255,255,255,0.1"], [0, "xlink", "href", "#gentle-wave", "x", "48", "y", "1", "fill", "rgba(255,255,255,0.2)"], [0, "xlink", "href", "#gentle-wave", "x", "48", "y", "2", "fill", "rgba(255,255,255,0.3)"], [1, "ripples"], [1, "ripple"], [1, "handsome"], ["src", "#"], ["id", "layerNavContent"], [3, "showBack", "showBackToTop"], [1, "constellation"], [1, "sunlightToTwilight", 3, "ngClass"], [1, "twilightToMidnight", 3, "ngClass"], [1, "midnightToAbyss", 3, "ngClass"], [1, "abyssToTrenches", 3, "ngClass"], ["routerLink", "/sunlight", 1, "sunlightStar", 3, "ngClass", "click", "mouseover", "mouseout"], [1, "twilightStar", 3, "ngClass", "click", "mouseover", "mouseout"], [1, "midnightStar", 3, "ngClass", "click", "mouseover", "mouseout"], [1, "abyssStar", 3, "ngClass", "click", "mouseover", "mouseout"], [1, "trenchesStar", 3, "ngClass", "click", "mouseover", "mouseout"], [1, "selectedLayerName"], ["id", "layerContentBegin"]], template: function AppComponent_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "div", 0)(1, "div");
     \u0275\u0275element(2, "img", 1);
@@ -53000,13 +53000,13 @@ _AppComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _A
     \u0275\u0275element(17, "span", 14)(18, "span", 14)(19, "span", 14)(20, "span", 14)(21, "span", 14);
     \u0275\u0275elementEnd();
     \u0275\u0275elementStart(22, "div", 15);
-    \u0275\u0275element(23, "img");
+    \u0275\u0275element(23, "img", 16);
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(24, "div", 16);
-    \u0275\u0275element(25, "app-tool-bar", 17);
-    \u0275\u0275elementStart(26, "div", 18);
-    \u0275\u0275element(27, "img")(28, "div", 19)(29, "div", 20)(30, "div", 21)(31, "div", 22);
-    \u0275\u0275elementStart(32, "div", 23);
+    \u0275\u0275elementStart(24, "div", 17);
+    \u0275\u0275element(25, "app-tool-bar", 18);
+    \u0275\u0275elementStart(26, "div", 19);
+    \u0275\u0275element(27, "img")(28, "div", 20)(29, "div", 21)(30, "div", 22)(31, "div", 23);
+    \u0275\u0275elementStart(32, "div", 24);
     \u0275\u0275listener("click", function AppComponent_Template_div_click_32_listener() {
       return ctx.onLayerSelect(true);
     })("mouseover", function AppComponent_Template_div_mouseover_32_listener() {
@@ -53016,7 +53016,7 @@ _AppComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _A
     });
     \u0275\u0275element(33, "img");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(34, "div", 24);
+    \u0275\u0275elementStart(34, "div", 25);
     \u0275\u0275listener("click", function AppComponent_Template_div_click_34_listener() {
       return ctx.onLayerSelect(false);
     })("mouseover", function AppComponent_Template_div_mouseover_34_listener() {
@@ -53026,7 +53026,7 @@ _AppComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _A
     });
     \u0275\u0275element(35, "img");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(36, "div", 25);
+    \u0275\u0275elementStart(36, "div", 26);
     \u0275\u0275listener("click", function AppComponent_Template_div_click_36_listener() {
       return ctx.onLayerSelect(false);
     })("mouseover", function AppComponent_Template_div_mouseover_36_listener() {
@@ -53036,7 +53036,7 @@ _AppComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _A
     });
     \u0275\u0275element(37, "img");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(38, "div", 26);
+    \u0275\u0275elementStart(38, "div", 27);
     \u0275\u0275listener("click", function AppComponent_Template_div_click_38_listener() {
       return ctx.onLayerSelect(false);
     })("mouseover", function AppComponent_Template_div_mouseover_38_listener() {
@@ -53046,7 +53046,7 @@ _AppComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _A
     });
     \u0275\u0275element(39, "img");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(40, "div", 27);
+    \u0275\u0275elementStart(40, "div", 28);
     \u0275\u0275listener("click", function AppComponent_Template_div_click_40_listener() {
       return ctx.onLayerSelect(false);
     })("mouseover", function AppComponent_Template_div_mouseover_40_listener() {
@@ -53056,10 +53056,10 @@ _AppComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _A
     });
     \u0275\u0275element(41, "img");
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(42, "div", 28)(43, "h2");
+    \u0275\u0275elementStart(42, "div", 29)(43, "h2");
     \u0275\u0275text(44);
     \u0275\u0275elementEnd()()();
-    \u0275\u0275element(45, "div", 29)(46, "router-outlet");
+    \u0275\u0275element(45, "div", 30)(46, "router-outlet");
   }
   if (rf & 2) {
     \u0275\u0275advance(25);

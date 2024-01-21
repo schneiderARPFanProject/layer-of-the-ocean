@@ -6,21 +6,21 @@
        matTooltip="Letters to Schneider"
        matTooltipPosition="above"
        matTooltipShowDelay="0">
-      <img src="../../assets/images/galleries-icon.PNG">
+      <img />
     </a>
     <div class="projectListBtn"
          (click)="showProjectList($event)"
          matTooltip="Presents to Schneider"
          matTooltipPosition="above"
          matTooltipShowDelay="0">
-      <img src="../../assets/images/projects-icon.PNG">
+      <img />
     </div>
     <a routerLink="schneider-journey"
        class="timeLineLink"
        matTooltip="Schneider's Journey"
        matTooltipPosition="above"
        matTooltipShowDelay="0">
-      <img src="../../assets/images/timeline-icon.PNG">
+      <img />
     </a>
     <div *ngIf="showList" class="projectModal" (click)="closeProjectList()">
       <div class="projectModalContent"  [ngStyle]="{'top': projectContentY, 'left': projectContentX}">
@@ -36,7 +36,7 @@
     </div>
   </nav>
   <div class="schneiderDiv">
-    <img src="#"/>
+    <img />
   </div>
   <app-sunlight-zone-bg></app-sunlight-zone-bg>
 </div>

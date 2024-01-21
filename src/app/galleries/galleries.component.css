@@ -30,6 +30,7 @@
   height: 100%;
 }
 .loadingDiv > img {
+  content: url("../../assets/images/loading-icon.PNG");
   width: 70px;
   height: auto;
   position: absolute;

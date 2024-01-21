@@ -6,6 +6,7 @@
   font-style: italic;
 }
 .titleTypo {
+  content: url("../../assets/images/typo.PNG");
   width: 500px;
   height: auto;
   margin-top: 5%;

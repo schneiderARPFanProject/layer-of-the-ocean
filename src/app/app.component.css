@@ -22,6 +22,7 @@
   transform: translate(-50%, -50%);
 }
 .titleTypo {
+  content: url("../assets/images/typo.GIF");
   width: 100%;
   height: 100%;
   animation-name: imgFade;
@@ -38,6 +39,7 @@
     transform: translate(137px, 76px);
 }
 .drop {
+    content: url("../assets/images/drop.PNG");
     width: 100%;
     height: 100%;
     opacity: 0;
@@ -148,6 +150,7 @@
   animation: fadeIn 2s 13.5s ease-in-out forwards;
 }
 .constellation > img {
+  content: url("../assets/images/schneider-constellation.PNG");
   width: 100%;
   opacity: 0.3;
   animation: scaleUp 5s 15s ease-in-out infinite;
@@ -160,6 +163,7 @@
   animation: sizeUpDown 6s ease-in-out infinite;
 }
 .layerStar > img {
+  content: url("../assets/images/close-icon-hover.PNG");
   width: 100%;
 }
 .layerStar > img:hover {
@@ -263,6 +267,7 @@
   width: 100%;
 }
 .handsome > img {
+  content: url("../assets/images/schneider-main-float.GIF");
   position: absolute;
   bottom: -80px;
   left: 5%;

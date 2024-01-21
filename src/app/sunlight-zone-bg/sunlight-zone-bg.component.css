@@ -20,6 +20,7 @@
   height: auto;
 }
 .sunlightBgDiv #bg1 {
+  content: url("../../assets/images/sunlight-bg1.PNG");
   width: 102vw;
   left: -1vw;
   top: 38%;
@@ -27,6 +28,7 @@
   animation: slightMove1 8s 1s infinite ease-in-out;
 }
 .sunlightBgDiv #bg2 {
+  content: url("../../assets/images/sunlight-bg2.PNG");
   width: 72vw;
   left: -1vw;
   bottom: -1vw;
@@ -34,6 +36,7 @@
   animation: slightMove2 8s 1s infinite ease-in-out;
 }
 .sunlightBgDiv #bg3 {
+  content: url("../../assets/images/sunlight-bg3.PNG");
   width: 40%;
   right: 0;
   bottom: 0;

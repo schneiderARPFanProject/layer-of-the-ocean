@@ -50075,7 +50075,7 @@ var SunlightZoneBgComponent = _SunlightZoneBgComponent;
 var _c04 = (a1) => ["presents-to-schneider", a1];
 function SunlightZoneComponent_div_9_div_5_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 13)(1, "a", 14);
+    \u0275\u0275elementStart(0, "div", 14)(1, "a", 15);
     \u0275\u0275text(2);
     \u0275\u0275elementEnd()();
   }
@@ -50092,20 +50092,20 @@ var _c13 = (a0, a1) => ({ "top": a0, "left": a1 });
 function SunlightZoneComponent_div_9_Template(rf, ctx) {
   if (rf & 1) {
     const _r4 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "div", 8);
+    \u0275\u0275elementStart(0, "div", 9);
     \u0275\u0275listener("click", function SunlightZoneComponent_div_9_Template_div_click_0_listener() {
       \u0275\u0275restoreView(_r4);
       const ctx_r3 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r3.closeProjectList());
     });
-    \u0275\u0275elementStart(1, "div", 9)(2, "div");
-    \u0275\u0275element(3, "img", 10);
+    \u0275\u0275elementStart(1, "div", 10)(2, "div");
+    \u0275\u0275element(3, "img", 11);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(4, "div", 11);
+    \u0275\u0275elementStart(4, "div", 12);
     \u0275\u0275listener("click", function SunlightZoneComponent_div_9_Template_div_click_4_listener($event) {
       return $event.stopPropagation();
     });
-    \u0275\u0275template(5, SunlightZoneComponent_div_9_div_5_Template, 3, 4, "div", 12);
+    \u0275\u0275template(5, SunlightZoneComponent_div_9_div_5_Template, 3, 4, "div", 13);
     \u0275\u0275elementEnd()()();
   }
   if (rf & 2) {
@@ -50141,7 +50141,7 @@ var _SunlightZoneComponent = class _SunlightZoneComponent {
 _SunlightZoneComponent.\u0275fac = function SunlightZoneComponent_Factory(t) {
   return new (t || _SunlightZoneComponent)();
 };
-_SunlightZoneComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _SunlightZoneComponent, selectors: [["app-sunlight-zone"]], decls: 13, vars: 3, consts: [["onload", "testFunction()", 1, "layerContainer", "sunlightLayerContainer"], [3, "level", "showBack"], [1, "sunlightLayerNav"], ["routerLink", "letters-to-schneider", "matTooltip", "Letters to Schneider", "matTooltipPosition", "above", "matTooltipShowDelay", "0", 1, "galleriesLink"], ["matTooltip", "Presents to Schneider", "matTooltipPosition", "above", "matTooltipShowDelay", "0", 1, "projectListBtn", 3, "click"], ["routerLink", "schneider-journey", "matTooltip", "Schneider's Journey", "matTooltipPosition", "above", "matTooltipShowDelay", "0", 1, "timeLineLink"], ["class", "projectModal", 3, "click", 4, "ngIf"], [1, "schneiderDiv"], [1, "projectModal", 3, "click"], [1, "projectModalContent", 3, "ngStyle"], [1, "projectListCloseBtn"], [1, "projectModalList", 3, "click"], ["class", "projectList", 4, "ngFor", "ngForOf"], [1, "projectList"], [3, "routerLink"]], template: function SunlightZoneComponent_Template(rf, ctx) {
+_SunlightZoneComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _SunlightZoneComponent, selectors: [["app-sunlight-zone"]], decls: 13, vars: 3, consts: [["onload", "testFunction()", 1, "layerContainer", "sunlightLayerContainer"], [3, "level", "showBack"], [1, "sunlightLayerNav"], ["routerLink", "letters-to-schneider", "matTooltip", "Letters to Schneider", "matTooltipPosition", "above", "matTooltipShowDelay", "0", 1, "galleriesLink"], ["matTooltip", "Presents to Schneider", "matTooltipPosition", "above", "matTooltipShowDelay", "0", 1, "projectListBtn", 3, "click"], ["routerLink", "schneider-journey", "matTooltip", "Schneider's Journey", "matTooltipPosition", "above", "matTooltipShowDelay", "0", 1, "timeLineLink"], ["class", "projectModal", 3, "click", 4, "ngIf"], [1, "schneiderDiv"], ["src", "#"], [1, "projectModal", 3, "click"], [1, "projectModalContent", 3, "ngStyle"], [1, "projectListCloseBtn"], [1, "projectModalList", 3, "click"], ["class", "projectList", 4, "ngFor", "ngForOf"], [1, "projectList"], [3, "routerLink"]], template: function SunlightZoneComponent_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "div", 0);
     \u0275\u0275element(1, "app-tool-bar", 1);
@@ -50160,7 +50160,7 @@ _SunlightZoneComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({
     \u0275\u0275template(9, SunlightZoneComponent_div_9_Template, 6, 5, "div", 6);
     \u0275\u0275elementEnd();
     \u0275\u0275elementStart(10, "div", 7);
-    \u0275\u0275element(11, "img");
+    \u0275\u0275element(11, "img", 8);
     \u0275\u0275elementEnd();
     \u0275\u0275element(12, "app-sunlight-zone-bg");
     \u0275\u0275elementEnd();
@@ -52977,7 +52977,7 @@ var _AppComponent = class _AppComponent {
 _AppComponent.\u0275fac = function AppComponent_Factory(t) {
   return new (t || _AppComponent)();
 };
-_AppComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _AppComponent, selectors: [["app-root"]], decls: 47, vars: 12, consts: [[1, "titleModal"], [1, "titleTypo"], [1, "dropDiv"], [1, "drop"], [1, "oceanBg"], ["id", "oceanBaseBg"], [1, "oceanBaseBgInner"], ["xmlns", "http://www.w3.org/2000/svg", 0, "xmlns", "xlink", "http://www.w3.org/1999/xlink", "viewBox", "0 24 150 28", "preserveAspectRatio", "none", "shape-rendering", "auto", 1, "waves"], ["id", "gentle-wave", "d", "M-160 44c30 0 58-5 88-5s 58 5 88 5 58-5 88-5 58 5 88 5 v44h-352z"], [1, "parallax"], [0, "xlink", "href", "#gentle-wave", "x", "48", "y", "0", "fill", "rgba(255,255,255,0.1"], [0, "xlink", "href", "#gentle-wave", "x", "48", "y", "1", "fill", "rgba(255,255,255,0.2)"], [0, "xlink", "href", "#gentle-wave", "x", "48", "y", "2", "fill", "rgba(255,255,255,0.3)"], [1, "ripples"], [1, "ripple"], [1, "handsome"], ["id", "layerNavContent"], [3, "showBack", "showBackToTop"], [1, "constellation"], [1, "sunlightToTwilight", 3, "ngClass"], [1, "twilightToMidnight", 3, "ngClass"], [1, "midnightToAbyss", 3, "ngClass"], [1, "abyssToTrenches", 3, "ngClass"], ["routerLink", "/sunlight", 1, "sunlightStar", 3, "ngClass", "click", "mouseover", "mouseout"], [1, "twilightStar", 3, "ngClass", "click", "mouseover", "mouseout"], [1, "midnightStar", 3, "ngClass", "click", "mouseover", "mouseout"], [1, "abyssStar", 3, "ngClass", "click", "mouseover", "mouseout"], [1, "trenchesStar", 3, "ngClass", "click", "mouseover", "mouseout"], [1, "selectedLayerName"], ["id", "layerContentBegin"]], template: function AppComponent_Template(rf, ctx) {
+_AppComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _AppComponent, selectors: [["app-root"]], decls: 47, vars: 12, consts: [[1, "titleModal"], ["src", "#", 1, "titleTypo"], [1, "dropDiv"], [1, "drop"], [1, "oceanBg"], ["id", "oceanBaseBg"], [1, "oceanBaseBgInner"], ["xmlns", "http://www.w3.org/2000/svg", 0, "xmlns", "xlink", "http://www.w3.org/1999/xlink", "viewBox", "0 24 150 28", "preserveAspectRatio", "none", "shape-rendering", "auto", 1, "waves"], ["id", "gentle-wave", "d", "M-160 44c30 0 58-5 88-5s 58 5 88 5 58-5 88-5 58 5 88 5 v44h-352z"], [1, "parallax"], [0, "xlink", "href", "#gentle-wave", "x", "48", "y", "0", "fill", "rgba(255,255,255,0.1"], [0, "xlink", "href", "#gentle-wave", "x", "48", "y", "1", "fill", "rgba(255,255,255,0.2)"], [0, "xlink", "href", "#gentle-wave", "x", "48", "y", "2", "fill", "rgba(255,255,255,0.3)"], [1, "ripples"], [1, "ripple"], [1, "handsome"], ["id", "layerNavContent"], [3, "showBack", "showBackToTop"], [1, "constellation"], [1, "sunlightToTwilight", 3, "ngClass"], [1, "twilightToMidnight", 3, "ngClass"], [1, "midnightToAbyss", 3, "ngClass"], [1, "abyssToTrenches", 3, "ngClass"], ["routerLink", "/sunlight", 1, "sunlightStar", 3, "ngClass", "click", "mouseover", "mouseout"], [1, "twilightStar", 3, "ngClass", "click", "mouseover", "mouseout"], [1, "midnightStar", 3, "ngClass", "click", "mouseover", "mouseout"], [1, "abyssStar", 3, "ngClass", "click", "mouseover", "mouseout"], [1, "trenchesStar", 3, "ngClass", "click", "mouseover", "mouseout"], [1, "selectedLayerName"], ["id", "layerContentBegin"]], template: function AppComponent_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "div", 0)(1, "div");
     \u0275\u0275element(2, "img", 1);

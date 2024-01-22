@@ -49809,8 +49809,6 @@ var navigationGuard = (route, state2) => {
   } else {
     router.navigate(["/"]).then(() => {
       router.navigate(["/"]);
-    }).catch((e) => {
-      router.navigate(["/layer-of-the-ocean/"]);
     });
     return false;
   }
@@ -53026,7 +53024,7 @@ _AppRoutingModule.\u0275fac = function AppRoutingModule_Factory(t) {
   return new (t || _AppRoutingModule)();
 };
 _AppRoutingModule.\u0275mod = /* @__PURE__ */ \u0275\u0275defineNgModule({ type: _AppRoutingModule });
-_AppRoutingModule.\u0275inj = /* @__PURE__ */ \u0275\u0275defineInjector({ imports: [RouterModule.forRoot(routes), RouterModule] });
+_AppRoutingModule.\u0275inj = /* @__PURE__ */ \u0275\u0275defineInjector({ imports: [RouterModule.forRoot(routes, { useHash: true }), RouterModule] });
 var AppRoutingModule = _AppRoutingModule;
 
 // src/app/stars/stars.component.ts

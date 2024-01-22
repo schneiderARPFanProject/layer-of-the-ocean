@@ -6,7 +6,11 @@ export const navigationGuard: CanActivateFn = (route, state) => {
   if (router.navigated) {
     return true
   } else {
-    router.navigate(['/']).then(() => {router.navigate(['/'])})
+    router.navigate(['/'])
+      .then(() => {router.navigate(['/'])})
+      .catch(e => {
+        router.navigate(['/layer-of-the-ocean/'])
+      })
     return false
   };
 };

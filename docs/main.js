@@ -49809,6 +49809,8 @@ var navigationGuard = (route, state2) => {
   } else {
     router.navigate(["/"]).then(() => {
       router.navigate(["/"]);
+    }).catch((e) => {
+      router.navigate(["/layer-of-the-ocean/"]);
     });
     return false;
   }

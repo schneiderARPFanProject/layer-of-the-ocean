@@ -165,23 +165,23 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .projectDetail .menuDiv {
-  margin-bottom: 3rem;
+  margin-bottom: 0rem;
 }
-.projectDetail .menuDiv > h1 {
+.projectDetail .menuDiv > h1, .projectDetail .giftDiv > h1 {
   margin-bottom: 0.5rem;
 }
-.projectDetail .menuDiv dt {
+.projectDetail .menuDiv dt, .projectDetail .giftDiv dt {
   display:block;
   float:left;
-  width:45%;
+  width:50%;
   text-align: right;
 }
-.projectDetail .menuDiv dt:after{
+.projectDetail .menuDiv dt:after, .projectDetail .giftDiv dt:after{
   content:':';
   font-style: normal;
   padding: 5px;
 }
-.projectDetail .menuDiv dd {
+.projectDetail .menuDiv dd, .projectDetail .giftDiv dd {
   display:block;
   text-align: left;
   margin: 2px 0px;
@@ -198,6 +198,10 @@ a:link, a:visited, a:hover, a:active {
   justify-content: center;
 }
 
+.projectDetail .giftDiv {
+  margin-bottom: 3rem;
+  text-align: center;
+}
 
 
 .mat-mdc-dialog-surface, .mdc-dialog__surface {

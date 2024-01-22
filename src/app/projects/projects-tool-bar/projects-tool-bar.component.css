@@ -2,8 +2,9 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
   column-gap: 10px;
-  margin: 10px 0;
+  height: 50px;
 }
 .project {
   border-left: solid 2px white;

@@ -1,0 +1,35 @@
+.projectDetail .logoDiv {
+  mask-image: url("../../../assets/images/fenchanted/fenchanted-logo.PNG");
+  mask-size: 600px auto;
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+
+.standee1{
+  content: url("../../../assets/images/fenchanted/standee-k-mad.JPG");
+  width: 48%;
+  height: auto;
+}
+.standee2{
+  content: url("../../../assets/images/fenchanted/standee-k-first.JPG");
+  width: 48%;
+  height: auto;
+}
+.specialMenuImg1 {
+  margin-top: 10px;
+  content: url("../../../assets/images/fenchanted/special-set.JPG");
+  width: 70%;
+  height: auto;
+}
+.specialMenuImg2 {
+  margin-top: 10px;
+  content: url("../../../assets/images/fenchanted/dearest.JPG");
+  width: 70%;
+  height: auto;
+}
+.specialMenuImg3 {
+  margin-top: 10px;
+  content: url("../../../assets/images/fenchanted/sweetheart.JPG");
+  width: 70%;
+  height: auto;
+}

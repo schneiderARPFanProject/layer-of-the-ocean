@@ -1,14 +1,39 @@
 <div class="layerContainer sunlightLayerContainer">
   <app-tool-bar [level]="level" [sublevel]="'Presents to Schneider'"></app-tool-bar>
+  <app-projects-tool-bar [level]="level" [currentProject]="projectName"></app-projects-tool-bar>
   <div class="projectContainer">
-    <app-projects-tool-bar [level]="level" [currentProject]="projectName"></app-projects-tool-bar>
     <div class="projectDetail">
-      <h3>{{ projectNameList[projectName] }}</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim diam vulputate ut pharetra sit amet aliquam id diam. Neque vitae tempus quam pellentesque nec nam. Nunc pulvinar sapien et ligula ullamcorper malesuada proin libero. Risus commodo viverra maecenas accumsan lacus vel facilisis volutpat est. Amet mauris commodo quis imperdiet massa tincidunt. Sagittis orci a scelerisque purus. Sed turpis tincidunt id aliquet risus feugiat in ante. Ut sem nulla pharetra diam sit amet nisl suscipit. Nibh mauris cursus mattis molestie. Massa sed elementum tempus egestas. Tempus egestas sed sed risus pretium quam vulputate dignissim. Consequat ac felis donec et odio. Mauris ultrices eros in cursus turpis. Scelerisque mauris pellentesque pulvinar pellentesque habitant. Ultricies lacus sed turpis tincidunt id aliquet risus. Massa id neque aliquam vestibulum morbi blandit cursus risus at. Mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Commodo quis imperdiet massa tincidunt nunc pulvinar sapien. Urna duis convallis convallis tellus id interdum velit laoreet.</p>
-      <p>Porttitor leo a diam sollicitudin tempor id eu. Vivamus arcu felis bibendum ut tristique et egestas quis. Ac tincidunt vitae semper quis lectus nulla at volutpat. Nulla pharetra diam sit amet nisl suscipit. Turpis massa sed elementum tempus egestas sed sed. Mauris sit amet massa vitae. Ultricies integer quis auctor elit sed vulputate mi sit amet. Lacus viverra vitae congue eu consequat. Nibh cras pulvinar mattis nunc sed blandit libero. Posuere urna nec tincidunt praesent. Sed elementum tempus egestas sed. Est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus.</p>
-      <p>Congue nisi vitae suscipit tellus mauris a diam maecenas sed. Consequat semper viverra nam libero justo laoreet. Facilisis sed odio morbi quis commodo odio aenean. Sed felis eget velit aliquet sagittis. Vulputate eu scelerisque felis imperdiet proin fermentum leo vel orci. Fermentum et sollicitudin ac orci phasellus egestas tellus rutrum tellus. Tortor at auctor urna nunc id cursus metus aliquam eleifend. Sapien pellentesque habitant morbi tristique senectus. Vitae tempus quam pellentesque nec. Ut sem viverra aliquet eget sit amet tellus cras adipiscing. Faucibus ornare suspendisse sed nisi lacus. Nam at lectus urna duis convallis convallis. Non blandit massa enim nec dui nunc mattis. At consectetur lorem donec massa sapien faucibus. Diam ut venenatis tellus in metus vulputate. A pellentesque sit amet porttitor eget dolor morbi non. Cras ornare arcu dui vivamus arcu. Vestibulum lectus mauris ultrices eros in cursus.</p>
-      <p>Purus in mollis nunc sed id semper risus in hendrerit. Etiam dignissim diam quis enim lobortis scelerisque fermentum dui. Eu sem integer vitae justo. In mollis nunc sed id semper risus in. Viverra orci sagittis eu volutpat. Tristique senectus et netus et malesuada fames ac. Vulputate enim nulla aliquet porttitor lacus luctus accumsan. Magna ac placerat vestibulum lectus mauris ultrices eros in. Vivamus at augue eget arcu dictum varius. Ante in nibh mauris cursus mattis molestie a iaculis. Sodales ut eu sem integer vitae justo eget. Quam vulputate dignissim suspendisse in.</p>
-      <p>Nibh nisl condimentum id venenatis a. Ornare arcu odio ut sem nulla pharetra diam sit. Ac auctor augue mauris augue neque gravida in fermentum. Sagittis eu volutpat odio facilisis mauris sit. Habitant morbi tristique senectus et netus. Aliquam purus sit amet luctus venenatis lectus magna fringilla urna. Aliquam sem fringilla ut morbi tincidunt augue interdum velit euismod. Sed sed risus pretium quam vulputate dignissim suspendisse. Phasellus faucibus scelerisque eleifend donec. Faucibus a pellentesque sit amet porttitor eget dolor. Potenti nullam ac tortor vitae purus faucibus. Scelerisque viverra mauris in aliquam sem. Fringilla ut morbi tincidunt augue interdum. Vitae congue mauris rhoncus aenean. Enim lobortis scelerisque fermentum dui faucibus in ornare quam.</p>
+<!--      <h2>{{ projectNameList[projectName] }}</h2>-->
+      <div class="logoDiv"></div>
+      <div class="twitterDiv">
+        <a class="twitterLink" href="https://twitter.com/FEnchanted0802" target="_blank"><img src="#" /></a>
+        <span>#FEnchanted</span>
+      </div>
+      <p>"งานเลี้ยงน้ำชาแห่งมนตราแสนพิเศษ ณ คฤหาสน์ของนายท่านชไนเดอร์"</p>
+      <div class="dateNPlaceDiv">
+        <h2>3 - 4 Feb 2024</h2>
+        <p>Babette's, the Steak House ชั้น 19<br>Hotel Muse Bangkok Langsuan
+          <a class="locationDiv" href="https://maps.app.goo.gl/Ds7xpw63PgZYMnVw8" target="_blank">
+            <img src="#" />
+          </a>
+        </p>
+      </div>
+      <div class="menuDiv">
+        <h1>Special Menu</h1>
+        <dl>
+          <dt>Dearest</dt><dd>ชีสเค้ก 1 ชิ้น เครื่องดื่ม 2 แก้ว</dd>
+          <dt>Sweetheart</dt><dd>บราวนี่ 1 ชิ้น เครื่องดื่ม 2 แก้ว</dd>
+        </dl>
+      </div>
+      <div class="staticPicDiv">
+        <div class="standeeDiv">
+          <img class="standee1" src="#"/>
+          <img class="standee2" src="#"/>
+        </div>
+        <img class="specialMenuImg1" src="#" />
+        <img class="specialMenuImg2" src="#" />
+        <img class="specialMenuImg3" src="#" />
+      </div>
     </div>
   </div>
   <app-sunlight-zone-bg></app-sunlight-zone-bg>

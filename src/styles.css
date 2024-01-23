@@ -1,5 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 @import '../node_modules/@angular/material/prebuilt-themes/indigo-pink.css';
+@font-face {
+   font-family: Mitr;
+   src: url(assets/fonts/Mitr/Mitr-Light.ttf);
+}
+
 body {
   background-color: #030216;
   color: white;
@@ -7,6 +12,7 @@ body {
   text-align: center;
   padding: 0;
   margin: 0;
+  font-family: Mitr, san-serif;
 }
 body::after {
    position:absolute;
@@ -30,6 +36,7 @@ body::after {
             url("assets/images/home-icon.PNG")
             url("assets/images/home-icon-hover.PNG")
             url("assets/images/loading-icon.PNG")
+            url("assets/images/location-icon.PNG")
             url("assets/images/member-icon.PNG")
             url("assets/images/music-icon.PNG")
             url("assets/images/projects-close-icon.PNG")
@@ -46,7 +53,15 @@ body::after {
             url("assets/images/sunlight-bg3.PNG")
             url("assets/images/timeline-icon.PNG")
             url("assets/images/timeline-icon-hover.PNG")
-            url("assets/images/typo.PNG");
+            url("assets/images/twitter-icon.PNG")
+            url("assets/images/typo.PNG")
+            url("assets/images/amiore/amiore-logo.PNG")
+            url("assets/images/fenchanted/dearest.JPG")
+            url("assets/images/fenchanted/fenchanted-logo.PNG")
+            url("assets/images/fenchanted/special-set.JPG")
+            url("assets/images/fenchanted/standee-k-first.JPG")
+            url("assets/images/fenchanted/standee-k-mad.JPG")
+            url("assets/images/fenchanted/sweetheart.JPG");
 }
 a:link, a:visited, a:hover, a:active {
   color: white;
@@ -208,6 +223,11 @@ a:link, a:visited, a:hover, a:active {
   background-color: rgba(0, 0, 0, 0.8) !important;
 }
 
+.mat-mdc-tooltip .mdc-tooltip__surface {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  font-family: Mitr, san-serif !important;
+  padding: 0.5rem 1rem;
+}
 
 /* -- scrollbar ----------------------------------------*/
 

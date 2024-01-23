@@ -56,6 +56,10 @@ body::after {
             url("assets/images/twitter-icon.PNG")
             url("assets/images/typo.PNG")
             url("assets/images/amiore/amiore-logo.PNG")
+            url("assets/images/amiore/be-loved.JPG")
+            url("assets/images/amiore/love.JPG")
+            url("assets/images/amiore/standee-amil1.JPG")
+            url("assets/images/amiore/standee-amil2.JPG")
             url("assets/images/fenchanted/dearest.JPG")
             url("assets/images/fenchanted/fenchanted-logo.PNG")
             url("assets/images/fenchanted/special-set.JPG")
@@ -120,13 +124,19 @@ a:link, a:visited, a:hover, a:active {
 }
 .projectDetail::before {
   content: '';
-  height: 70vh;
-  width: 80%;
+  height: 1vh;
+  width: 1%;
   margin: 0 auto;
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0));
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
   position: fixed;
   top: 100px;
+  left: 50vw;
   z-index: -1;
+  animation: ray 1s ease-in-out forwards;
+}
+.projectDetail > * {
+  opacity: 0;
+  animation: projectDetailFadeIn 1s 500ms ease-in-out forwards;
 }
 
 .projectDetail .logoDiv {
@@ -228,6 +238,34 @@ a:link, a:visited, a:hover, a:active {
   font-family: Mitr, san-serif !important;
   padding: 0.5rem 1rem;
 }
+
+@keyframes ray {
+  0% {
+    width: 1%;
+    height: 1vh;
+    left: 50vw;
+  }
+  50% {
+    width: 1%;
+    height: 65vh;
+    left: 50vw;
+  }
+  100% {
+    width: 80%;
+    height: 70vh;
+    left: 10vw;
+  }
+}
+
+@keyframes projectDetailFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 
 /* -- scrollbar ----------------------------------------*/
 

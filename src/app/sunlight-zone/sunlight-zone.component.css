@@ -58,8 +58,8 @@
   height: auto;
   top: 8%;
   left: 55%;
-  animation: floating 2s ease-in-out infinite alternate;
-  animation-delay: 550ms;
+  opacity: 0;
+  animation: fadeIn 500ms 500ms ease-in-out forwards, floating 2s 950ms ease-in-out infinite alternate;
 }
 .galleriesLink > img {
   content: url("../../assets/images/galleries-icon.PNG");
@@ -78,8 +78,8 @@
   height: auto;
   top: 42%;
   left: 48%;
-  animation: floating 2s ease-in-out infinite alternate;
-  animation-delay: 930ms;
+  opacity: 0;
+  animation: fadeIn 500ms 700ms ease-in-out forwards, floating 2s 1330ms ease-in-out infinite alternate;
 }
 .timeLineLink > img {
   content: url("../../assets/images/timeline-icon.PNG");
@@ -98,7 +98,8 @@
   height: auto;
   top: 30%;
   left: 67%;
-  animation: floating 2s ease-in-out infinite alternate;
+  opacity: 0;
+  animation: fadeIn 500ms 400ms ease-in-out forwards, floating 2s 500ms ease-in-out infinite alternate;
 }
 .projectListBtn > img {
   content: url("../../assets/images/projects-icon.PNG");
@@ -162,6 +163,15 @@
     to {
         transform: translateY(2vh);
     }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @media only screen  and (max-height: 600px) and (orientation: landscape) {

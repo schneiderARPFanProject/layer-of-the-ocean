@@ -6,32 +6,26 @@
   mask-repeat: no-repeat;
   mask-position: center;
 }
-/*
+
 .standee1{
-  content: url("../../../assets/images/fenchanted/standee-k-mad.JPG");
+  content: url("../../../assets/images/amiore/standee-amil1.JPG");
   width: 48%;
   height: auto;
 }
 .standee2{
-  content: url("../../../assets/images/fenchanted/standee-k-first.JPG");
+  content: url("../../../assets/images/amiore/standee-amil2.JPG");
   width: 48%;
   height: auto;
 }
 .specialMenuImg1 {
   margin-top: 10px;
-  content: url("../../../assets/images/fenchanted/special-set.JPG");
+  content: url("../../../assets/images/amiore/love.JPG");
   width: 70%;
   height: auto;
 }
 .specialMenuImg2 {
   margin-top: 10px;
-  content: url("../../../assets/images/fenchanted/dearest.JPG");
+  content: url("../../../assets/images/amiore/be-loved.JPG");
   width: 70%;
   height: auto;
 }
-.specialMenuImg3 {
-  margin-top: 10px;
-  content: url("../../../assets/images/fenchanted/sweetheart.JPG");
-  width: 70%;
-  height: auto;
-}*/

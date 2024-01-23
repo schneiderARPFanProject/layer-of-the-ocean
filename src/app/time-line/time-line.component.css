@@ -110,14 +110,14 @@
 .timeLineContent span.number span {
   position: absolute;
   font-size: 1rem;
-  left: -4rem;
+  left: -4.5rem;
   font-weight: bold;
 }
 .timeLineContent span.number span:first-child {
-  top: 0;
+  top: -8px;
 }
 .timeLineContent span.number span:last-child {
-  top: 100%;
+  bottom: -10px;
 }
 
 .monthHead {

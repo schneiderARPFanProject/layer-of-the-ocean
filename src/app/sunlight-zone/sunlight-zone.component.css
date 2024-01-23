@@ -27,7 +27,8 @@
 }
 .projectList {
   border-top: solid 2px white;
-  padding: 10px 5px;
+  padding: 10px 10px;
+  width: 90%;
 }
 .projectList:nth-child(1) {
   border: none;

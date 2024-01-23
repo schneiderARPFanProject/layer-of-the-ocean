@@ -1,0 +1,36 @@
+.projectDetail .logoDiv {
+  mask-image: url("../../../assets/images/deep-sea/deep-sea-logo.PNG");
+  mask-size: 555px auto;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  height: 495px;
+}
+
+.standee1{
+  content: url("../../../assets/images/deep-sea/standee-schneider.PNG");
+  width: 48%;
+  height: auto;
+}
+.standee2{
+  content: url("../../../assets/images/deep-sea/standee-schmeiphorn.PNG");
+  width: 48%;
+  height: auto;
+}
+.specialMenuImg1 {
+  margin-top: 10px;
+  content: url("../../../assets/images/deep-sea/firtha.JPG");
+  width: 70%;
+  height: auto;
+}
+.specialMenuImg2 {
+  margin-top: 10px;
+  content: url("../../../assets/images/deep-sea/lorelei.JPG");
+  width: 70%;
+  height: auto;
+}
+.specialMenuImg3 {
+  margin-top: 10px;
+  content: url("../../../assets/images/deep-sea/corsair.JPG");
+  width: 70%;
+  height: auto;
+}

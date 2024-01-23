@@ -127,7 +127,7 @@
   content:url("../../assets/images/schneider-layer-dive.GIF");
   position: absolute;
   top: 5%;
-  left: 2%;
+  right: 52vw;
   animation-fill-mode: forwards;
   animation-name: hiding;
   animation-duration: 1ms;
@@ -167,7 +167,7 @@
 @media only screen  and (max-height: 600px) and (orientation: landscape) {
   .schneiderDiv > img {
     width: 430px;
-    left: 0%;
+    right: 50vw;
   }
   .galleriesLink {
     width: 170px;
@@ -197,6 +197,7 @@
 @media only screen  and (min-height: 1100px) and (orientation: landscape) {
   .schneiderDiv > img {
     width: 1100px;
+    right: 60vw;
   }
   .galleriesLink {
     width: 395px;

@@ -91,7 +91,7 @@
   margin-left: 10px;
 }
 .timeLineContent div .title {
-  font-weight: 600;
+  font-weight: 300;
   font-size: 1rem;
   margin-top: 10px;
 }
@@ -202,9 +202,11 @@
   justify-content: center;
   column-gap: 10px;
   margin: 10px 0;
+  font-weight: bold;
+  text-shadow: 0px 0px 5px #53babf;
 }
 .monthDiv {
-  border-left: solid 2px white;
+  border-left: solid 3px white;
   padding-left: 10px;
   width: max-content;
 }

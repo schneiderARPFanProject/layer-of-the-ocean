@@ -5,6 +5,8 @@
   align-items: center;
   column-gap: 10px;
   height: 50px;
+  font-weight: bold;
+  text-shadow: 0 0 5px #53babf;
 }
 .project {
   border-left: solid 2px white;

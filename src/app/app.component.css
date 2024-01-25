@@ -267,7 +267,7 @@
   width: 100%;
 }
 .handsome > img {
-  content: url("../assets/images/schneider-main-float.GIF");
+  /*content: url("../assets/images/schneider-main-float.GIF"); TODO?*/
   position: absolute;
   bottom: -80px;
   left: 5%;

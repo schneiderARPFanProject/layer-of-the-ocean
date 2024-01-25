@@ -20,7 +20,7 @@ body::after {
    height:0;
    overflow:hidden;
    z-index:-50;
-   content: url("assets/images/typo.GIF")
+   /*content: url("assets/images/typo.GIF") TODO?
             url("assets/images/back-icon.PNG")
             url("assets/images/back-icon-hover.PNG")
             url("assets/images/close-icon.PNG")
@@ -72,7 +72,7 @@ body::after {
             url("assets/images/fenchanted/special-set.JPG")
             url("assets/images/fenchanted/standee-k-first.JPG")
             url("assets/images/fenchanted/standee-k-mad.JPG")
-            url("assets/images/fenchanted/sweetheart.JPG");
+            url("assets/images/fenchanted/sweetheart.JPG");*/
 }
 a:link, a:visited, a:hover, a:active {
   color: white;

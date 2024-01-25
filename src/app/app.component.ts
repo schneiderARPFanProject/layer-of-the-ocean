@@ -10,28 +10,15 @@ import { LEVEL_DISPLAY_TEXT } from './app.properties';
 export class AppComponent {
   title: string = 'Layer Of The Ocean';
   hoveredLayer: string = '';
+  loading: boolean = true;
 
   levelDisplayText = LEVEL_DISPLAY_TEXT;
 
   ngOnInit(): void {
-    console.log("start app.oninit)");/* TODO?
-    Promise.all(Array.from(document.images).map(img => {
-      console.log(img);
-      if (img.complete)
-          return Promise.resolve(img.naturalHeight !== 0);
-      return new Promise(resolve => {
-          img.addEventListener('load', () => resolve(true));
-          img.addEventListener('error', () => {console.log('err');resolve(false)});
-      });
-    })).then(results => {
-        console.log(results);
-        if (results.every(res => res)) {
-            console.log('all images loaded successfully');
-        }
-        else
-            console.log('some images failed to load, all finished loading');
-    });*/
-    console.log("end app.oninit)");
+    const bar = document.querySelector(".bar");
+    setTimeout(() => {
+      this.loading = false;
+    }, 10000);
   }
 
   onLayerSelect(activeLayer: boolean): void {

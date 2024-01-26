@@ -62,3 +62,31 @@ dd {
     width: 700px;
   }
 }
+
+/* iPad */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 1),
+  @media only screen
+    and (min-device-width: 768px)
+    and (max-device-width: 1024px)
+    and (orientation: landscape)
+    and (-webkit-min-device-pixel-ratio: 2) {
+
+  .creditsContainer {
+    color: red;
+  }
+}
+
+/* Phone */
+@media screen
+  and (device-width: 360px)
+  and (device-height: 640px)
+  and (-webkit-device-pixel-ratio: 4)
+  and (orientation: landscape) {
+  .creditsContainer {
+    color: blue;
+  }
+}

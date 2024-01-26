@@ -11,11 +11,16 @@ export class AppComponent {
   title: string = 'Layer Of The Ocean';
   hoveredLayer: string = '';
   loading: boolean = true;
+  hiddenImgSrc: string = '#';
 
   levelDisplayText = LEVEL_DISPLAY_TEXT;
 
   ngOnInit(): void {
     const bar = document.querySelector(".bar");
+    this.hiddenImgSrc = "../assets/images/typo.GIF";
+    setTimeout(()=>{
+      this.hiddenImgSrc = "#";
+    }, 9000);
     setTimeout(() => {
       this.loading = false;
     }, 10000);

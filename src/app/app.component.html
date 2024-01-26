@@ -3,10 +3,13 @@
     <div class="bar"></div>
   </div>
 </div>
+<div *ngIf="loading" class="hiddenLoadingModal">
+  <img src="{{ hiddenImgSrc }}" id="hiddenTypo"/>
+</div>
 
 <div *ngIf="!loading" class="titleModal">
   <div>
-    <img class="titleTypo" src="#"/>
+    <img id="titleTypo" src="#"/>
     <div class="dropDiv">
       <img class="drop" />
     </div>

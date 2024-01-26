@@ -2399,9 +2399,8 @@ a:active {
   display: block;
   margin: 0 auto;
   padding: 0;
-  aspect-ratio: 16:9;
   height: 100vh;
-  width: auto;
+  width: 100vw;
   overflow: hidden;
 }
 .alignMiddle {
@@ -2585,9 +2584,12 @@ a:active {
     display: block;
   }
 }
-@media only screen and (max-height: 600px) and (orientation: landscape) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1), @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  .appContent {
+    height: calc(100vh-200px);
+  }
 }
-@media only screen and (min-height: 1100px) and (orientation: landscape) {
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 4) and (orientation: landscape) {
 }
 
 /* angular:styles/global:styles */

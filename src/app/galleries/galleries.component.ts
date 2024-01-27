@@ -3,6 +3,7 @@ import { ActivatedRoute, ParamMap } from '@angular/router'
 import { animate, style, transition, trigger } from '@angular/animations';
 import { GalleriesMessage } from '../galleries/galleries-message';
 import { MessageService } from '../galleries/services/message.service';
+import { MAX_COUNT_PER_PAGE } from '../app.properties';
 
 @Component({
   selector: 'app-galleries',
@@ -23,8 +24,12 @@ import { MessageService } from '../galleries/services/message.service';
 })
 export class GalleriesComponent {
   galleriesMessages: GalleriesMessage[] = [];
-  showPreview: boolean = false;
-  lightBoxImageUrl: string = "";
+  galleriesMessagesPage: GalleriesMessage[] = [];
+  pageCountArr: number[] = [];
+  pageCount: number = 1;
+  currentPage: number = 0;
+  //showPreview: boolean = false;
+  //lightBoxImageUrl: string = "";
 
   @Input() level?: string;
 
@@ -39,17 +44,35 @@ export class GalleriesComponent {
   }
 
   getGalleriesMessages(): void {
-    this.messageService.getMessages(this.level!).subscribe(messages => this.galleriesMessages = messages);
     console.log("get galleries of", this.level);
+    this.messageService.getMessages(this.level!).subscribe(
+      messages => {
+        //console.log(messages);
+        this.galleriesMessages = messages;
+        //console.log(this.galleriesMessages);
+        //console.log(this.galleriesMessages.length);
+        this.pageCount = Math.ceil(this.galleriesMessages.length/MAX_COUNT_PER_PAGE);
+        this.pageCountArr = Array(this.pageCount).fill(0).map((x,i)=>i);
+        this.selectGalleriesPage(0);
+      }
+    );
   }
 
-  onPreviewImage(imgUrl: string): void {
-    this.showPreview = true;
-    this.lightBoxImageUrl = imgUrl;
+  selectGalleriesPage(selectedPage: number) {
+    this.currentPage = selectedPage;
+
+    let minIndex = selectedPage * MAX_COUNT_PER_PAGE;
+    let maxIndex = (selectedPage + 1) * MAX_COUNT_PER_PAGE;
+    this.galleriesMessagesPage = this.galleriesMessages.slice(minIndex, maxIndex);
   }
 
-  onClosePreview(): void {
-    this.showPreview = false;
-    this.lightBoxImageUrl = "";
-  }
+//  onPreviewImage(imgUrl: string): void {
+//    this.showPreview = true;
+//    this.lightBoxImageUrl = imgUrl;
+//  }
+
+//  onClosePreview(): void {
+//    this.showPreview = false;
+//    this.lightBoxImageUrl = "";
+//  }
 }

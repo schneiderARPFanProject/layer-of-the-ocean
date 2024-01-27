@@ -1,6 +1,8 @@
 export const MESSAGE_URL: Record<string, string> = {
-  'sunlight': 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQFLGsnPY92PkHXWJZLtrOR97_FXbk5b-BrCqj11F7qm46KA8YOmJnXEqbG_VVS6nAM64XwgI93d1rv/pub?gid=1367183595&single=true&output=csv'
+  'sunlight': 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQz6cjguH-7bIjL4nfA6EadHzMWAO6ZLJ9xqZAS8j3TILRNNDZ-JDVAzCz5yTNrsSaktn-L0F7ofoQh/pub?gid=737277178&single=true&output=csv'
 }
+
+export const MAX_COUNT_PER_PAGE = 50;
 
 export const LEVEL_DISPLAY_TEXT: Record<string, string> = {
   'sunlight': 'Layer I : The Sunlight Zone',
@@ -20,4 +22,4 @@ export const PROJECT_NAME_LIST: Record<string, string> = {
   'whisper-from-the-deep-sea': 'Whisper From The Deep Sea',
 }
 
-export const GALLERY_IMG_URL: string = 'https://drive.google.com/uc?export=view&id=${imgId}';
+//export const GALLERY_IMG_URL: string = 'https://drive.google.com/uc?export=view&id=${imgId}';

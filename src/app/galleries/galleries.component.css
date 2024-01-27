@@ -1,4 +1,45 @@
 
+.galleriesToolBar {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  row-gap: 10px;
+  margin: 10px 0;
+  font-weight: bold;
+  text-shadow: 0px 0px 5px #53babf;
+}
+.sendBtn {
+  margin-right: 4%;
+  font-style: italic;
+}
+.paginationToolBar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+  margin-bottom: 5px;
+}
+.page {
+  border-left: solid 2px white;
+  padding-left: 10px;
+}
+.page:nth-child(1) {
+  border: none;
+}
+.page > a {
+  padding: 5px;
+}
+.page > a:hover {
+  color: #ebebeb;
+  cursor: pointer;
+}
+.selected {
+  border-top: solid 2px white;
+  border-bottom: solid 2px white;
+}
+
+
 .galleriesContainer {
   height: 100%;
   width: 100%;
@@ -12,13 +53,13 @@
   column-count: 5;
   gap: 30px;
   transform: translateX(-15px);
-  margin-bottom: 100px;
+  margin-bottom: 300px;
 }
 .galleriesMessage {
   width: 100%;
   height: auto;
   display: inline-block;
-  background-color: rgb(255 250 239);
+  background-color: rgba(255, 250, 239, 0.65);
   border: solid white 2px;
   border-radius: 5px;
   color: black;
@@ -40,23 +81,29 @@
   animation: spin 1s linear infinite;
 }
 
-.messageName {
+.messageFrom {
   padding: 10px 0px;
   text-align: right;
+  font-style: italic;
 }
 .messageDear {
   padding-bottom: 20px;
   text-align: left;
+  flex-direction: column;
+  font-style: italic;
 }
 .messageText {
   width: 100%;
   height: auto;
+  padding-top: 5px;
   padding-bottom: 20px;
   text-align: left;
+  font-size: 0.9rem;
 }
 .galleriesMessage img {
   width: 100%;
   height: auto;
+  font-style: italic;
 }
 
 .lightBox{

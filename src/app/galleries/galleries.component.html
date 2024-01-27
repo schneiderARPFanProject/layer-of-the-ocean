@@ -1,27 +1,41 @@
 <div class="layerContainer sunlightLayerContainer">
   <app-tool-bar [level]="level" [sublevel]="'Letters to Schneider'"></app-tool-bar>
+  <div class="galleriesToolBar">
+    <div class="sendBtn">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSenvzwpl8PhVSUaEHiTr88JBhhwMVqFXQJ4JHTZl6sttVnOzQ/viewform?usp=sf_link" target="_blank">
+        Send A Letter
+      </a>
+    </div>
+    <div class="paginationToolBar">
+      <div class="page" *ngFor="let pageNumber of pageCountArr">
+        <a [class.selected] = "pageNumber === currentPage" (click)="selectGalleriesPage(pageNumber)">
+          {{ pageNumber+1 }}
+        </a>
+      </div>
+    </div>
+  </div>
   <div class="galleriesContainer">
     <div *ngIf="!galleriesMessages.length" class="loadingDiv">
       <img />
     </div>
     <div class="galleriesList">
-      <div class="galleriesMessage" *ngFor="let galleriesMessage of galleriesMessages">
-        <div class="messageDear">Dear {{ galleriesMessage.dear || 'Schneider' }}</div>
+      <div class="galleriesMessage" *ngFor="let galleriesMessage of galleriesMessagesPage">
+        <div class="messageDear">
+          <div>Dear</div>
+          <div>{{ galleriesMessage.dear || 'Schneider' }},</div>
+        </div>
         <div class="messageText" *ngIf="galleriesMessage.message">{{ galleriesMessage.message }}</div>
-        <div class="messageName">{{ galleriesMessage.name }}</div>
-<!--        <div *ngIf="galleriesMessage.imgUrl">-->
-<!--          <img src="{{galleriesMessage.imgUrl}}" (click)="onPreviewImage(galleriesMessage.imgUrl)">-->
-<!--        </div>-->
+        <div class="messageFrom">{{ galleriesMessage.from || 'Anonymous Honey' }}</div>
       </div>
     </div>
   </div>
-  <div *ngIf="showPreview"
-       [@animation]="{value: 'visible'}"
-       class="lightBox">
-    <img class="closeBtn" (click)="onClosePreview()" />
-    <div class="lightBoxContainer">
-      <img class="lightBoxImage" [src]="lightBoxImageUrl">
-    </div>
-  </div>
+<!--  <div *ngIf="showPreview"-->
+<!--       [@animation]="{value: 'visible'}"-->
+<!--       class="lightBox">-->
+<!--    <img class="closeBtn" (click)="onClosePreview()" />-->
+<!--    <div class="lightBoxContainer">-->
+<!--      <img class="lightBoxImage" [src]="lightBoxImageUrl">-->
+<!--    </div>-->
+<!--  </div>-->
   <app-sunlight-zone-bg></app-sunlight-zone-bg>
 </div>

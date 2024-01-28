@@ -195,6 +195,30 @@ only screen
   and (orientation: landscape)
   and (-webkit-min-device-pixel-ratio: 2) {
   .schneiderDiv > img {
+    width: 515px;
+    right: 55vw;
+  }
+  .galleriesLink {
+    width: 190px;
+  }
+  .timeLineLink {
+    width: 190px;
+  }
+  .projectListBtn {
+    width: 190px;
+  }
+  .projectModalContent {
+    transform: translate(-25px, -50%);
+  }
+  .projectListCloseBtn {
+    width: 50px;
+  }
+  .projectModalList {
+    padding: 5px;
+    border: solid 2px black;
+    border-radius: 10px;
+  }
+  /*.schneiderDiv > img {
     width: 430px;
     right: 55vw;
   }
@@ -217,10 +241,7 @@ only screen
     padding: 5px;
     border: solid 2px black;
     border-radius: 10px;
-  }
-  .diamondDeco {
-    margin: 2px 0;
-  }
+  }*/
 }
 
 /* pc large*/
@@ -250,8 +271,5 @@ only screen
     padding: 10px;
     border: solid 5px black;
     border-radius: 25px;
-  }
-  .diamondDeco {
-    margin: 15px 0;
   }
 }

@@ -25,3 +25,30 @@
   border-top: solid 2px white;
   border-bottom: solid 2px white;
 }
+
+/* pc small */
+@media only screen
+  and (max-height: 600px)
+  and (orientation: landscape),
+only screen
+  and (min-width: 768px)
+  and (max-width: 1024px),
+/* iPad */
+only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 1),
+only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  .projectsToolBar {
+    font-size: 0.8rem;
+    column-gap: 3px;
+  }
+  .project {
+    padding-left: 3px;
+  }
+}

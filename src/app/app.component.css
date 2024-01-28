@@ -492,8 +492,24 @@
   }
 }
 
-
-@media only screen  and (max-height: 600px) and (orientation: landscape) {
+/* pc small */
+@media only screen
+  and (max-height: 600px)
+  and (orientation: landscape),
+only screen
+  and (min-width: 768px)
+  and (max-width: 1024px),
+/* iPad */
+only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 1),
+only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 2) {
   .titleModal > div {
     display: block;
     width: 400px;
@@ -505,12 +521,12 @@
       transform: translate(91px, 48px);
   }
   .waves {
-      height:35vh;
-      min-height:35vh;
+      height:45vh;
+      min-height:45vh;
   }
   .handsome > img {
     width: 390px;
-    bottom: -55px;
+    bottom: -18px;
   }
   .constellation {
     width: 400px;
@@ -566,11 +582,14 @@
     right: 70px;
   }
   .selectedLayerName {
-    top: 400px;
+    top: 420px;
   }
 }
 
-@media only screen  and (min-height: 1100px) and (orientation: landscape) {
+/* pc large*/
+@media only screen
+  and (min-height: 1100px)
+  and (orientation: landscape) {
   .titleModal > div {
     display: block;
     width: 800px;

@@ -86,7 +86,7 @@
   width: 70px;
   height: auto;
   position: absolute;
-  top: 40%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   animation: spin 1s linear infinite;
@@ -111,6 +111,7 @@
   text-align: left;
   font-size: 0.9rem;
 }
+/*
 .galleriesMessage img {
   width: 100%;
   height: auto;
@@ -159,40 +160,65 @@
   width: auto;
   cursor: pointer;
   transform: scale(1.1);
-}
+}*/
 
 @keyframes spin {
   from {
-    transform: rotate(0deg);
+    transform: translate(-50%, -50%) rotate(0deg);
   }
   to {
-    transform: rotate(360deg);
+    transform: translate(-50%, -50%) rotate(360deg);
   }
 }
 
-
-@media only screen  and (max-width: 1024px) {
+/* pc small */
+@media only screen
+  and (max-height: 600px)
+  and (orientation: landscape),
+only screen
+  and (min-width: 768px)
+  and (max-width: 1024px),
+/* iPad */
+only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 1),
+only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 2) {
   .galleriesList {
     column-count: 3;
   }
-  .galleriesMessage img {
-    width: 100%;
+  .galleriesToolBar {
+    row-gap: 0px;
+    margin: 10px 0;
   }
-  .lightBoxContainer {
-    width: 90%;
-    height: 90%;
+  .sendBtnBar > a {
+    top: 35px;
+    right: 4%;
+  }
+  .sendBtnBar > h2 {
+    margin-top: 0px;
+  }
+  .paginationToolBar {
+    column-gap: 3px;
+    font-size: 0.8rem;
+  }
+  .page {
+    padding-left: 3px;
+  }
+  .numberCounter > span {
+    width: 5rem;
+    display: inline-block;
   }
 }
+
 @media only screen  and (max-width: 800px) {
   .galleriesList {
     column-count: 3;
-  }
-  .galleriesMessage img {
-    max-width: 100%;
-  }
-  .lightBoxContainer {
-    width: 90%;
-    height: 90%;
   }
   .loadingDiv > img {
     width: 50px;

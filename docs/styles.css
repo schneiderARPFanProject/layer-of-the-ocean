@@ -2473,7 +2473,7 @@ a:active {
   height: 20px;
 }
 .projectDetail .twitterLink {
-  width: auto;
+  width: fit-content;
   height: 100%;
 }
 .projectDetail .twitterLink > img {
@@ -2584,9 +2584,29 @@ a:active {
     display: block;
   }
 }
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1), @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
-  .appContent {
-    height: calc(100vh-200px);
+@media only screen and (max-height: 600px) and (orientation: landscape), only screen and (min-width: 768px) and (max-width: 1024px) {
+  body {
+    font-size: 0.8rem;
+  }
+  h1 {
+    font-size: 1.6rem;
+  }
+  h2 {
+    font-size: 1.3rem;
+  }
+  h3 {
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (max-height: 600px) and (orientation: landscape), only screen and (min-width: 768px) and (max-width: 1024px), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  .projectDetail::before {
+    top: 80px;
+  }
+  .projectDetail .logoDiv {
+    height: 300px;
+  }
+  .projectDetail .dateNPlaceDiv > h2 {
+    font-size: 1.2rem;
   }
 }
 @media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 4) and (orientation: landscape) {

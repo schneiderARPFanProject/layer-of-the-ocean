@@ -9,10 +9,21 @@
   font-weight: bold;
   text-shadow: 0px 0px 5px #53babf;
 }
-.sendBtn {
-  margin-right: 4%;
+.sendBtnBar {
+  width: 100%;
   font-style: italic;
 }
+.sendBtnBar > a {
+  position: absolute;
+  top: 50px;
+  right: 4%;
+  transform: translateY(50%);
+}
+.numberCounter > span {
+  width: 5rem;
+  display: inline-block;
+}
+
 .paginationToolBar {
   width: 100%;
   display: flex;

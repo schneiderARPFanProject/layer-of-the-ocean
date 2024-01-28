@@ -12,12 +12,12 @@ import { MAX_COUNT_PER_PAGE } from '../app.properties';
   animations: [
     trigger('animation', [
       transition('void => visible', [
-        style({transform: 'scale(0.5)'}),
-        animate('100ms', style({transform: 'scale(1)'}))
+        style({opacity: 0}),
+        animate('500ms', style({opacity: 1}))
       ]),
       transition('visible => void', [
-        style({transform: 'scale(1)'}),
-        animate('100ms', style({transform: 'scale(0.5)'}))
+        style({opacity: 1}),
+        animate('500ms', style({opacity: 0}))
       ])
     ])
   ]
@@ -25,6 +25,7 @@ import { MAX_COUNT_PER_PAGE } from '../app.properties';
 export class GalleriesComponent {
   galleriesMessages: GalleriesMessage[] = [];
   galleriesMessagesPage: GalleriesMessage[] = [];
+  messageCount: number = 0;
   pageCountArr: number[] = [];
   pageCount: number = 1;
   currentPage: number = 0;
@@ -47,13 +48,13 @@ export class GalleriesComponent {
     console.log("get galleries of", this.level);
     this.messageService.getMessages(this.level!).subscribe(
       messages => {
-        //console.log(messages);
         this.galleriesMessages = messages;
         //console.log(this.galleriesMessages);
         //console.log(this.galleriesMessages.length);
         this.pageCount = Math.ceil(this.galleriesMessages.length/MAX_COUNT_PER_PAGE);
         this.pageCountArr = Array(this.pageCount).fill(0).map((x,i)=>i);
         this.selectGalleriesPage(0);
+        this.showMessageCount(this.galleriesMessages.length);
       }
     );
   }
@@ -64,6 +65,20 @@ export class GalleriesComponent {
     let minIndex = selectedPage * MAX_COUNT_PER_PAGE;
     let maxIndex = (selectedPage + 1) * MAX_COUNT_PER_PAGE;
     this.galleriesMessagesPage = this.galleriesMessages.slice(minIndex, maxIndex);
+  }
+
+  showMessageCount(totalCount: number) {
+    let startNum: number = Math.max(totalCount-70, 0);
+    this.counting(startNum, totalCount);
+  }
+
+  private counting(curNum: number, endNum: number) {
+    if (curNum <= endNum) {
+      this.messageCount = curNum;
+      setTimeout(() => { //Delay a bit before calling the function again.
+        this.counting(curNum + 1, endNum);
+      }, 10);
+    }
   }
 
 //  onPreviewImage(imgUrl: string): void {

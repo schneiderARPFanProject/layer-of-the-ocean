@@ -45,7 +45,25 @@ dd {
   margin: 2px 0px;
 }
 
-@media only screen  and (max-height: 600px) and (orientation: landscape) {
+
+/* pc small */
+@media only screen
+  and (max-height: 600px)
+  and (orientation: landscape),
+only screen
+  and (min-width: 768px)
+  and (max-width: 1024px),
+/* iPad */
+only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 1),
+only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 2) {
   .titleTypo {
     width: 300px;
   }
@@ -55,38 +73,28 @@ dd {
   .closeBtn:hover {
     height: 40px;
   }
+
+  .creditsContainer { // todo: this is just for testing the @media
+    color: red;
+  }
 }
 
-@media only screen  and (min-height: 1100px) and (orientation: landscape) {
+/* pc large */
+@media only screen
+  and (min-height: 1100px)
+  and (orientation: landscape) {
   .titleTypo {
     width: 700px;
   }
 }
 
-/* iPad */
-@media only screen
-  and (min-device-width: 768px)
-  and (max-device-width: 1024px)
-  and (orientation: landscape)
-  and (-webkit-min-device-pixel-ratio: 1),
-  @media only screen
-    and (min-device-width: 768px)
-    and (max-device-width: 1024px)
-    and (orientation: landscape)
-    and (-webkit-min-device-pixel-ratio: 2) {
-
-  .creditsContainer {
-    color: red;
-  }
-}
-
 /* Phone */
-@media screen
+/*@media screen
   and (device-width: 360px)
   and (device-height: 640px)
   and (-webkit-device-pixel-ratio: 4)
   and (orientation: landscape) {
   .creditsContainer {
-    color: blue;
+    color: blue; // todo
   }
-}
+}*/

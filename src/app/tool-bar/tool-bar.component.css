@@ -83,7 +83,7 @@ only screen
   and (max-device-width: 1024px)
   and (orientation: landscape)
   and (-webkit-min-device-pixel-ratio: 2) {
-  .toolBar {
+  /*.toolBar {
     height: 30px;
   }
   .backButtons {
@@ -97,5 +97,5 @@ only screen
   }
   .toolBarIcon {
     height: 25px;
-  }
+  }*/
 }

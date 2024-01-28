@@ -65,14 +65,21 @@ only screen
   and (orientation: landscape)
   and (-webkit-min-device-pixel-ratio: 2) {
   .titleTypo {
-    width: 300px;
+    width: 400px;
+    /*width: 300px;*/
   }
   .closeBtn {
+      height: 55px;
+    }
+    .closeBtn:hover {
+      height: 55px;
+  }
+  /*.closeBtn {
     height: 40px;
   }
   .closeBtn:hover {
     height: 40px;
-  }
+  }*/
 
   .creditsContainer { // todo: this is just for testing the @media
     color: red;

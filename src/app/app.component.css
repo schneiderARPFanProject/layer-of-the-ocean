@@ -49,7 +49,7 @@
   text-align: center;
   animation-name: slideUp, hideTypo;
   animation-duration: 2s, 100ms;
-  animation-delay: 12s, 15s;
+  animation-delay: 11s, 14s;
   animation-iteration-count: 1, 1;
   animation-fill-mode: forwards, forwards;
   z-index: 10;
@@ -69,7 +69,7 @@
   height: 100%;
   animation-name: imgFade;
   animation-duration: 500ms;
-  animation-delay: 12s;
+  animation-delay: 11s;
   animation-fill-mode: forwards;
 }
 .dropDiv {
@@ -87,7 +87,7 @@
     opacity: 0;
     animation-name: dropping;
     animation-duration: 1800ms;
-    animation-delay: 12s;
+    animation-delay: 11s;
     animation-fill-mode: forwards;
 }
 
@@ -133,36 +133,36 @@
   width: 5px;
   height: 5px;
   background-image: radial-gradient(rgba(255,255,255,0) 50%, rgba(255,255,255,0.5));
-  animation: rip 2s ease-out, hideTypo 100ms 14 linear;
+  animation: rip 2s ease-out, hideTypo 100ms 13 linear;
   animation-iteration-count: 1, 1;
   animation-fill-mode: forwards;
 }
 .ripple:nth-child(1) {
-  animation-delay: 13.3s;
+  animation-delay: 12.3s;
   top: 0px;
   left: -110px;
   --scale: 40;
 }
 .ripple:nth-child(2) {
-  animation-delay: 13.7s;
+  animation-delay: 12.7s;
   top: -100px;
   left: 0px;
   --scale: 50;
 }
 .ripple:nth-child(3) {
-  animation-delay: 14.1s;
+  animation-delay: 13.1s;
   top: 15px;
   left: 50px;
   --scale: 30;
 }
 .ripple:nth-child(4) {
-  animation-delay: 14.5s;
+  animation-delay: 13.5s;
   top: -50px;
   left: 100px;
   --scale: 40;
 }
 .ripple:nth-child(5) {
-  animation-delay: 14.9s;
+  animation-delay: 13.9s;
   top: -10px;
   left: 150px;
   --scale: 45;
@@ -189,13 +189,13 @@
   margin: 0 auto;
   position: relative;
   opacity: 0;
-  animation: fadeIn 2s 13.5s ease-in-out forwards;
+  animation: fadeIn 2s 12.5s ease-in-out forwards;
 }
 .constellation > img {
   content: url("../assets/images/schneider-constellation.PNG");
   width: 100%;
   opacity: 0.3;
-  animation: scaleUp 5s 15s ease-in-out infinite;
+  /*animation: scaleUp 5s 14s ease-in-out infinite;*/
 }
 .layerStar {
   position: absolute;
@@ -212,6 +212,7 @@
   transform: scale(1.3);
   cursor: pointer;
 }
+
 .inactiveStar {
   position: absolute;
   width: 70px;
@@ -324,6 +325,14 @@
   margin-bottom:-7px; /*Fix for safari gap*/
   min-height:25vh;
   max-height:40vh;
+  bottom: 0;
+  left: 0;
+}
+.wavesFiller {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 100%;
+  height: 0;
   bottom: 0;
   left: 0;
 }
@@ -511,6 +520,116 @@ only screen
   and (orientation: landscape)
   and (-webkit-min-device-pixel-ratio: 2) {
   .titleModal > div {
+    width: 500px;
+    height: auto;
+  }
+  .dropDiv {
+    width: 90px;
+    height: auto;
+    transform: translate(119px, 58px);
+  }
+  .waves {
+    bottom: 50px;
+  }
+  .wavesFiller {
+    height: 43px;
+  }
+  .handsome > img {
+    width: 515px;
+    bottom: 0px;
+  }
+  .constellation {
+    width: 500px;
+  }
+  .layerStar {
+    width: 60px;
+  }
+  .inactiveStar {
+    width: 60px;
+  }
+  .sunlightStar {
+    top: 82px;
+    left: 88px;
+  }
+    .sunlightToTwilight {
+      left: 45px;
+      top: 230px;
+      width: 150px;
+      rotate: -60deg;
+    }
+  .twilightStar {
+    top: 210px;
+    left: 15px;
+  }
+    .twilightToMidnight {
+      left: 45px;
+      top: 232px;
+      width: 220px;
+      rotate: 23deg;
+    }
+  .midnightStar {
+    top: 300px;
+    left: 250px;
+  }
+    .midnightToAbyss {
+      right: 45px;
+      top: 232px;
+      width: 220px;
+      rotate: -23deg;
+    }
+  .abyssStar {
+    top: 210px;
+    right: 15px;
+  }
+    .abyssToTrenches {
+      right: 45px;
+      top: 230px;
+      width: 150px;
+      rotate: 60deg;
+    }
+  .trenchesStar {
+    top: 82px;
+    right: 88px;
+  }
+  .selectedLayerName {
+    top: 520px;
+  }
+}
+
+/* iPad */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 1),
+only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  .titleModal > div {
+    top: 40%;
+  }
+}
+/* pc small */
+/*@media only screen
+  and (max-height: 600px)
+  and (orientation: landscape),
+only screen
+  and (min-width: 768px)
+  and (max-width: 1024px),
+/* iPad */
+/*only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 1),
+only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  .titleModal > div {
     display: block;
     width: 400px;
     height: auto;
@@ -584,7 +703,7 @@ only screen
   .selectedLayerName {
     top: 420px;
   }
-}
+}*/
 
 /* pc large*/
 @media only screen

@@ -652,17 +652,22 @@ only screen
     transform: translate(91px, 48px);
   }
   .waves {
-    bottom: 25px;
+    bottom: 50px;
   }
   .wavesFiller {
-    height: 18px;
+    height: 43px;
   }
   .handsome > img {
     width: 350px;
-    bottom: -20px;
+    bottom: 5px;
   }
   .constellation {
     width: 280px;
+  }
+  .constellation > img {
+    position: absolute;
+    top: -15px;
+    left: 0px;
   }
   .layerStar {
     width: 40px;
@@ -715,9 +720,35 @@ only screen
     right: 70px;
   }
   .selectedLayerName {
-    top: 5px;
+    top: 3px;
+    z-index: -1;
   }
 }
+
+/* Phone */
+only screen
+  and (device-width: 360px)
+  and (device-height: 640px)
+  and (-webkit-device-pixel-ratio: 4)
+  and (orientation: landscape),
+only screen
+  and (min-device-width: 390px)
+  and (max-device-width: 844px)
+  and (-webkit-min-device-pixel-ratio: 4)
+  and (orientation: landscape),
+only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape),
+only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+  .titleModal > div {
+    top: 45%;
+  }
 
 /* pc large*/
 @media only screen

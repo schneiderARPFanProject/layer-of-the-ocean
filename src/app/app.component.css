@@ -195,7 +195,7 @@
   content: url("../assets/images/schneider-constellation.PNG");
   width: 100%;
   opacity: 0.3;
-  /*animation: scaleUp 5s 14s ease-in-out infinite;*/
+  animation: scaleUp 5s 14s ease-in-out infinite;
 }
 .layerStar {
   position: absolute;

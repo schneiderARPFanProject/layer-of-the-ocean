@@ -611,50 +611,64 @@ only screen
     top: 45%;
   }
 }
-/* pc small */
-/*@media only screen
-  and (max-height: 600px)
+
+/* pc extra small */
+@media only screen
+  and (max-height: 400px)
   and (orientation: landscape),
 only screen
-  and (min-width: 768px)
-  and (max-width: 1024px),
-/* iPad */
-/*only screen
-  and (min-device-width: 768px)
-  and (max-device-width: 1024px)
-  and (orientation: landscape)
-  and (-webkit-min-device-pixel-ratio: 1),
+  and (min-width: 390px)
+  and (max-width: 768px)
+  and (orientation: landscape),
+/* Phone */
 only screen
-  and (min-device-width: 768px)
-  and (max-device-width: 1024px)
-  and (orientation: landscape)
-  and (-webkit-min-device-pixel-ratio: 2) {
+  and (device-width: 360px)
+  and (device-height: 640px)
+  and (-webkit-device-pixel-ratio: 4)
+  and (orientation: landscape),
+only screen
+  and (min-device-width: 390px)
+  and (max-device-width: 844px)
+  and (-webkit-min-device-pixel-ratio: 4)
+  and (orientation: landscape),
+only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape),
+only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) {
   .titleModal > div {
     display: block;
-    width: 400px;
+    width: 280px;
     height: auto;
   }
   .dropDiv {
-      width: 80px;
-      height: auto;
-      transform: translate(91px, 48px);
+    width: 80px;
+    height: auto;
+    transform: translate(91px, 48px);
   }
   .waves {
-      height:45vh;
-      min-height:45vh;
+    bottom: 25px;
+  }
+  .wavesFiller {
+    height: 18px;
   }
   .handsome > img {
-    width: 390px;
-    bottom: -18px;
+    width: 350px;
+    bottom: -20px;
   }
   .constellation {
-    width: 400px;
+    width: 280px;
   }
   .layerStar {
-    width: 50px;
+    width: 40px;
   }
   .inactiveStar {
-    width: 50px;
+    width: 40px;
   }
   .sunlightStar {
     top: 60px;
@@ -701,9 +715,9 @@ only screen
     right: 70px;
   }
   .selectedLayerName {
-    top: 420px;
+    top: 5px;
   }
-}*/
+}
 
 /* pc large*/
 @media only screen

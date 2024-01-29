@@ -57,11 +57,6 @@
   transform: translate3d(120vw, 0, 0);
   animation: fall var(--fall-duration) var(--fall-delay) linear infinite, tail-fade var(--tail-fade-duration) var(--fall-delay) ease-out infinite;
 }
-@media screen and (max-width: 750px) {
-  .shootingStar {
-    animation: fall var(--fall-duration) var(--fall-delay) linear infinite;
-  }
-}
 .shootingStar:nth-child(1) {
   --star-tail-length: 6.22em;
   --top-offset: 30.45vh;

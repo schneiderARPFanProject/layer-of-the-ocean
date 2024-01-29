@@ -54,7 +54,7 @@
   background: linear-gradient(45deg, currentColor, transparent);
   border-radius: 50%;
   filter: drop-shadow(0 0 6px currentColor);
-  transform: translate3d(120vw, 0, 0);
+  transform: translate3d(140vw, 0, 0);
   animation: fall var(--fall-duration) var(--fall-delay) linear infinite, tail-fade var(--tail-fade-duration) var(--fall-delay) ease-out infinite;
 }
 .shootingStar:nth-child(1) {
@@ -107,13 +107,13 @@
 
 @keyframes fall {
   0% {
-    transform: translate3d(120vw, 0, 0);
+    transform: translate3d(140vw, 0, 0);
   }
   24% {
-    transform: translate3d(30vw, 0, 0);
+    transform: translate3d(20vw, 0, 0);
   }
   25%, 100% {
-    transform: translate3d(30vw, 0, 0);
+    transform: translate3d(20vw, 0, 0);
     display: none;
   }
 }
@@ -173,7 +173,7 @@ only screen
   and (-webkit-min-device-pixel-ratio: 2) {
   .shootingStars {
     top: -50vh;
-    left: -12vw;
+    left: -20vw;
     width: 200vw;
     height: 200vh;
   }

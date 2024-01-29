@@ -74,9 +74,9 @@ only screen
       height: 55px;
   }
 
-  .creditsContainer { /* todo: this is just for testing the @media */
+  /*.creditsContainer {  // this is just for testing the @media
     color: red;
-  }
+  }*/
 }
 
 /* pc large */
@@ -130,7 +130,7 @@ only screen
   .closeBtn:hover {
     height: 40px;
   }
-  .creditsContainer {
-    color: blue; /* todo */
-  }
+  /*.creditsContainer {
+    color: blue;  // test
+  }*/
 }

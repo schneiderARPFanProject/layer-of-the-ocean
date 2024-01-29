@@ -22,8 +22,20 @@
        matTooltipShowDelay="0">
       <img />
     </a>
-    <div *ngIf="showList" class="projectModal" (click)="closeProjectList()">
+    <div *ngIf="showList" class="projectModal modalOnOthers" (click)="closeProjectList()">
       <div class="projectModalContent"  [ngStyle]="{'top': projectContentY, 'left': projectContentX}">
+        <div>
+          <img class="projectListCloseBtn" />
+        </div>
+        <div class="projectModalList" (click)="$event.stopPropagation()">
+          <div class="projectList" *ngFor="let projectName of projectList">
+            <a [routerLink]="['presents-to-schneider', projectName]">{{ projectNameList[projectName] }}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="showList" class="projectModal modalOnPhone" (click)="closeProjectList()">
+      <div class="projectModalContent" >
         <div>
           <img class="projectListCloseBtn" />
         </div>

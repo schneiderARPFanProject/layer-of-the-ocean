@@ -25,6 +25,23 @@
   border-radius: 20px;
   background-color: rgba(0, 0, 0, 0.7);
 }
+.modalOnOthers {
+  display: block;
+}
+.modalOnPhone {
+  display: none;
+}
+.modalOnPhone .projectModalContent {
+  top: 50%;
+  right: -23px;
+  height: 100%;
+}
+.modalOnPhone .projectModalContent .projectModalList {
+  border: solid 3px black;
+  border-radius: 0px;
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 100%;
+}
 .projectList {
   border-top: solid 2px white;
   padding: 10px 10px;
@@ -278,6 +295,12 @@ only screen
     padding: 5px;
     border: solid 2px black;
     border-radius: 10px;
+  }
+  .modalOnOthers {
+    display: none;
+  }
+  .modalOnPhone {
+    display: block;
   }
 }
 

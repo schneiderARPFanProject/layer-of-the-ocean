@@ -2611,7 +2611,19 @@ a:active {
     font-size: 1.2rem;
   }
 }
-@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 4) and (orientation: landscape) {
+@media only screen and (max-height: 400px) and (orientation: landscape), only screen and (min-width: 390px) and (max-width: 768px) and (orientation: landscape), only screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 4) and (orientation: landscape), only screen and (min-device-width: 390px) and (max-device-width: 844px) and (-webkit-min-device-pixel-ratio: 4) and (orientation: landscape), only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape), only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  body {
+    font-size: 0.7rem;
+  }
+  h1 {
+    font-size: 1.3rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+  h3 {
+    font-size: 0.8rem;
+  }
 }
 
 /* angular:styles/global:styles */

@@ -1,44 +1,77 @@
 <div class="layerContainer sunlightLayerContainer">
   <app-tool-bar [level]="level" [sublevel]="'Schneider\'s Journey'"></app-tool-bar>
   <div class="timeLineToolBar">
-    <div class="monthDiv">
-      <a (click)="monthSelect('marHead')">
-        <!--          [class.selected] = "projectName === currentProject"-->
-        2023<br>March
-      </a>
+    <div class="monthDiv fullMonth">
+      <a (click)="monthSelect('marHead')">2023<br>March</a>
     </div>
-    <div class="monthDiv">
+    <div class="monthDiv fullMonth">
       <a (click)="monthSelect('aprHead')">2023<br>April</a>
     </div>
-    <div class="monthDiv">
+    <div class="monthDiv fullMonth">
       <a (click)="monthSelect('mayHead')">2023<br>May</a>
     </div>
-    <div class="monthDiv">
+    <div class="monthDiv fullMonth">
       <a (click)="monthSelect('junHead')">2023<br>June</a>
     </div>
-    <div class="monthDiv">
+    <div class="monthDiv fullMonth">
       <a (click)="monthSelect('julHead')">2023<br>July</a>
     </div>
-    <div class="monthDiv">
+    <div class="monthDiv fullMonth">
       <a (click)="monthSelect('augHead')">2023<br>August</a>
     </div>
-    <div class="monthDiv">
+    <div class="monthDiv fullMonth">
       <a (click)="monthSelect('sepHead')">2023<br>September</a>
     </div>
-    <div class="monthDiv">
+    <div class="monthDiv fullMonth">
       <a (click)="monthSelect('octHead')">2023<br>October</a>
     </div>
-    <div class="monthDiv">
+    <div class="monthDiv fullMonth">
       <a (click)="monthSelect('novHead')">2023<br>November</a>
     </div>
-    <div class="monthDiv">
+    <div class="monthDiv fullMonth">
       <a (click)="monthSelect('decHead')">2023<br>December</a>
     </div>
-    <div class="monthDiv">
+    <div class="monthDiv fullMonth">
       <a (click)="monthSelect('janHead')">2024<br>January</a>
     </div>
-    <div class="monthDiv">
+    <div class="monthDiv fullMonth">
       <a (click)="monthSelect('febHead')">2024<br>February</a>
+    </div>
+    <div class="monthDiv shortMonth">
+      <a (click)="monthSelect('marHead')">23.03</a>
+    </div>
+    <div class="monthDiv shortMonth">
+      <a (click)="monthSelect('aprHead')">23.04</a>
+    </div>
+    <div class="monthDiv shortMonth">
+      <a (click)="monthSelect('mayHead')">23.05</a>
+    </div>
+    <div class="monthDiv shortMonth">
+      <a (click)="monthSelect('junHead')">23.06</a>
+    </div>
+    <div class="monthDiv shortMonth">
+      <a (click)="monthSelect('julHead')">23.07</a>
+    </div>
+    <div class="monthDiv shortMonth">
+      <a (click)="monthSelect('augHead')">23.08</a>
+    </div>
+    <div class="monthDiv shortMonth">
+      <a (click)="monthSelect('sepHead')">23.09</a>
+    </div>
+    <div class="monthDiv shortMonth">
+      <a (click)="monthSelect('octHead')">23.10</a>
+    </div>
+    <div class="monthDiv shortMonth">
+      <a (click)="monthSelect('novHead')">23.11</a>
+    </div>
+    <div class="monthDiv shortMonth">
+      <a (click)="monthSelect('decHead')">23.12</a>
+    </div>
+    <div class="monthDiv shortMonth">
+      <a (click)="monthSelect('janHead')">24.01</a>
+    </div>
+    <div class="monthDiv shortMonth">
+      <a (click)="monthSelect('febHead')">24.02</a>
     </div>
   </div>
   <div class="timeLineContainer" id="timeLineContainer">

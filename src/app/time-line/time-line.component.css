@@ -197,8 +197,6 @@
 
 
 
-
-
 .timeLineToolBar {
   width: 100%;
   display: flex;
@@ -215,7 +213,7 @@
   padding-left: 10px;
   width: max-content;
 }
-.monthDiv:nth-child(1) {
+.monthDiv:nth-child(1), .monthDiv:nth-child(13) {
   border: none;
 }
 .monthDiv > a {
@@ -225,6 +223,12 @@
 .monthDiv > a:hover {
   color: #ebebeb;
   cursor: pointer;
+}
+.fullMonth {
+  display: block;
+}
+.shortMonth {
+  display: none;
 }
 .selected {
   border-top: solid 2px white;
@@ -250,6 +254,7 @@
     opacity: 1;
   }
 }
+
 
 /* pc small */
 @media only screen
@@ -284,21 +289,105 @@ only screen
     transform: translate(45px, -23px) rotate(11deg);
   }
   .music {
-     width: 40px;
-   }
-
-   .member {
-     width: 40px;
-   }
-
-   .goods {
-     width: 40px;
-   }
-
-   .collab {
-     width: 60px;
-   }
+    width: 40px;
+  }
+  .member {
+    width: 40px;
+  }
+  .goods {
+    width: 40px;
+  }
+  .collab {
+    width: 60px;
+  }
 }
+
+/* pc extra small */
+@media only screen
+  and (max-height: 400px)
+  and (orientation: landscape),
+only screen
+  and (min-width: 390px)
+  and (max-width: 768px)
+  and (orientation: landscape),
+/* Phone */
+only screen
+  and (device-width: 360px)
+  and (device-height: 640px)
+  and (-webkit-device-pixel-ratio: 4)
+  and (orientation: landscape),
+only screen
+  and (min-device-width: 390px)
+  and (max-device-width: 844px)
+  and (-webkit-min-device-pixel-ratio: 4)
+  and (orientation: landscape),
+only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape),
+only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+  .timeLineContent {
+    width: 75vw;
+    padding-top: 0px;
+  }
+  .timeLineToolBar {
+    column-gap: 3px;
+    font-size: 0.8rem;
+  }
+  .timeLineContent span.number span:first-child {
+    top: -8px;
+    left: -58px;
+    font-size: 0.8rem;
+  }
+  .timeLineContent span.number span:last-child {
+    bottom: -10px;
+    left: -58px;
+    font-size: 0.8rem;
+  }
+  .monthDiv {
+    padding-left: 3px;
+  }
+  .fullMonth {
+    display: none;
+  }
+  .shortMonth {
+    display: block;
+  }
+  .timeLineContent div .title {
+    font-size: 0.9rem;
+  }
+  .timeLineContent .highlight div .title{
+    font-size: 1rem;
+  }
+  .timeLineContent div .info {
+    font-size: 0.7rem;
+  }
+  .monthHead {
+    margin-top: 40px;
+  }
+  .congrats {
+    width: 70px;
+    transform: translate(45px, -23px) rotate(11deg);
+  }
+  .music {
+    width: 40px;
+  }
+  .member {
+    width: 40px;
+  }
+  .goods {
+    width: 40px;
+  }
+  .collab {
+    width: 60px;
+  }
+}
+
 @media only screen  and (max-width: 900px) {
   .timeLineContent {
     width: 90vw;

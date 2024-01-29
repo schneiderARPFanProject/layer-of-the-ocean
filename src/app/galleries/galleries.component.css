@@ -210,9 +210,72 @@ only screen
   .page {
     padding-left: 3px;
   }
-  .numberCounter > span {
-    width: 5rem;
-    display: inline-block;
+}
+
+/* pc extra small */
+@media only screen
+  and (max-height: 400px)
+  and (orientation: landscape),
+only screen
+  and (min-width: 390px)
+  and (max-width: 768px)
+  and (orientation: landscape),
+/* Phone */
+only screen
+  and (device-width: 360px)
+  and (device-height: 640px)
+  and (-webkit-device-pixel-ratio: 4)
+  and (orientation: landscape),
+only screen
+  and (min-device-width: 390px)
+  and (max-device-width: 844px)
+  and (-webkit-min-device-pixel-ratio: 4)
+  and (orientation: landscape),
+only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape),
+only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+  .galleriesList {
+    column-count: 3;
+  }
+  .galleriesToolBar {
+    row-gap: 0px;
+    margin: 5px 0;
+  }
+  .sendBtnBar {
+    display: flex;
+    flex-direction: column;
+    column-gap: 0px;
+    justify-content: end;
+    align-items: flex-end;
+    padding-bottom: 5px;
+  }
+  .sendBtnBar > a {
+    position: relative;
+    top: -6px;
+    right: 4%;
+  }
+  .sendBtnBar > h2 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: fit-content;
+  }
+  .paginationToolBar {
+    column-gap: 3px;
+    font-size: 0.7rem;
+    width: fit-content;
+    position: absolute;
+    top: 60px;
+    left: 4%;
+  }
+  .page {
+    padding-left: 3px;
   }
 }
 

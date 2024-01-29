@@ -2624,6 +2624,26 @@ a:active {
   h3 {
     font-size: 0.8rem;
   }
+  .projectDetail::before {
+    top: 80px;
+  }
+  .projectDetail .logoDiv {
+    height: 195px;
+  }
+  .projectDetail .dateNPlaceDiv > h2 {
+    font-size: 1rem;
+  }
+  .projectDetail .twitterDiv {
+    height: 15px;
+  }
+  .projectDetail .twitterLink > img {
+    width: 15px;
+    height: 15px;
+  }
+  .projectDetail .locationDiv > img {
+    width: 15px;
+    height: 15px;
+  }
 }
 
 /* angular:styles/global:styles */

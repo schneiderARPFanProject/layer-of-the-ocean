@@ -608,7 +608,7 @@ only screen
   and (orientation: landscape)
   and (-webkit-min-device-pixel-ratio: 2) {
   .titleModal > div {
-    top: 40%;
+    top: 45%;
   }
 }
 /* pc small */

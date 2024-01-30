@@ -1,0 +1,19 @@
+.projectDetail::before {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
+}
+
+#rodkenforsnd .subProjectsProfile {
+  content: url("../../../assets/images/more-sunlight/rodkenforsnd.JPG");
+}
+
+#mummum .subProjectsProfile {
+  content: url("../../../assets/images/more-sunlight/mummum.JPG");
+}
+
+#sweethoney .subProjectsProfile {
+  content: url("../../../assets/images/more-sunlight/sweethoney.JPG");
+}
+
+#walkingwithschnei .subProjectsProfile {
+  content: url("../../../assets/images/projects-close-icon.PNG");
+}

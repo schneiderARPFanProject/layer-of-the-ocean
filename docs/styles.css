@@ -2374,7 +2374,7 @@ body::after {
   height: 0;
   overflow: hidden;
   z-index: -50;
-  content: url("./media/typo.GIF") url("./media/back-icon.PNG") url("./media/back-icon-hover.PNG") url("./media/close-icon.PNG") url("./media/close-icon-hover.PNG") url("./media/collab-icon.PNG") url("./media/congrats-icon.PNG") url("./media/credit-icon.PNG") url("./media/credit-icon-hover.PNG") url("./media/drop.PNG") url("./media/galleries-icon.PNG") url("./media/galleries-icon-hover.PNG") url("./media/goods-icon.PNG") url("./media/home-icon.PNG") url("./media/home-icon-hover.PNG") url("./media/loading-icon.PNG") url("./media/location-icon.PNG") url("./media/member-icon.PNG") url("./media/music-icon.PNG") url("./media/projects-close-icon.PNG") url("./media/projects-close-icon-hover.PNG") url("./media/projects-icon.PNG") url("./media/projects-icon-hover.PNG") url("./media/schneider-constellation.PNG") url("./media/schneider-layer-dive.GIF") url("./media/schneider-layer-float.GIF") url("./media/schneider-main-float.GIF") url("./media/stars.PNG") url("./media/sunlight-bg1.PNG") url("./media/sunlight-bg2.PNG") url("./media/sunlight-bg3.PNG") url("./media/timeline-icon.PNG") url("./media/timeline-icon-hover.PNG") url("./media/twitter-icon.PNG") url("./media/typo.PNG") url("./media/amiore-logo.PNG") url("./media/be-loved.JPG") url("./media/love.JPG") url("./media/standee-amil1.JPG") url("./media/standee-amil2.JPG") url("./media/corsair.JPG") url("./media/firtha.JPG") url("./media/deep-sea-logo.PNG") url("./media/firtha.JPG") url("./media/lorelei.JPG") url("./media/standee-schmeiphorn.PNG") url("./media/standee-schneider.PNG") url("./media/dearest.JPG") url("./media/fenchanted-logo.PNG") url("./media/special-set.JPG") url("./media/standee-k-first.JPG") url("./media/standee-k-mad.JPG") url("./media/sweetheart.JPG");
+  content: url("./media/typo.GIF") url("./media/back-icon.PNG") url("./media/back-icon-hover.PNG") url("./media/close-icon.PNG") url("./media/close-icon-hover.PNG") url("./media/collab-icon.PNG") url("./media/congrats-icon.PNG") url("./media/credit-icon.PNG") url("./media/credit-icon-hover.PNG") url("./media/drop.PNG") url("./media/galleries-icon.PNG") url("./media/galleries-icon-hover.PNG") url("./media/goods-icon.PNG") url("./media/home-icon.PNG") url("./media/home-icon-hover.PNG") url("./media/loading-icon.PNG") url("./media/location-icon.PNG") url("./media/member-icon.PNG") url("./media/music-icon.PNG") url("./media/projects-close-icon.PNG") url("./media/projects-close-icon-hover.PNG") url("./media/projects-icon.PNG") url("./media/projects-icon-hover.PNG") url("./media/schneider-constellation.PNG") url("./media/schneider-layer-dive.GIF") url("./media/schneider-layer-float.GIF") url("./media/schneider-main-float.GIF") url("./media/stars.PNG") url("./media/sunlight-bg1.PNG") url("./media/sunlight-bg2.PNG") url("./media/sunlight-bg3.PNG") url("./media/timeline-icon.PNG") url("./media/timeline-icon-hover.PNG") url("./media/twitter-icon.PNG") url("./media/typo.PNG") url("./media/amiore-logo.PNG") url("./media/be-loved.JPG") url("./media/love.JPG") url("./media/standee-amil1.JPG") url("./media/standee-amil2.JPG") url("./media/corsair.JPG") url("./media/firtha.JPG") url("./media/deep-sea-logo.PNG") url("./media/firtha.JPG") url("./media/lorelei.JPG") url("./media/standee-schmeiphorn.PNG") url("./media/standee-schneider.PNG") url("./media/dearest.JPG") url("./media/fenchanted-logo.PNG") url("./media/special-set.JPG") url("./media/standee-k-first.JPG") url("./media/standee-k-mad.JPG") url("./media/sweetheart.JPG") url("./media/mummum.JPG") url("./media/rodkenforsnd.JPG") url("./media/sweethoney.JPG");
 }
 a:link,
 a:visited,
@@ -2437,7 +2437,7 @@ a:active {
   height: 1vh;
   width: 1%;
   margin: 0 auto;
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
   position: fixed;
   top: 100px;
   left: 50vw;
@@ -2538,6 +2538,73 @@ a:active {
   margin-bottom: 3rem;
   text-align: center;
 }
+.subProjects {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  column-gap: 10px;
+  margin: 15px 20px 0 20px;
+  text-align: left;
+}
+.subProjects:nth-child(even) {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+.subProjectsProfile {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: white solid 3px;
+}
+.subProjectsProfile:hover {
+  box-shadow: 0 0 1rem white;
+}
+.subProjectsDetail {
+  width: 70%;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 3rem;
+  padding: 1rem 0 3rem 2rem;
+  position: relative;
+}
+.subProjects:nth-child(even) .subProjectsDetail {
+  padding: 1rem 2rem 3rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.subProjectsDetail > h2 {
+  border-image-slice: 1;
+  border-width: 2px;
+  border-style: solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-image-source: linear-gradient(to right, black, rgba(255, 255, 255, 0.1));
+  padding-bottom: 5px;
+  width: 90%;
+}
+.subProjects:nth-child(even) .subProjectsDetail > h2 {
+  border-image-source: linear-gradient(to left, black, rgba(255, 255, 255, 0.1));
+}
+.subProjectsTag {
+  width: fit-content;
+  position: absolute;
+  bottom: 1rem;
+  right: 2rem;
+}
+.subProjectTitle {
+  font-weight: bold;
+}
+.subProjectInfo {
+  display: grid;
+  grid-template-columns: 5rem 5px auto;
+}
+.subProjects:nth-child(even) .subProjectInfo {
+  direction: rtl;
+}
+.subProjects:nth-child(even) .subProjectInfo > div {
+  direction: ltr;
+}
 .mat-mdc-dialog-surface,
 .mdc-dialog__surface {
   background-color: rgba(0, 0, 0, 0.8) !important;
@@ -2610,6 +2677,21 @@ a:active {
   .projectDetail .dateNPlaceDiv > h2 {
     font-size: 1.2rem;
   }
+  .subProjectInfo {
+    display: grid;
+    grid-template-columns: 4rem 5px auto;
+  }
+  .subProjectsProfile {
+    width: 60px;
+    height: 60px;
+  }
+  .subProjectsDetail {
+    border-radius: 2rem;
+    padding: 0.5rem 0 2rem 2rem;
+  }
+  .subProjects:nth-child(even) .subProjectsDetail {
+    padding: 0.5rem 2rem 2rem 0;
+  }
 }
 @media only screen and (max-height: 400px) and (orientation: landscape), only screen and (min-width: 390px) and (max-width: 768px) and (orientation: landscape), only screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 4) and (orientation: landscape), only screen and (min-device-width: 390px) and (max-device-width: 844px) and (-webkit-min-device-pixel-ratio: 4) and (orientation: landscape), only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape), only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
   body {
@@ -2643,6 +2725,21 @@ a:active {
   .projectDetail .locationDiv > img {
     width: 15px;
     height: 15px;
+  }
+  .subProjectInfo {
+    display: grid;
+    grid-template-columns: 4rem 5px auto;
+  }
+  .subProjectsProfile {
+    width: 45px;
+    height: 45px;
+  }
+  .subProjectsDetail {
+    border-radius: 2rem;
+    padding: 0rem 0 1rem 2rem;
+  }
+  .subProjects:nth-child(even) .subProjectsDetail {
+    padding: 0rem 2rem 1rem 0;
   }
 }
 

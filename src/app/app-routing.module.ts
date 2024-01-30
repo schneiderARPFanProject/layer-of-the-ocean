@@ -7,6 +7,7 @@ import { TimeLineComponent } from './time-line/time-line.component';
 import { FenchantedComponent } from './projects/fenchanted/fenchanted.component';
 import { AmioreComponent } from './projects/amiore/amiore.component';
 import { WhisperFromDeepSeaComponent } from './projects/whisper-from-deep-sea/whisper-from-deep-sea.component';
+import { MoreSunlightComponent } from './projects/more-sunlight/more-sunlight.component';
 
 const routes: Routes = [
   { path: 'sunlight', component: SunlightZoneComponent, canActivate: [navigationGuard] },
@@ -14,7 +15,8 @@ const routes: Routes = [
   { path: ':level/schneider-journey', component: TimeLineComponent, canActivate: [navigationGuard] },
   { path: ':level/presents-to-schneider/fenchanted', component: FenchantedComponent, canActivate: [navigationGuard] },
   { path: ':level/presents-to-schneider/amiore', component: AmioreComponent, canActivate: [navigationGuard] },
-  { path: ':level/presents-to-schneider/whisper-from-the-deep-sea', component: WhisperFromDeepSeaComponent, canActivate: [navigationGuard] }
+  { path: ':level/presents-to-schneider/whisper-from-the-deep-sea', component: WhisperFromDeepSeaComponent, canActivate: [navigationGuard] },
+  { path: 'sunlight/presents-to-schneider/more-projects', component: MoreSunlightComponent, canActivate: [navigationGuard] }
 ];
 
 @NgModule({

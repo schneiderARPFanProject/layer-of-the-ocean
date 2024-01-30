@@ -19,6 +19,7 @@ import { TimeLineComponent } from './time-line/time-line.component';
 import { FenchantedComponent } from './projects/fenchanted/fenchanted.component';
 import { AmioreComponent } from './projects/amiore/amiore.component';
 import { WhisperFromDeepSeaComponent } from './projects/whisper-from-deep-sea/whisper-from-deep-sea.component';
+import { MoreSunlightComponent } from './projects/more-sunlight/more-sunlight.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { WhisperFromDeepSeaComponent } from './projects/whisper-from-deep-sea/wh
     TimeLineComponent,
     FenchantedComponent,
     AmioreComponent,
-    WhisperFromDeepSeaComponent
+    WhisperFromDeepSeaComponent,
+    MoreSunlightComponent
   ],
   imports: [
     BrowserModule,

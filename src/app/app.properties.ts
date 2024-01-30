@@ -13,13 +13,14 @@ export const LEVEL_DISPLAY_TEXT: Record<string, string> = {
 }
 
 export const PROJECT_LIST: Record<string, string[]> = {
-  'sunlight': ['fenchanted', 'amiore', 'whisper-from-the-deep-sea']
+  'sunlight': ['fenchanted', 'amiore', 'whisper-from-the-deep-sea', 'more-projects']
 }
 
 export const PROJECT_NAME_LIST: Record<string, string> = {
   'fenchanted': 'FEnchanted',
   'amiore': 'AMiORE',
   'whisper-from-the-deep-sea': 'Whisper From The Deep Sea',
+  'more-projects': 'More Projects',
 }
 
 //export const GALLERY_IMG_URL: string = 'https://drive.google.com/uc?export=view&id=${imgId}';

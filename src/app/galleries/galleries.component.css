@@ -196,10 +196,6 @@ only screen
     row-gap: 0px;
     margin: 10px 0;
   }
-  /*.sendBtnBar > a {
-    top: 35px;
-    right: 4%;
-  }*/
   .sendBtnBar > h2 {
     margin-top: 0px;
   }
@@ -276,6 +272,15 @@ only screen
   }
   .page {
     padding-left: 3px;
+  }
+  .messageFrom {
+    font-size: 0.9rem;
+  }
+  .messageDear {
+    font-size: 0.9rem;
+  }
+  .messageText {
+    font-size: 0.8rem;
   }
 }
 

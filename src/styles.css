@@ -75,7 +75,8 @@ body::after {
             url("assets/images/fenchanted/sweetheart.JPG")
             url("assets/images/more-sunlight/mummum.JPG")
             url("assets/images/more-sunlight/rodkenforsnd.JPG")
-            url("assets/images/more-sunlight/sweethoney.JPG");
+            url("assets/images/more-sunlight/sweethoney.JPG")
+            url("assets/images/more-sunlight/walkingwithschnei.JPG");
 }
 a:link, a:visited, a:hover, a:active {
   color: white;
@@ -296,6 +297,9 @@ a:link, a:visited, a:hover, a:active {
   bottom: 1rem;
   right: 2rem;
 }
+.subProjects:nth-child(even) .subProjectsTag {
+  left: 2rem;
+}
 .subProjectTitle {
   font-weight: bold;
 }
@@ -424,7 +428,7 @@ only screen
   }
   .subProjectInfo {
     display: grid;
-    grid-template-columns: 4rem 5px auto;
+    grid-template-columns: 5rem 5px auto;
   }
   .subProjectsProfile {
     width: 60px;

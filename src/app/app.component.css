@@ -182,7 +182,11 @@
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 600px;
+  top: 570px;
+}
+.selectedLayerName > h2 {
+  font-family: Twilight, Mitr, san-serif;
+  font-size: 2.5rem;
 }
 .constellation {
   width: 600px;
@@ -592,7 +596,10 @@ only screen
     right: 88px;
   }
   .selectedLayerName {
-    top: 520px;
+    top: 480px;
+  }
+  .selectedLayerName > h2 {
+    font-size: 2rem;
   }
 }
 
@@ -720,8 +727,11 @@ only screen
     right: 50px;
   }
   .selectedLayerName {
-    top: -3px;
+    top: -25px;
     z-index: -1;
+  }
+  .selectedLayerName > h2 {
+    font-size: 1.5rem;
   }
 }
 

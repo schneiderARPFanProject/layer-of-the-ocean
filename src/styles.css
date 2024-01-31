@@ -4,6 +4,10 @@
    font-family: Mitr;
    src: url(assets/fonts/Mitr/Mitr-Light.ttf);
 }
+@font-face {
+   font-family: Twilight;
+   src: url(assets/fonts/Twilight/DM-Twilight-Regular.ttf);
+}
 
 body {
   background-color: #030216;

@@ -53864,7 +53864,7 @@ var _MoreSunlightComponent = class _MoreSunlightComponent extends BaseProject {
 _MoreSunlightComponent.\u0275fac = function MoreSunlightComponent_Factory(t) {
   return new (t || _MoreSunlightComponent)(\u0275\u0275directiveInject(ActivatedRoute));
 };
-_MoreSunlightComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _MoreSunlightComponent, selectors: [["app-more-sunlight"]], features: [\u0275\u0275InheritDefinitionFeature], decls: 116, vars: 4, consts: [[1, "layerContainer", "sunlightLayerContainer"], [3, "level", "sublevel"], [3, "level", "currentProject"], [1, "projectContainer"], [1, "projectDetail"], ["id", "rodkenforsnd", 1, "subProjects"], ["href", "https://twitter.com/RODKENFORSND", "target", "_blank", 1, "subProjectsProfile"], ["src", "#"], [1, "subProjectsDetail"], [1, "subProjectTitle"], [1, "subProjectInfo"], ["id", "mummum", 1, "subProjects"], ["href", "https://twitter.com/jabchaisaimoo", "target", "_blank", 1, "subProjectsProfile"], ["id", "sweethoney", 1, "subProjects"], ["href", "https://twitter.com/Real_SweetHoney", "target", "_blank", 1, "subProjectsProfile"], [1, "subProjectsTag"], ["id", "walkingwithschnei", 1, "subProjects"], ["href", "https://twitter.com/hashtag/WalkingwithSchnei?src=hashtag_click", "target", "_blank", 1, "subProjectsProfile"]], template: function MoreSunlightComponent_Template(rf, ctx) {
+_MoreSunlightComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _MoreSunlightComponent, selectors: [["app-more-sunlight"]], features: [\u0275\u0275InheritDefinitionFeature], decls: 126, vars: 4, consts: [[1, "layerContainer", "sunlightLayerContainer"], [3, "level", "sublevel"], [3, "level", "currentProject"], [1, "projectContainer"], [1, "projectDetail"], ["id", "rodkenforsnd", 1, "subProjects"], ["href", "https://twitter.com/RODKENFORSND", "target", "_blank", 1, "subProjectsProfile"], ["src", "#"], [1, "subProjectsDetail"], [1, "subProjectTitle"], [1, "subProjectInfo"], ["id", "mummum", 1, "subProjects"], ["href", "https://twitter.com/jabchaisaimoo", "target", "_blank", 1, "subProjectsProfile"], ["id", "sweethoney", 1, "subProjects"], ["href", "https://twitter.com/Real_SweetHoney", "target", "_blank", 1, "subProjectsProfile"], [1, "subProjectsTag"], ["id", "walkingwithschnei", 1, "subProjects"], ["href", "https://twitter.com/hashtag/WalkingwithSchnei?src=hashtag_click", "target", "_blank", 1, "subProjectsProfile"]], template: function MoreSunlightComponent_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "p");
     \u0275\u0275text(1, "more-sunlight works!");
@@ -53966,29 +53966,40 @@ _MoreSunlightComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({
     \u0275\u0275element(93, "img", 7);
     \u0275\u0275elementEnd();
     \u0275\u0275elementStart(94, "div", 8)(95, "h2");
-    \u0275\u0275text(96, "#WalkingwithSchnei");
+    \u0275\u0275text(96, "WalkingwithSchnei");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(97, "div")(98, "div", 10)(99, "div")(100, "b");
-    \u0275\u0275text(101, "LOCATION");
+    \u0275\u0275elementStart(97, "div")(98, "span", 9);
+    \u0275\u0275text(99, "One steps 1_9 ");
+    \u0275\u0275elementEnd();
+    \u0275\u0275element(100, "br");
+    \u0275\u0275text(101, " \u0E1B\u0E49\u0E32\u0E22\u0E42\u0E06\u0E29\u0E13\u0E32\u0E40\u0E04\u0E25\u0E37\u0E48\u0E2D\u0E19\u0E17\u0E35\u0E48 \u0E42\u0E14\u0E22\u0E1E\u0E25\u0E30\u0E01\u0E33\u0E25\u0E31\u0E07\u0E04\u0E19\u0E44\u0E23\u0E49\u0E1A\u0E49\u0E32\u0E19\u0E1C\u0E39\u0E49\u0E2A\u0E39\u0E07\u0E2D\u0E32\u0E22\u0E38");
+    \u0275\u0275element(102, "br");
+    \u0275\u0275text(103, " \u0E44\u0E27\u0E49\u0E21\u0E32\u0E40\u0E08\u0E2D\u0E2A\u0E38\u0E14\u0E2B\u0E25\u0E48\u0E2D\u0E40\u0E04\u0E25\u0E37\u0E48\u0E2D\u0E19\u0E17\u0E35\u0E48\u0E41\u0E16\u0E27\u0E2A\u0E22\u0E32\u0E21\u0E44\u0E14\u0E49\u0E19\u0E30\u0E04\u0E23\u0E31\u0E1A\u2728");
+    \u0275\u0275element(104, "br")(105, "br");
+    \u0275\u0275elementStart(106, "div", 10)(107, "div")(108, "b");
+    \u0275\u0275text(109, "LOCATION");
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(102, "div");
-    \u0275\u0275text(103, ":");
+    \u0275\u0275elementStart(110, "div");
+    \u0275\u0275text(111, ":");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(104, "div");
-    \u0275\u0275text(105, "Paragon/CTW/Gaysorn Plaza/CT Chidlom/Terminal21/");
-    \u0275\u0275element(106, "br");
-    \u0275\u0275text(107, "Korean Town/Mercury Ville/Marin plaza/Siam square ");
+    \u0275\u0275elementStart(112, "div");
+    \u0275\u0275text(113, "Paragon/CTW/Gaysorn Plaza/CT Chidlom/Terminal21/");
+    \u0275\u0275element(114, "br");
+    \u0275\u0275text(115, "Korean Town/Mercury Ville/Marin plaza/Siam square ");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(108, "div")(109, "b");
-    \u0275\u0275text(110, "DATE");
+    \u0275\u0275elementStart(116, "div")(117, "b");
+    \u0275\u0275text(118, "DATE");
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(111, "div");
-    \u0275\u0275text(112, ":");
+    \u0275\u0275elementStart(119, "div");
+    \u0275\u0275text(120, ":");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(113, "div");
-    \u0275\u0275text(114, "3 - 4 FEB 2024 | 13:30-18:30 ");
-    \u0275\u0275elementEnd()()()()()()();
-    \u0275\u0275element(115, "app-sunlight-zone-bg");
+    \u0275\u0275elementStart(121, "div");
+    \u0275\u0275text(122, "3 - 4 FEB 2024 | 13:30-18:30 ");
+    \u0275\u0275elementEnd()()();
+    \u0275\u0275elementStart(123, "div", 15);
+    \u0275\u0275text(124, "#WalkingwithSchnei");
+    \u0275\u0275elementEnd()()()()();
+    \u0275\u0275element(125, "app-sunlight-zone-bg");
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
@@ -53997,7 +54008,7 @@ _MoreSunlightComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({
     \u0275\u0275advance(1);
     \u0275\u0275property("level", ctx.level)("currentProject", ctx.projectName);
   }
-}, dependencies: [ToolBarComponent, SunlightZoneBgComponent, ProjectsToolBarComponent], styles: ['\n\n.projectDetail[_ngcontent-%COMP%]::before {\n  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));\n}\n#rodkenforsnd[_ngcontent-%COMP%]   .subProjectsProfile[_ngcontent-%COMP%] {\n  content: url("./media/rodkenforsnd.JPG");\n}\n#mummum[_ngcontent-%COMP%]   .subProjectsProfile[_ngcontent-%COMP%] {\n  content: url("./media/mummum.JPG");\n}\n#sweethoney[_ngcontent-%COMP%]   .subProjectsProfile[_ngcontent-%COMP%] {\n  content: url("./media/sweethoney.JPG");\n}\n#walkingwithschnei[_ngcontent-%COMP%]   .subProjectsProfile[_ngcontent-%COMP%] {\n  content: url("./media/projects-close-icon.PNG");\n}\n/*# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsic3JjL2FwcC9wcm9qZWN0cy9tb3JlLXN1bmxpZ2h0L21vcmUtc3VubGlnaHQuY29tcG9uZW50LmNzcyJdLAogICJzb3VyY2VzQ29udGVudCI6IFsiLnByb2plY3REZXRhaWw6OmJlZm9yZSB7XHJcbiAgYmFja2dyb3VuZC1pbWFnZTogbGluZWFyLWdyYWRpZW50KHRvIGJvdHRvbSwgcmdiYSgyNTUsIDI1NSwgMjU1LCAwLjMpLCByZ2JhKDI1NSwgMjU1LCAyNTUsIDApKTtcclxufVxyXG5cclxuI3JvZGtlbmZvcnNuZCAuc3ViUHJvamVjdHNQcm9maWxlIHtcclxuICBjb250ZW50OiB1cmwoXCIuLi8uLi8uLi9hc3NldHMvaW1hZ2VzL21vcmUtc3VubGlnaHQvcm9ka2VuZm9yc25kLkpQR1wiKTtcclxufVxyXG5cclxuI211bW11bSAuc3ViUHJvamVjdHNQcm9maWxlIHtcclxuICBjb250ZW50OiB1cmwoXCIuLi8uLi8uLi9hc3NldHMvaW1hZ2VzL21vcmUtc3VubGlnaHQvbXVtbXVtLkpQR1wiKTtcclxufVxyXG5cclxuI3N3ZWV0aG9uZXkgLnN1YlByb2plY3RzUHJvZmlsZSB7XHJcbiAgY29udGVudDogdXJsKFwiLi4vLi4vLi4vYXNzZXRzL2ltYWdlcy9tb3JlLXN1bmxpZ2h0L3N3ZWV0aG9uZXkuSlBHXCIpO1xyXG59XHJcblxyXG4jd2Fsa2luZ3dpdGhzY2huZWkgLnN1YlByb2plY3RzUHJvZmlsZSB7XHJcbiAgY29udGVudDogdXJsKFwiLi4vLi4vLi4vYXNzZXRzL2ltYWdlcy9wcm9qZWN0cy1jbG9zZS1pY29uLlBOR1wiKTtcclxufVxyXG4iXSwKICAibWFwcGluZ3MiOiAiO0FBQUEsQ0FBQyxhQUFhO0FBQ1osb0JBQWtCLGdCQUFnQixHQUFHLE1BQU0sRUFBRSxLQUFLLEdBQUcsRUFBRSxHQUFHLEVBQUUsR0FBRyxFQUFFLElBQUksRUFBRSxLQUFLLEdBQUcsRUFBRSxHQUFHLEVBQUUsR0FBRyxFQUFFO0FBQzdGO0FBRUEsQ0FBQyxhQUFhLENBQUM7QUFDYixXQUFTO0FBQ1g7QUFFQSxDQUFDLE9BQU8sQ0FKTztBQUtiLFdBQVM7QUFDWDtBQUVBLENBQUMsV0FBVyxDQVJHO0FBU2IsV0FBUztBQUNYO0FBRUEsQ0FBQyxrQkFBa0IsQ0FaSjtBQWFiLFdBQVM7QUFDWDsiLAogICJuYW1lcyI6IFtdCn0K */'] });
+}, dependencies: [ToolBarComponent, SunlightZoneBgComponent, ProjectsToolBarComponent], styles: ['\n\n.projectDetail[_ngcontent-%COMP%]::before {\n  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));\n}\n#rodkenforsnd[_ngcontent-%COMP%]   .subProjectsProfile[_ngcontent-%COMP%] {\n  content: url("./media/rodkenforsnd.JPG");\n}\n#mummum[_ngcontent-%COMP%]   .subProjectsProfile[_ngcontent-%COMP%] {\n  content: url("./media/mummum.JPG");\n}\n#sweethoney[_ngcontent-%COMP%]   .subProjectsProfile[_ngcontent-%COMP%] {\n  content: url("./media/sweethoney.JPG");\n}\n#walkingwithschnei[_ngcontent-%COMP%]   .subProjectsProfile[_ngcontent-%COMP%] {\n  content: url("./media/walkingwithschnei.JPG");\n}\n/*# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsic3JjL2FwcC9wcm9qZWN0cy9tb3JlLXN1bmxpZ2h0L21vcmUtc3VubGlnaHQuY29tcG9uZW50LmNzcyJdLAogICJzb3VyY2VzQ29udGVudCI6IFsiLnByb2plY3REZXRhaWw6OmJlZm9yZSB7XHJcbiAgYmFja2dyb3VuZC1pbWFnZTogbGluZWFyLWdyYWRpZW50KHRvIGJvdHRvbSwgcmdiYSgyNTUsIDI1NSwgMjU1LCAwLjMpLCByZ2JhKDI1NSwgMjU1LCAyNTUsIDApKTtcclxufVxyXG5cclxuI3JvZGtlbmZvcnNuZCAuc3ViUHJvamVjdHNQcm9maWxlIHtcclxuICBjb250ZW50OiB1cmwoXCIuLi8uLi8uLi9hc3NldHMvaW1hZ2VzL21vcmUtc3VubGlnaHQvcm9ka2VuZm9yc25kLkpQR1wiKTtcclxufVxyXG5cclxuI211bW11bSAuc3ViUHJvamVjdHNQcm9maWxlIHtcclxuICBjb250ZW50OiB1cmwoXCIuLi8uLi8uLi9hc3NldHMvaW1hZ2VzL21vcmUtc3VubGlnaHQvbXVtbXVtLkpQR1wiKTtcclxufVxyXG5cclxuI3N3ZWV0aG9uZXkgLnN1YlByb2plY3RzUHJvZmlsZSB7XHJcbiAgY29udGVudDogdXJsKFwiLi4vLi4vLi4vYXNzZXRzL2ltYWdlcy9tb3JlLXN1bmxpZ2h0L3N3ZWV0aG9uZXkuSlBHXCIpO1xyXG59XHJcblxyXG4jd2Fsa2luZ3dpdGhzY2huZWkgLnN1YlByb2plY3RzUHJvZmlsZSB7XHJcbiAgY29udGVudDogdXJsKFwiLi4vLi4vLi4vYXNzZXRzL2ltYWdlcy9tb3JlLXN1bmxpZ2h0L3dhbGtpbmd3aXRoc2NobmVpLkpQR1wiKTtcclxufVxyXG4iXSwKICAibWFwcGluZ3MiOiAiO0FBQUEsQ0FBQyxhQUFhO0FBQ1osb0JBQWtCLGdCQUFnQixHQUFHLE1BQU0sRUFBRSxLQUFLLEdBQUcsRUFBRSxHQUFHLEVBQUUsR0FBRyxFQUFFLElBQUksRUFBRSxLQUFLLEdBQUcsRUFBRSxHQUFHLEVBQUUsR0FBRyxFQUFFO0FBQzdGO0FBRUEsQ0FBQyxhQUFhLENBQUM7QUFDYixXQUFTO0FBQ1g7QUFFQSxDQUFDLE9BQU8sQ0FKTztBQUtiLFdBQVM7QUFDWDtBQUVBLENBQUMsV0FBVyxDQVJHO0FBU2IsV0FBUztBQUNYO0FBRUEsQ0FBQyxrQkFBa0IsQ0FaSjtBQWFiLFdBQVM7QUFDWDsiLAogICJuYW1lcyI6IFtdCn0K */'] });
 var MoreSunlightComponent = _MoreSunlightComponent;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && \u0275setClassDebugInfo(MoreSunlightComponent, { className: "MoreSunlightComponent", filePath: "src\\app\\projects\\more-sunlight\\more-sunlight.component.ts", lineNumber: 10 });

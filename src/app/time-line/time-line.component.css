@@ -47,7 +47,7 @@
 .timeLineContent ul li {
   position: relative;
   margin-left: 30px;
-  background-color: rgba(0, 0, 0, 0.35);
+  background-color: rgba(0, 0, 0, 0.45);
   padding: 14px;
   border-radius: 6px;
   width: 100%;
@@ -55,7 +55,7 @@
 }
 .highlight {
   border: 5px solid #dfcdff;
-  background-color: rgb(0 0 0 / 50%) !important;
+  background-color: rgb(0 0 0 / 55%) !important;
 }
 .timeLineContent ul .highlight {
   margin-left: 25px;

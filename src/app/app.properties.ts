@@ -6,10 +6,10 @@ export const MAX_COUNT_PER_PAGE = 50;
 
 export const LEVEL_DISPLAY_TEXT: Record<string, string> = {
   'sunlight': 'Layer I : The Sunlight Zone',
-  'twilight': 'Layer II : The Twilight Zone',
-  'midnight': 'Layer III : The Midnight Zone',
-  'abyss': 'Layer IV : The Abyss',
-  'trenches': 'Layer V : The Trenches',
+  'twilight': '🔒Layer II : The Twilight Zone',
+  'midnight': '🔒Layer III : The Midnight Zone',
+  'abyss': '🔒Layer IV : The Abyss',
+  'trenches': '🔒Layer V : The Trenches',
 }
 
 export const PROJECT_LIST: Record<string, string[]> = {

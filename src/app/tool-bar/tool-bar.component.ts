@@ -43,6 +43,7 @@ export class ToolBarComponent {
       maxHeight: "calc(100%)",
       width: "calc(100%)",
       maxWidth: "calc(100%)",
+      autoFocus: false
     });
 
    /*CreditsComponent dialogRef.afterClosed().subscribe(result => {

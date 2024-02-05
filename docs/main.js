@@ -50280,12 +50280,13 @@ var _MessageService = class _MessageService {
       const dataArr = data.split(/\r\n|\n/);
       for (let i = 1; i < dataArr.length; i++) {
         let record = dataArr[i].split(",");
-        let message = record.slice(3).join().replace(/^"(.+)"$/, "$1");
+        console.log(record);
+        let message = record.slice(4).join().replace(/^"(.+)"$/, "$1");
         let galleriesMessage = {
-          timestamp: record[0].trim(),
-          dear: record[1].trim(),
+          timestamp: record[0].trim() + record[1].trim(),
+          dear: record[2].trim(),
           message,
-          from: record[2].trim()
+          from: record[3].trim()
         };
         galleriesMessages.push(galleriesMessage);
       }
@@ -50361,7 +50362,7 @@ function GalleriesComponent_div_15_div_1_Template(rf, ctx) {
   if (rf & 2) {
     const galleriesMessage_r7 = ctx.$implicit;
     \u0275\u0275advance(5);
-    \u0275\u0275textInterpolate1("", galleriesMessage_r7.dear || "Schneider", ",");
+    \u0275\u0275textInterpolate1("", (galleriesMessage_r7.dear == "Schneider (default)" ? "Schneider" : galleriesMessage_r7.dear) || "Schneider", ",");
     \u0275\u0275advance(1);
     \u0275\u0275property("ngIf", galleriesMessage_r7.message);
     \u0275\u0275advance(2);

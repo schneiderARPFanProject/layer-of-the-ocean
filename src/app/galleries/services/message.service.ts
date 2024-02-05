@@ -19,7 +19,7 @@ export class MessageService {
       const dataArr = data.split(/\r\n|\n/);
       for (let i=1; i<dataArr.length; i++) {
         let record = (<string>dataArr[i]).split(',');
-        console.log(record);
+        //console.log(record);
         let message = record.slice(4).join().replace(/^"(.+)"$/,'$1');
         let galleriesMessage: GalleriesMessage = {
           timestamp: record[0].trim() + record[1].trim(),

@@ -50500,7 +50500,7 @@ var _TimeLineComponent = class _TimeLineComponent {
 _TimeLineComponent.\u0275fac = function TimeLineComponent_Factory(t) {
   return new (t || _TimeLineComponent)(\u0275\u0275directiveInject(ActivatedRoute));
 };
-_TimeLineComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _TimeLineComponent, selectors: [["app-time-line"]], decls: 2591, vars: 2, consts: [[1, "layerContainer", "sunlightLayerContainer"], [3, "level", "sublevel"], [1, "timeLineToolBar"], [1, "monthDiv", "fullMonth"], [3, "click"], [1, "monthDiv", "shortMonth"], ["id", "timeLineContainer", 1, "timeLineContainer"], [1, "timeLineContent"], ["id", "marHead", 1, "monthHead"], [1, "title"], [1, "info"], [1, "underline", 2, "transform", "rotate(0deg) translate(0.5rem, 0px)"], [1, "underline", 2, "transform", "rotate(0deg) translate(102px, 0px)"], [1, "number"], [1, "highlight"], [1, "music"], [1, "underline"], [1, "goods"], ["id", "aprHead", 1, "monthHead"], [1, "congrats"], [1, "underline", 2, "transform", "rotate(-8deg) translate(0.5rem, -18px)"], [1, "underline", 2, "transform", "rotate(-8deg) translate(5.5rem, -20px)"], [1, "underline", 2, "transform", "rotate(-8deg) translate(0.5rem, -20px)"], [1, "underline", 2, "transform", "rotate(-8deg) translate(0.5rem, 5px)"], [1, "member"], ["id", "mayHead", 1, "monthHead"], [1, "collab"], ["id", "junHead", 1, "monthHead"], ["id", "julHead", 1, "monthHead"], ["id", "augHead", 1, "monthHead"], ["id", "sepHead", 1, "monthHead"], ["id", "octHead", 1, "monthHead"], ["id", "novHead", 1, "monthHead"], ["id", "decHead", 1, "monthHead"], ["id", "janHead", 1, "monthHead"], ["id", "febHead", 1, "monthHead"]], template: function TimeLineComponent_Template(rf, ctx) {
+_TimeLineComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _TimeLineComponent, selectors: [["app-time-line"]], decls: 2604, vars: 2, consts: [[1, "layerContainer", "sunlightLayerContainer"], [3, "level", "sublevel"], [1, "timeLineToolBar"], [1, "monthDiv", "fullMonth"], [3, "click"], [1, "monthDiv", "shortMonth"], ["id", "timeLineContainer", 1, "timeLineContainer"], [1, "timeLineContent"], ["id", "marHead", 1, "monthHead"], [1, "title"], [1, "info"], [1, "underline", 2, "transform", "rotate(0deg) translate(0.5rem, 0px)"], [1, "underline", 2, "transform", "rotate(0deg) translate(102px, 0px)"], [1, "number"], [1, "highlight"], [1, "music"], [1, "underline"], [1, "goods"], ["id", "aprHead", 1, "monthHead"], [1, "congrats"], [1, "underline", 2, "transform", "rotate(-8deg) translate(0.5rem, -18px)"], [1, "underline", 2, "transform", "rotate(-8deg) translate(5.5rem, -20px)"], [1, "underline", 2, "transform", "rotate(-8deg) translate(0.5rem, -20px)"], [1, "underline", 2, "transform", "rotate(-8deg) translate(0.5rem, 5px)"], [1, "member"], ["id", "mayHead", 1, "monthHead"], [1, "collab"], ["id", "junHead", 1, "monthHead"], ["id", "julHead", 1, "monthHead"], ["id", "augHead", 1, "monthHead"], ["id", "sepHead", 1, "monthHead"], ["id", "octHead", 1, "monthHead"], ["id", "novHead", 1, "monthHead"], ["id", "decHead", 1, "monthHead"], ["id", "janHead", 1, "monthHead"], ["id", "febHead", 1, "monthHead"]], template: function TimeLineComponent_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "div", 0);
     \u0275\u0275element(1, "app-tool-bar", 1);
@@ -53549,8 +53549,23 @@ _TimeLineComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ typ
     \u0275\u0275text(2588, "Feb 02");
     \u0275\u0275elementEnd();
     \u0275\u0275element(2589, "span");
+    \u0275\u0275elementEnd()();
+    \u0275\u0275elementStart(2590, "li")(2591, "div");
+    \u0275\u0275element(2592, "span");
+    \u0275\u0275elementStart(2593, "div", 9);
+    \u0275\u0275text(2594, "[Post] Givaway \u0E41\u0E0B\u0E19\u0E14\u0E4C\u0E27\u0E34\u0E0A\u0E44\u0E02\u0E48\u0E28\u0E23\u0E35\u0E23\u0E32\u0E0A\u0E32\u0E21\u0E32\u0E42\u0E22\u0E40\u0E1E\u0E34\u0E48\u0E21\u0E1B\u0E39\u0E2D\u0E31\u0E14\u0E01\u0E31\u0E1A\u0E01\u0E38\u0E49\u0E07\u0E08\u0E32\u0E01\u0E0A\u0E44\u0E19\u0E40\u0E14\u0E49\u0E2D");
+    \u0275\u0275elementStart(2595, "span", 16);
+    \u0275\u0275text(2596, "\u0E27\u0E32\u0E2A\u0E19\u0E32\u0E21\u0E19\u0E1C");
+    \u0275\u0275elementEnd()();
+    \u0275\u0275elementStart(2597, "div", 9);
+    \u0275\u0275text(2598, '\u0E04\u0E32\u0E1A\u0E40\u0E23\u0E35\u0E22\u0E19\u0E1E\u0E34\u0E40\u0E28\u0E29 \u0E2B\u0E19\u0E31\u0E07\u0E2A\u0E37\u0E2D\u0E2D\u0E48\u0E32\u0E19\u0E19\u0E2D\u0E01\u0E40\u0E27\u0E25\u0E32 "\u0E27\u0E31\u0E19\u0E46 \u0E01\u0E31\u0E1A\u0E19\u0E32\u0E22\u0E17\u0E48\u0E32\u0E19\u0E2B\u0E21\u0E32"');
+    \u0275\u0275elementEnd()();
+    \u0275\u0275elementStart(2599, "span", 13)(2600, "span");
+    \u0275\u0275text(2601, "Feb 04");
+    \u0275\u0275elementEnd();
+    \u0275\u0275element(2602, "span");
     \u0275\u0275elementEnd()()()()();
-    \u0275\u0275element(2590, "app-sunlight-zone-bg");
+    \u0275\u0275element(2603, "app-sunlight-zone-bg");
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
@@ -54027,7 +54042,7 @@ _MoreSunlightComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({
     \u0275\u0275text(64, ":");
     \u0275\u0275elementEnd();
     \u0275\u0275elementStart(65, "div");
-    \u0275\u0275text(66, "7 FEB 2024 \u2726 17:00");
+    \u0275\u0275text(66, "8 FEB 2024 \u2726 12:00");
     \u0275\u0275elementEnd()()()()();
     \u0275\u0275elementStart(67, "div", 14)(68, "a", 15);
     \u0275\u0275element(69, "img", 7);

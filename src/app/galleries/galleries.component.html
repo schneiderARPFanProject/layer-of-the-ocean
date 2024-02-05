@@ -23,7 +23,7 @@
       <div class="galleriesMessage" *ngFor="let galleriesMessage of galleriesMessagesPage">
         <div class="messageDear">
           <div>Dear</div>
-          <div>{{ galleriesMessage.dear || 'Schneider' }},</div>
+          <div>{{ (galleriesMessage.dear == 'Schneider (default)' ? 'Schneider' : galleriesMessage.dear)  || 'Schneider' }},</div>
         </div>
         <div class="messageText" *ngIf="galleriesMessage.message">{{ galleriesMessage.message }}</div>
         <div class="messageFrom">{{ galleriesMessage.from || 'Anonymous Honey' }}</div>

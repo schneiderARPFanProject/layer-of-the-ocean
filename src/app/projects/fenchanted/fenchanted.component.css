@@ -35,6 +35,39 @@
 }
 
 
+.slide-wrapper {
+  width: 4250px;
+}
+.slide:nth-child(1) > img {
+  content: url("../../../assets/images/fenchanted/fen1.JPG");
+  width: 600px;
+}
+.slide:nth-child(2) > img {
+  content: url("../../../assets/images/fenchanted/fen2.JPG");
+  width: 650px;
+}
+.slide:nth-child(3) > img {
+  content: url("../../../assets/images/fenchanted/fen3.JPG");
+  width: 340px;
+}
+.slide:nth-child(4) > img {
+  content: url("../../../assets/images/fenchanted/fen4.JPG");
+  width: 650px;
+}
+.slide:nth-child(5) > img {
+  content: url("../../../assets/images/fenchanted/fen5.JPG");
+  width: 650px;
+}
+.slide:nth-child(6) > img {
+  content: url("../../../assets/images/fenchanted/fen6.JPG");
+  width: 650px;
+}
+.slide:nth-child(7) > img {
+  content: url("../../../assets/images/fenchanted/fen7.JPG");
+  width: 650px;
+}
+
+
 /* pc small */
 @media only screen
   and (max-height: 600px)
@@ -65,6 +98,30 @@ only screen
   and (-webkit-min-device-pixel-ratio: 2) {
   .projectDetail .logoDiv {
     mask-size: 400px auto;
+  }
+  .slide-wrapper {
+    width: 3435px;
+  }
+  .slide:nth-child(1) > img {
+    width: 460px;
+  }
+  .slide:nth-child(2) > img {
+    width: 530px;
+  }
+  .slide:nth-child(3) > img {
+    width: 265px;
+  }
+  .slide:nth-child(4) > img {
+    width: 530px;
+  }
+  .slide:nth-child(5) > img {
+    width: 530px;
+  }
+  .slide:nth-child(6) > img {
+    width: 530px;
+  }
+  .slide:nth-child(7) > img {
+    width: 530px;
   }
 }
 
@@ -99,5 +156,29 @@ only screen
   and (orientation: landscape) {
   .projectDetail .logoDiv {
     mask-size: 280px auto;
+  }
+  .slide-wrapper {
+    width: 2345px;
+  }
+  .slide:nth-child(1) > img {
+    width: 300px;
+  }
+  .slide:nth-child(2) > img {
+    width: 370px;
+  }
+  .slide:nth-child(3) > img {
+    width: 165px;
+  }
+  .slide:nth-child(4) > img {
+    width: 370px;
+  }
+  .slide:nth-child(5) > img {
+    width: 370px;
+  }
+  .slide:nth-child(6) > img {
+    width: 370px;
+  }
+  .slide:nth-child(7) > img {
+    width: 370px;
   }
 }

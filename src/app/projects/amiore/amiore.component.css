@@ -31,6 +31,32 @@
 }
 
 
+.slide-wrapper {
+  width: 2160px;
+}
+.slide:nth-child(1) > img {
+  content: url("../../../assets/images/amiore/amil1.JPG");
+}
+.slide:nth-child(2) > img {
+  content: url("../../../assets/images/amiore/amil2.JPG");
+}
+.slide:nth-child(3) > img {
+  content: url("../../../assets/images/amiore/amil3.JPG");
+}
+.slide:nth-child(4) > img {
+  content: url("../../../assets/images/amiore/amil4.JPG");
+}
+.slide:nth-child(5) > img {
+  content: url("../../../assets/images/amiore/amil5.JPG");
+}
+.slide:nth-child(6) > img {
+  content: url("../../../assets/images/amiore/amil6.JPG");
+}
+.slide:nth-child(7) > img {
+  content: url("../../../assets/images/amiore/amil7.JPG");
+}
+
+
 /* pc small */
 @media only screen
   and (max-height: 600px)
@@ -63,6 +89,9 @@ only screen
     height: 180px;
     margin-top: 50px;
     mask-size: 450px auto;
+  }
+  .slide-wrapper {
+    width: 1670px;
   }
 }
 
@@ -99,5 +128,8 @@ only screen
     height: 80px;
     margin-top: 25px;
     mask-size: 280px auto;
+  }
+  .slide-wrapper {
+    width: 1010px;
   }
 }

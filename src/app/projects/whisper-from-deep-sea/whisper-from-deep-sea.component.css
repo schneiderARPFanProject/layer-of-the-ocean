@@ -36,6 +36,38 @@
 }
 
 
+
+.slide-wrapper {
+  width: 3660px;
+}
+.slide:nth-child(1) > img {
+  content: url("../../../assets/images/deep-sea/whisper1.JPG");
+  width: 640px;
+}
+.slide:nth-child(2) > img {
+  content: url("../../../assets/images/deep-sea/whisper2.JPG");
+  width: 640px;
+}
+.slide:nth-child(3) > img {
+  content: url("../../../assets/images/deep-sea/whisper3.JPG");
+  width: 640px;
+}
+.slide:nth-child(4) > img {
+  content: url("../../../assets/images/deep-sea/whisper4.JPG");
+  width: 440px;
+}
+.slide:nth-child(5) > img {
+  content: url("../../../assets/images/deep-sea/whisper5.JPG");
+}
+.slide:nth-child(6) > img {
+  content: url("../../../assets/images/deep-sea/whisper6.JPG");
+}
+.slide:nth-child(7) > img {
+  content: url("../../../assets/images/deep-sea/whisper7.JPG");
+  width: 640px;
+}
+
+
 /* pc small */
 @media only screen
   and (max-height: 600px)
@@ -67,6 +99,28 @@ only screen
   .projectDetail .logoDiv {
     height: 380px;
     mask-size: 400px auto;
+  }
+  .slide-wrapper {
+    width: 2840px;
+  }
+  .slide:nth-child(1) > img {
+    width: 500px;
+  }
+  .slide:nth-child(2) > img {
+    width: 500px;
+  }
+  .slide:nth-child(3) > img {
+    width: 500px;
+  }
+  .slide:nth-child(4) > img {
+    width: 340px;
+  }
+  .slide:nth-child(5) > img {
+  }
+  .slide:nth-child(6) > img {
+  }
+  .slide:nth-child(7) > img {
+    width: 480px;
   }
 }
 
@@ -102,5 +156,27 @@ only screen
   .projectDetail .logoDiv {
     height: 230px;
     mask-size: 270px auto;
+  }
+  .slide-wrapper {
+    width: 1830px;
+  }
+  .slide:nth-child(1) > img {
+    width: 330px;
+  }
+  .slide:nth-child(2) > img {
+    width: 330px;
+  }
+  .slide:nth-child(3) > img {
+    width: 330px;
+  }
+  .slide:nth-child(4) > img {
+    width: 210px;
+  }
+  .slide:nth-child(5) > img {
+  }
+  .slide:nth-child(6) > img {
+  }
+  .slide:nth-child(7) > img {
+    width: 320px;
   }
 }

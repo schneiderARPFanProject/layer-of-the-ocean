@@ -2378,7 +2378,7 @@ body::after {
   height: 0;
   overflow: hidden;
   z-index: -50;
-  content: url("./media/typo.GIF") url("./media/back-icon.PNG") url("./media/back-icon-hover.PNG") url("./media/close-icon.PNG") url("./media/close-icon-hover.PNG") url("./media/collab-icon.PNG") url("./media/congrats-icon.PNG") url("./media/credit-icon.PNG") url("./media/credit-icon-hover.PNG") url("./media/drop.PNG") url("./media/galleries-icon.PNG") url("./media/galleries-icon-hover.PNG") url("./media/goods-icon.PNG") url("./media/home-icon.PNG") url("./media/home-icon-hover.PNG") url("./media/loading-icon.PNG") url("./media/location-icon.PNG") url("./media/member-icon.PNG") url("./media/music-icon.PNG") url("./media/projects-close-icon.PNG") url("./media/projects-close-icon-hover.PNG") url("./media/projects-icon.PNG") url("./media/projects-icon-hover.PNG") url("./media/schneider-constellation.PNG") url("./media/schneider-layer-dive.GIF") url("./media/schneider-layer-float.GIF") url("./media/schneider-main-float.GIF") url("./media/stars.PNG") url("./media/sunlight-bg1.PNG") url("./media/sunlight-bg2.PNG") url("./media/sunlight-bg3.PNG") url("./media/timeline-icon.PNG") url("./media/timeline-icon-hover.PNG") url("./media/twitter-icon.PNG") url("./media/typo.PNG") url("./media/amiore-logo.PNG") url("./media/be-loved.JPG") url("./media/love.JPG") url("./media/standee-amil1.JPG") url("./media/standee-amil2.JPG") url("./media/corsair.JPG") url("./media/firtha.JPG") url("./media/deep-sea-logo.PNG") url("./media/firtha.JPG") url("./media/lorelei.JPG") url("./media/standee-schmeiphorn.PNG") url("./media/standee-schneider.PNG") url("./media/dearest.JPG") url("./media/fenchanted-logo.PNG") url("./media/special-set.JPG") url("./media/standee-k-first.JPG") url("./media/standee-k-mad.JPG") url("./media/sweetheart.JPG") url("./media/mummum.JPG") url("./media/rodkenforsnd.JPG") url("./media/sweethoney.JPG") url("./media/walkingwithschnei.JPG");
+  content: url("./media/typo.GIF") url("./media/back-icon.PNG") url("./media/back-icon-hover.PNG") url("./media/close-icon.PNG") url("./media/close-icon-hover.PNG") url("./media/collab-icon.PNG") url("./media/congrats-icon.PNG") url("./media/credit-icon.PNG") url("./media/credit-icon-hover.PNG") url("./media/drop.PNG") url("./media/galleries-icon.PNG") url("./media/galleries-icon-hover.PNG") url("./media/goods-icon.PNG") url("./media/home-icon.PNG") url("./media/home-icon-hover.PNG") url("./media/loading-icon.PNG") url("./media/location-icon.PNG") url("./media/member-icon.PNG") url("./media/music-icon.PNG") url("./media/projects-close-icon.PNG") url("./media/projects-close-icon-hover.PNG") url("./media/projects-icon.PNG") url("./media/projects-icon-hover.PNG") url("./media/schneider-constellation.PNG") url("./media/schneider-layer-dive.GIF") url("./media/schneider-layer-float.GIF") url("./media/schneider-main-float.GIF") url("./media/stars.PNG") url("./media/sunlight-bg1.PNG") url("./media/sunlight-bg2.PNG") url("./media/sunlight-bg3.PNG") url("./media/timeline-icon.PNG") url("./media/timeline-icon-hover.PNG") url("./media/twitter-icon.PNG") url("./media/typo.PNG") url("./media/amiore-logo.PNG") url("./media/be-loved.JPG") url("./media/love.JPG") url("./media/standee-amil1.JPG") url("./media/standee-amil2.JPG") url("./media/amil1.JPG") url("./media/amil2.JPG") url("./media/amil3.JPG") url("./media/amil4.JPG") url("./media/amil5.JPG") url("./media/amil6.JPG") url("./media/amil7.JPG") url("./media/corsair.JPG") url("./media/firtha.JPG") url("./media/deep-sea-logo.PNG") url("./media/firtha.JPG") url("./media/lorelei.JPG") url("./media/standee-schmeiphorn.PNG") url("./media/standee-schneider.PNG") url("./media/whisper1.JPG") url("./media/whisper2.JPG") url("./media/whisper3.JPG") url("./media/whisper4.JPG") url("./media/whisper5.JPG") url("./media/whisper6.JPG") url("./media/whisper7.JPG") url("./media/dearest.JPG") url("./media/fenchanted-logo.PNG") url("./media/special-set.JPG") url("./media/standee-k-first.JPG") url("./media/standee-k-mad.JPG") url("./media/sweetheart.JPG") url("./media/fen1.JPG") url("./media/fen2.JPG") url("./media/fen3.JPG") url("./media/fen4.JPG") url("./media/fen5.JPG") url("./media/fen6.JPG") url("./media/fen7.JPG") url("./media/mummum.JPG") url("./media/rodkenforsnd.JPG") url("./media/sweethoney.JPG") url("./media/walkingwithschnei.JPG");
 }
 a:link,
 a:visited,
@@ -2612,6 +2612,80 @@ a:active {
 .subProjects:nth-child(even) .subProjectInfo > div {
   direction: ltr;
 }
+.galleriesDiv {
+  width: 100%;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.slideshow {
+  text-align: center;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  height: 450px;
+  width: 96%;
+  margin-bottom: 10px;
+}
+.slide {
+  float: left;
+  height: fit-content;
+  width: fit-content;
+  margin-left: 10px;
+}
+.slide > img {
+  height: 440px;
+  width: 300px;
+}
+.slide > img:hover {
+  cursor: pointer;
+}
+.slide:nth-child(1) {
+  margin-left: 0px;
+}
+.projectContainer .lightBox {
+  background: rgba(0, 0, 0, 0.85);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.projectContainer .lightBoxContainer {
+  width: 85%;
+  height: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.projectContainer .lightBoxImage {
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  border-radius: .35rem;
+}
+.projectContainer .closeBtn {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  content: url("./media/close-icon.PNG");
+  z-index: 1;
+  height: 70px;
+  width: auto;
+}
+.projectContainer .closeBtn:hover {
+  content: url("./media/close-icon-hover.PNG");
+  height: 70px;
+  width: auto;
+  cursor: pointer;
+  transform: scale(1.1);
+}
 .mat-mdc-dialog-surface,
 .mdc-dialog__surface {
   background-color: rgba(0, 0, 0, 0.8) !important;
@@ -2648,6 +2722,7 @@ a:active {
 }
 ::-webkit-scrollbar {
   width: 3px;
+  height: 8px;
 }
 ::-webkit-scrollbar-track {
   background: rgba(255, 255, 255, 0.3);
@@ -2699,6 +2774,19 @@ a:active {
   .subProjects:nth-child(even) .subProjectsDetail {
     padding: 0.5rem 2rem 2rem 0;
   }
+  .slideshow {
+    height: 350px;
+  }
+  .slide > img {
+    height: 340px;
+    width: 230px;
+  }
+  .projectContainer .closeBtn {
+    height: 55px;
+  }
+  .projectContainer .closeBtn:hover {
+    height: 55px;
+  }
 }
 @media only screen and (max-height: 400px) and (orientation: landscape), only screen and (min-width: 390px) and (max-width: 768px) and (orientation: landscape), only screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 4) and (orientation: landscape), only screen and (min-device-width: 390px) and (max-device-width: 844px) and (-webkit-min-device-pixel-ratio: 4) and (orientation: landscape), only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape), only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
   body {
@@ -2747,6 +2835,22 @@ a:active {
   }
   .subProjects:nth-child(even) .subProjectsDetail {
     padding: 0rem 2rem 1rem 0;
+  }
+  .slideshow {
+    height: 220px;
+  }
+  .slide {
+    margin-left: 5px;
+  }
+  .slide > img {
+    height: 210px;
+    width: 140px;
+  }
+  .projectContainer .closeBtn {
+    height: 40px;
+  }
+  .projectContainer .closeBtn:hover {
+    height: 40px;
   }
 }
 

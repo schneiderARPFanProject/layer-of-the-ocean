@@ -48,20 +48,13 @@
         <h1>Galleries</h1>
         <div class="slideshow">
           <div class="slide-wrapper">
-            <div class="slide"><img src="#" /></div>
-            <div class="slide"><img src="#" /></div>
-            <div class="slide"><img src="#" /></div>
-            <div class="slide"><img src="#" /></div>
-            <div class="slide"><img src="#" /></div>
-            <div class="slide"><img src="#" /></div>
-            <div class="slide"><img src="#" /></div>
-<!--            <div class="slide"><img src="#" (click)="onPreviewImage('../../../assets/images/amiore/amil1.JPG')" /></div>-->
-<!--            <div class="slide"><img src="#" (click)="onPreviewImage('../../../assets/images/amiore/amil2.JPG')" /></div>-->
-<!--            <div class="slide"><img src="#" (click)="onPreviewImage('../../../assets/images/amiore/amil3.JPG')" /></div>-->
-<!--            <div class="slide"><img src="#" (click)="onPreviewImage('../../../assets/images/amiore/amil4.JPG')" /></div>-->
-<!--            <div class="slide"><img src="#" (click)="onPreviewImage('../../../assets/images/amiore/amil5.JPG')" /></div>-->
-<!--            <div class="slide"><img src="#" (click)="onPreviewImage('../../../assets/images/amiore/amil6.JPG')" /></div>-->
-<!--            <div class="slide"><img src="#" (click)="onPreviewImage('../../../assets/images/amiore/amil7.JPG')" /></div>-->
+            <div class="slide"><img src="#" (click)="onPreviewImage('previewAmil1')" /></div>
+            <div class="slide"><img src="#" (click)="onPreviewImage('previewAmil2')" /></div>
+            <div class="slide"><img src="#" (click)="onPreviewImage('previewAmil3')" /></div>
+            <div class="slide"><img src="#" (click)="onPreviewImage('previewAmil4')" /></div>
+            <div class="slide"><img src="#" (click)="onPreviewImage('previewAmil5')" /></div>
+            <div class="slide"><img src="#" (click)="onPreviewImage('previewAmil6')" /></div>
+            <div class="slide"><img src="#" (click)="onPreviewImage('previewAmil7')" /></div>
           </div>
         </div>
         <div>✦ ✦ ✦ slide left/right to see more ✦ ✦ ✦</div>
@@ -69,10 +62,11 @@
     </div>
     <div *ngIf="showPreview"
          [@animation]="{value: 'visible'}"
-         class="lightBox">
-      <img class="closeBtn" (click)="onClosePreview()" />
-      <div class="lightBoxContainer">
-        <img class="lightBoxImage" [src]="lightBoxImageUrl">
+         class="lightBox"
+         (click)="onClosePreview()">
+      <img class="closeBtn" />
+      <div class="lightBoxContainer" >
+        <img class="lightBoxImage" [ngClass]="[lightBoxImageClass]" src="#" (click)="$event.stopPropagation()"/>
       </div>
     </div>
   </div>

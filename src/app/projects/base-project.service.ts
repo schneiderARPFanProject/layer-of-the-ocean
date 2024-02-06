@@ -10,7 +10,7 @@ export class BaseProject {
   projectNameList: Record<string, string> = {};
   projectName: string = '';
   showPreview: boolean = false;
-  lightBoxImageUrl: string = '';
+  lightBoxImageClass: string = '';
 
   constructor(
     private route: ActivatedRoute
@@ -21,13 +21,13 @@ export class BaseProject {
     this.projectNameList = PROJECT_NAME_LIST;
   }
 
-  onPreviewImage(imgUrl: string): void {
+  onPreviewImage(imgClass: string): void {
     this.showPreview = true;
-    this.lightBoxImageUrl = imgUrl;
+    this.lightBoxImageClass = imgClass;
   }
 
   onClosePreview(): void {
     this.showPreview = false;
-    this.lightBoxImageUrl = "";
+    this.lightBoxImageClass = "";
   }
 }

@@ -66,6 +66,27 @@
   content: url("../../../assets/images/deep-sea/whisper7.JPG");
   width: 640px;
 }
+.previewWhisper1 {
+  content: url("../../../assets/images/deep-sea/whisper1.JPG");
+}
+.previewWhisper2 {
+  content: url("../../../assets/images/deep-sea/whisper2.JPG");
+}
+.previewWhisper3 {
+  content: url("../../../assets/images/deep-sea/whisper3.JPG");
+}
+.previewWhisper4 {
+  content: url("../../../assets/images/deep-sea/whisper4.JPG");
+}
+.previewWhisper5 {
+  content: url("../../../assets/images/deep-sea/whisper5.JPG");
+}
+.previewWhisper6 {
+  content: url("../../../assets/images/deep-sea/whisper6.JPG");
+}
+.previewWhisper7 {
+  content: url("../../../assets/images/deep-sea/whisper7.JPG");
+}
 
 
 /* pc small */

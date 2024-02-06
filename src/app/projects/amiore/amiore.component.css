@@ -55,6 +55,27 @@
 .slide:nth-child(7) > img {
   content: url("../../../assets/images/amiore/amil7.JPG");
 }
+.previewAmil1 {
+  content: url("../../../assets/images/amiore/amil1.JPG");
+}
+.previewAmil2 {
+  content: url("../../../assets/images/amiore/amil2.JPG");
+}
+.previewAmil3 {
+  content: url("../../../assets/images/amiore/amil3.JPG");
+}
+.previewAmil4 {
+  content: url("../../../assets/images/amiore/amil4.JPG");
+}
+.previewAmil5 {
+  content: url("../../../assets/images/amiore/amil5.JPG");
+}
+.previewAmil6 {
+  content: url("../../../assets/images/amiore/amil6.JPG");
+}
+.previewAmil7 {
+  content: url("../../../assets/images/amiore/amil7.JPG");
+}
 
 
 /* pc small */

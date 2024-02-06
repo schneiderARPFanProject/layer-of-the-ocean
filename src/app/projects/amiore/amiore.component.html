@@ -36,14 +36,37 @@
           <dt>Acrylic Standee</dt><dd>สแตนดี้อะคริลิค</dd>
         </dl>
       </div>
-    <div class="staticPicDiv">
-      <div class="standeeDiv">
-        <img class="standee1" src="#"/>
-        <img class="standee2" src="#"/>
+      <div class="staticPicDiv">
+        <div class="standeeDiv">
+          <img class="standee1" src="#"/>
+          <img class="standee2" src="#"/>
+        </div>
+        <img class="specialMenuImg1" src="#" />
+        <img class="specialMenuImg2" src="#" />
       </div>
-      <img class="specialMenuImg1" src="#" />
-      <img class="specialMenuImg2" src="#" />
+      <div class="galleriesDiv">
+        <h1>Galleries</h1>
+        <div class="slideshow">
+          <div class="slide-wrapper">
+            <div class="slide"><img src="#" (click)="onPreviewImage('../../../assets/images/amiore/amil1.JPG')" /></div>
+            <div class="slide"><img src="#" (click)="onPreviewImage('../../../assets/images/amiore/amil2.JPG')" /></div>
+            <div class="slide"><img src="#" (click)="onPreviewImage('../../../assets/images/amiore/amil3.JPG')" /></div>
+            <div class="slide"><img src="#" (click)="onPreviewImage('../../../assets/images/amiore/amil4.JPG')" /></div>
+            <div class="slide"><img src="#" (click)="onPreviewImage('../../../assets/images/amiore/amil5.JPG')" /></div>
+            <div class="slide"><img src="#" (click)="onPreviewImage('../../../assets/images/amiore/amil6.JPG')" /></div>
+            <div class="slide"><img src="#" (click)="onPreviewImage('../../../assets/images/amiore/amil7.JPG')" /></div>
+          </div>
+        </div>
+        <div>✦ ✦ ✦ slide left/right to see more ✦ ✦ ✦</div>
+      </div>
     </div>
+    <div *ngIf="showPreview"
+         [@animation]="{value: 'visible'}"
+         class="lightBox">
+      <img class="closeBtn" (click)="onClosePreview()" />
+      <div class="lightBoxContainer">
+        <img class="lightBoxImage" [src]="lightBoxImageUrl">
+      </div>
     </div>
   </div>
   <app-sunlight-zone-bg></app-sunlight-zone-bg>

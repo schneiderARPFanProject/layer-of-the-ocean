@@ -46,6 +46,29 @@
         <img class="specialMenuImg2" src="#" />
         <img class="specialMenuImg3" src="#" />
       </div>
+      <div class="galleriesDiv">
+        <h1>Galleries</h1>
+        <div class="slideshow">
+          <div class="slide-wrapper">
+            <div class="slide"><img src="#" (click)="onPreviewImage('../../../assets/images/fenchanted/fen1.JPG')" /></div>
+            <div class="slide"><img src="#" (click)="onPreviewImage('../../../assets/images/fenchanted/fen2.JPG')" /></div>
+            <div class="slide"><img src="#" (click)="onPreviewImage('../../../assets/images/fenchanted/fen3.JPG')" /></div>
+            <div class="slide"><img src="#" (click)="onPreviewImage('../../../assets/images/fenchanted/fen4.JPG')" /></div>
+            <div class="slide"><img src="#" (click)="onPreviewImage('../../../assets/images/fenchanted/fen5.JPG')" /></div>
+            <div class="slide"><img src="#" (click)="onPreviewImage('../../../assets/images/fenchanted/fen6.JPG')" /></div>
+            <div class="slide"><img src="#" (click)="onPreviewImage('../../../assets/images/fenchanted/fen7.JPG')" /></div>
+          </div>
+        </div>
+        <div>✦ ✦ ✦ slide left/right to see more ✦ ✦ ✦</div>
+      </div>
+    </div>
+    <div *ngIf="showPreview"
+         [@animation]="{value: 'visible'}"
+         class="lightBox">
+      <img class="closeBtn" (click)="onClosePreview()" />
+      <div class="lightBoxContainer">
+        <img class="lightBoxImage" [src]="lightBoxImageUrl">
+      </div>
     </div>
   </div>
   <app-sunlight-zone-bg></app-sunlight-zone-bg>

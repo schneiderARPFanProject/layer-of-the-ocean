@@ -53657,15 +53657,15 @@ var _c06 = () => ({ value: "visible" });
 function FenchantedComponent_div_86_Template(rf, ctx) {
   if (rf & 1) {
     const _r2 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "div", 26)(1, "img", 27);
+    \u0275\u0275elementStart(0, "div", 25)(1, "img", 26);
     \u0275\u0275listener("click", function FenchantedComponent_div_86_Template_img_click_1_listener() {
       \u0275\u0275restoreView(_r2);
       const ctx_r1 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r1.onClosePreview());
     });
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(2, "div", 28);
-    \u0275\u0275element(3, "img", 29);
+    \u0275\u0275elementStart(2, "div", 27);
+    \u0275\u0275element(3, "img", 28);
     \u0275\u0275elementEnd()();
   }
   if (rf & 2) {
@@ -53684,7 +53684,7 @@ var _FenchantedComponent = class _FenchantedComponent extends BaseProject {
 _FenchantedComponent.\u0275fac = function FenchantedComponent_Factory(t) {
   return new (t || _FenchantedComponent)(\u0275\u0275directiveInject(ActivatedRoute));
 };
-_FenchantedComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _FenchantedComponent, selectors: [["app-fenchanted"]], features: [\u0275\u0275InheritDefinitionFeature], decls: 88, vars: 5, consts: [[1, "layerContainer", "sunlightLayerContainer"], [3, "level", "sublevel"], [3, "level", "currentProject"], [1, "projectContainer"], [1, "projectDetail"], [1, "logoDiv"], [1, "twitterDiv"], ["href", "https://twitter.com/FEnchanted0802", "target", "_blank", 1, "twitterLink"], ["src", "#"], [1, "dateNPlaceDiv"], ["href", "https://maps.app.goo.gl/Ds7xpw63PgZYMnVw8", "target", "_blank", 1, "locationDiv"], [1, "menuDiv"], [1, "giftDiv"], [1, "staticPicDiv"], [1, "standeeDiv"], ["src", "#", 1, "standee1"], ["src", "#", 1, "standee2"], ["src", "#", 1, "specialMenuImg1"], ["src", "#", 1, "specialMenuImg2"], ["src", "#", 1, "specialMenuImg3"], [1, "galleriesDiv"], [1, "slideshow"], [1, "slide-wrapper"], [1, "slide"], ["src", "#", 3, "click"], ["class", "lightBox", 4, "ngIf"], [1, "lightBox"], [1, "closeBtn", 3, "click"], [1, "lightBoxContainer"], [1, "lightBoxImage", 3, "src"]], template: function FenchantedComponent_Template(rf, ctx) {
+_FenchantedComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _FenchantedComponent, selectors: [["app-fenchanted"]], features: [\u0275\u0275InheritDefinitionFeature], decls: 88, vars: 5, consts: [[1, "layerContainer", "sunlightLayerContainer"], [3, "level", "sublevel"], [3, "level", "currentProject"], [1, "projectContainer"], [1, "projectDetail"], [1, "logoDiv"], [1, "twitterDiv"], ["href", "https://twitter.com/FEnchanted0802", "target", "_blank", 1, "twitterLink"], ["src", "#"], [1, "dateNPlaceDiv"], ["href", "https://maps.app.goo.gl/Ds7xpw63PgZYMnVw8", "target", "_blank", 1, "locationDiv"], [1, "menuDiv"], [1, "giftDiv"], [1, "staticPicDiv"], [1, "standeeDiv"], ["src", "#", 1, "standee1"], ["src", "#", 1, "standee2"], ["src", "#", 1, "specialMenuImg1"], ["src", "#", 1, "specialMenuImg2"], ["src", "#", 1, "specialMenuImg3"], [1, "galleriesDiv"], [1, "slideshow"], [1, "slide-wrapper"], [1, "slide"], ["class", "lightBox", 4, "ngIf"], [1, "lightBox"], [1, "closeBtn", 3, "click"], [1, "lightBoxContainer"], [1, "lightBoxImage", 3, "src"]], template: function FenchantedComponent_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "div", 0);
     \u0275\u0275element(1, "app-tool-bar", 1)(2, "app-projects-tool-bar", 2);
@@ -53764,45 +53764,31 @@ _FenchantedComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ t
     \u0275\u0275elementStart(65, "div", 20)(66, "h1");
     \u0275\u0275text(67, "Galleries");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(68, "div", 21)(69, "div", 22)(70, "div", 23)(71, "img", 24);
-    \u0275\u0275listener("click", function FenchantedComponent_Template_img_click_71_listener() {
-      return ctx.onPreviewImage("../../../assets/images/fenchanted/fen1.JPG");
-    });
-    \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(72, "div", 23)(73, "img", 24);
-    \u0275\u0275listener("click", function FenchantedComponent_Template_img_click_73_listener() {
-      return ctx.onPreviewImage("../../../assets/images/fenchanted/fen2.JPG");
-    });
-    \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(74, "div", 23)(75, "img", 24);
-    \u0275\u0275listener("click", function FenchantedComponent_Template_img_click_75_listener() {
-      return ctx.onPreviewImage("../../../assets/images/fenchanted/fen3.JPG");
-    });
-    \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(76, "div", 23)(77, "img", 24);
-    \u0275\u0275listener("click", function FenchantedComponent_Template_img_click_77_listener() {
-      return ctx.onPreviewImage("../../../assets/images/fenchanted/fen4.JPG");
-    });
-    \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(78, "div", 23)(79, "img", 24);
-    \u0275\u0275listener("click", function FenchantedComponent_Template_img_click_79_listener() {
-      return ctx.onPreviewImage("../../../assets/images/fenchanted/fen5.JPG");
-    });
-    \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(80, "div", 23)(81, "img", 24);
-    \u0275\u0275listener("click", function FenchantedComponent_Template_img_click_81_listener() {
-      return ctx.onPreviewImage("../../../assets/images/fenchanted/fen6.JPG");
-    });
-    \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(82, "div", 23)(83, "img", 24);
-    \u0275\u0275listener("click", function FenchantedComponent_Template_img_click_83_listener() {
-      return ctx.onPreviewImage("../../../assets/images/fenchanted/fen7.JPG");
-    });
-    \u0275\u0275elementEnd()()()();
+    \u0275\u0275elementStart(68, "div", 21)(69, "div", 22)(70, "div", 23);
+    \u0275\u0275element(71, "img", 8);
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(72, "div", 23);
+    \u0275\u0275element(73, "img", 8);
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(74, "div", 23);
+    \u0275\u0275element(75, "img", 8);
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(76, "div", 23);
+    \u0275\u0275element(77, "img", 8);
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(78, "div", 23);
+    \u0275\u0275element(79, "img", 8);
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(80, "div", 23);
+    \u0275\u0275element(81, "img", 8);
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(82, "div", 23);
+    \u0275\u0275element(83, "img", 8);
+    \u0275\u0275elementEnd()()();
     \u0275\u0275elementStart(84, "div");
     \u0275\u0275text(85, "\u2726 \u2726 \u2726 slide left/right to see more \u2726 \u2726 \u2726");
     \u0275\u0275elementEnd()()();
-    \u0275\u0275template(86, FenchantedComponent_div_86_Template, 4, 3, "div", 25);
+    \u0275\u0275template(86, FenchantedComponent_div_86_Template, 4, 3, "div", 24);
     \u0275\u0275elementEnd();
     \u0275\u0275element(87, "app-sunlight-zone-bg");
     \u0275\u0275elementEnd();
@@ -53837,15 +53823,15 @@ var _c07 = () => ({ value: "visible" });
 function AmioreComponent_div_83_Template(rf, ctx) {
   if (rf & 1) {
     const _r2 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "div", 25)(1, "img", 26);
+    \u0275\u0275elementStart(0, "div", 24)(1, "img", 25);
     \u0275\u0275listener("click", function AmioreComponent_div_83_Template_img_click_1_listener() {
       \u0275\u0275restoreView(_r2);
       const ctx_r1 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r1.onClosePreview());
     });
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(2, "div", 27);
-    \u0275\u0275element(3, "img", 28);
+    \u0275\u0275elementStart(2, "div", 26);
+    \u0275\u0275element(3, "img", 27);
     \u0275\u0275elementEnd()();
   }
   if (rf & 2) {
@@ -53864,7 +53850,7 @@ var _AmioreComponent = class _AmioreComponent extends BaseProject {
 _AmioreComponent.\u0275fac = function AmioreComponent_Factory(t) {
   return new (t || _AmioreComponent)(\u0275\u0275directiveInject(ActivatedRoute));
 };
-_AmioreComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _AmioreComponent, selectors: [["app-amiore"]], features: [\u0275\u0275InheritDefinitionFeature], decls: 85, vars: 5, consts: [[1, "layerContainer", "sunlightLayerContainer"], [3, "level", "sublevel"], [3, "level", "currentProject"], [1, "projectContainer"], [1, "projectDetail"], [1, "logoDiv"], [1, "twitterDiv"], ["href", "https://twitter.com/AMiORE0802", "target", "_blank", 1, "twitterLink"], ["src", "#"], [1, "dateNPlaceDiv"], ["href", "https://maps.app.goo.gl/gLif8MspMnyu4JR16", "target", "_blank", 1, "locationDiv"], [1, "menuDiv"], [1, "giftDiv"], [1, "staticPicDiv"], [1, "standeeDiv"], ["src", "#", 1, "standee1"], ["src", "#", 1, "standee2"], ["src", "#", 1, "specialMenuImg1"], ["src", "#", 1, "specialMenuImg2"], [1, "galleriesDiv"], [1, "slideshow"], [1, "slide-wrapper"], [1, "slide"], ["src", "#", 3, "click"], ["class", "lightBox", 4, "ngIf"], [1, "lightBox"], [1, "closeBtn", 3, "click"], [1, "lightBoxContainer"], [1, "lightBoxImage", 3, "src"]], template: function AmioreComponent_Template(rf, ctx) {
+_AmioreComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _AmioreComponent, selectors: [["app-amiore"]], features: [\u0275\u0275InheritDefinitionFeature], decls: 85, vars: 5, consts: [[1, "layerContainer", "sunlightLayerContainer"], [3, "level", "sublevel"], [3, "level", "currentProject"], [1, "projectContainer"], [1, "projectDetail"], [1, "logoDiv"], [1, "twitterDiv"], ["href", "https://twitter.com/AMiORE0802", "target", "_blank", 1, "twitterLink"], ["src", "#"], [1, "dateNPlaceDiv"], ["href", "https://maps.app.goo.gl/gLif8MspMnyu4JR16", "target", "_blank", 1, "locationDiv"], [1, "menuDiv"], [1, "giftDiv"], [1, "staticPicDiv"], [1, "standeeDiv"], ["src", "#", 1, "standee1"], ["src", "#", 1, "standee2"], ["src", "#", 1, "specialMenuImg1"], ["src", "#", 1, "specialMenuImg2"], [1, "galleriesDiv"], [1, "slideshow"], [1, "slide-wrapper"], [1, "slide"], ["class", "lightBox", 4, "ngIf"], [1, "lightBox"], [1, "closeBtn", 3, "click"], [1, "lightBoxContainer"], [1, "lightBoxImage", 3, "src"]], template: function AmioreComponent_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "div", 0);
     \u0275\u0275element(1, "app-tool-bar", 1)(2, "app-projects-tool-bar", 2);
@@ -53942,45 +53928,31 @@ _AmioreComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type:
     \u0275\u0275elementStart(62, "div", 19)(63, "h1");
     \u0275\u0275text(64, "Galleries");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(65, "div", 20)(66, "div", 21)(67, "div", 22)(68, "img", 23);
-    \u0275\u0275listener("click", function AmioreComponent_Template_img_click_68_listener() {
-      return ctx.onPreviewImage("../../../assets/images/amiore/amil1.JPG");
-    });
-    \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(69, "div", 22)(70, "img", 23);
-    \u0275\u0275listener("click", function AmioreComponent_Template_img_click_70_listener() {
-      return ctx.onPreviewImage("../../../assets/images/amiore/amil2.JPG");
-    });
-    \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(71, "div", 22)(72, "img", 23);
-    \u0275\u0275listener("click", function AmioreComponent_Template_img_click_72_listener() {
-      return ctx.onPreviewImage("../../../assets/images/amiore/amil3.JPG");
-    });
-    \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(73, "div", 22)(74, "img", 23);
-    \u0275\u0275listener("click", function AmioreComponent_Template_img_click_74_listener() {
-      return ctx.onPreviewImage("../../../assets/images/amiore/amil4.JPG");
-    });
-    \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(75, "div", 22)(76, "img", 23);
-    \u0275\u0275listener("click", function AmioreComponent_Template_img_click_76_listener() {
-      return ctx.onPreviewImage("../../../assets/images/amiore/amil5.JPG");
-    });
-    \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(77, "div", 22)(78, "img", 23);
-    \u0275\u0275listener("click", function AmioreComponent_Template_img_click_78_listener() {
-      return ctx.onPreviewImage("../../../assets/images/amiore/amil6.JPG");
-    });
-    \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(79, "div", 22)(80, "img", 23);
-    \u0275\u0275listener("click", function AmioreComponent_Template_img_click_80_listener() {
-      return ctx.onPreviewImage("../../../assets/images/amiore/amil7.JPG");
-    });
-    \u0275\u0275elementEnd()()()();
+    \u0275\u0275elementStart(65, "div", 20)(66, "div", 21)(67, "div", 22);
+    \u0275\u0275element(68, "img", 8);
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(69, "div", 22);
+    \u0275\u0275element(70, "img", 8);
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(71, "div", 22);
+    \u0275\u0275element(72, "img", 8);
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(73, "div", 22);
+    \u0275\u0275element(74, "img", 8);
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(75, "div", 22);
+    \u0275\u0275element(76, "img", 8);
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(77, "div", 22);
+    \u0275\u0275element(78, "img", 8);
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(79, "div", 22);
+    \u0275\u0275element(80, "img", 8);
+    \u0275\u0275elementEnd()()();
     \u0275\u0275elementStart(81, "div");
     \u0275\u0275text(82, "\u2726 \u2726 \u2726 slide left/right to see more \u2726 \u2726 \u2726");
     \u0275\u0275elementEnd()()();
-    \u0275\u0275template(83, AmioreComponent_div_83_Template, 4, 3, "div", 24);
+    \u0275\u0275template(83, AmioreComponent_div_83_Template, 4, 3, "div", 23);
     \u0275\u0275elementEnd();
     \u0275\u0275element(84, "app-sunlight-zone-bg");
     \u0275\u0275elementEnd();
@@ -54015,15 +53987,15 @@ var _c08 = () => ({ value: "visible" });
 function WhisperFromDeepSeaComponent_div_94_Template(rf, ctx) {
   if (rf & 1) {
     const _r2 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "div", 26)(1, "img", 27);
+    \u0275\u0275elementStart(0, "div", 25)(1, "img", 26);
     \u0275\u0275listener("click", function WhisperFromDeepSeaComponent_div_94_Template_img_click_1_listener() {
       \u0275\u0275restoreView(_r2);
       const ctx_r1 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r1.onClosePreview());
     });
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(2, "div", 28);
-    \u0275\u0275element(3, "img", 29);
+    \u0275\u0275elementStart(2, "div", 27);
+    \u0275\u0275element(3, "img", 28);
     \u0275\u0275elementEnd()();
   }
   if (rf & 2) {
@@ -54042,7 +54014,7 @@ var _WhisperFromDeepSeaComponent = class _WhisperFromDeepSeaComponent extends Ba
 _WhisperFromDeepSeaComponent.\u0275fac = function WhisperFromDeepSeaComponent_Factory(t) {
   return new (t || _WhisperFromDeepSeaComponent)(\u0275\u0275directiveInject(ActivatedRoute));
 };
-_WhisperFromDeepSeaComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _WhisperFromDeepSeaComponent, selectors: [["app-whisper-from-deep-sea"]], features: [\u0275\u0275InheritDefinitionFeature], decls: 96, vars: 5, consts: [[1, "layerContainer", "sunlightLayerContainer"], [3, "level", "sublevel"], [3, "level", "currentProject"], [1, "projectContainer"], [1, "projectDetail"], [1, "logoDiv"], [1, "twitterDiv"], ["href", "https://twitter.com/DeepSea_0802", "target", "_blank", 1, "twitterLink"], ["src", "#"], [1, "dateNPlaceDiv"], ["href", "https://maps.app.goo.gl/8SjPxbvAqKmALfdQ6", "target", "_blank", 1, "locationDiv"], [1, "menuDiv"], [1, "giftDiv"], [1, "staticPicDiv"], [1, "standeeDiv"], ["src", "#", 1, "standee1"], ["src", "#", 1, "standee2"], ["src", "#", 1, "specialMenuImg1"], ["src", "#", 1, "specialMenuImg2"], ["src", "#", 1, "specialMenuImg3"], [1, "galleriesDiv"], [1, "slideshow"], [1, "slide-wrapper"], [1, "slide"], ["src", "#", 3, "click"], ["class", "lightBox", 4, "ngIf"], [1, "lightBox"], [1, "closeBtn", 3, "click"], [1, "lightBoxContainer"], [1, "lightBoxImage", 3, "src"]], template: function WhisperFromDeepSeaComponent_Template(rf, ctx) {
+_WhisperFromDeepSeaComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _WhisperFromDeepSeaComponent, selectors: [["app-whisper-from-deep-sea"]], features: [\u0275\u0275InheritDefinitionFeature], decls: 96, vars: 5, consts: [[1, "layerContainer", "sunlightLayerContainer"], [3, "level", "sublevel"], [3, "level", "currentProject"], [1, "projectContainer"], [1, "projectDetail"], [1, "logoDiv"], [1, "twitterDiv"], ["href", "https://twitter.com/DeepSea_0802", "target", "_blank", 1, "twitterLink"], ["src", "#"], [1, "dateNPlaceDiv"], ["href", "https://maps.app.goo.gl/8SjPxbvAqKmALfdQ6", "target", "_blank", 1, "locationDiv"], [1, "menuDiv"], [1, "giftDiv"], [1, "staticPicDiv"], [1, "standeeDiv"], ["src", "#", 1, "standee1"], ["src", "#", 1, "standee2"], ["src", "#", 1, "specialMenuImg1"], ["src", "#", 1, "specialMenuImg2"], ["src", "#", 1, "specialMenuImg3"], [1, "galleriesDiv"], [1, "slideshow"], [1, "slide-wrapper"], [1, "slide"], ["class", "lightBox", 4, "ngIf"], [1, "lightBox"], [1, "closeBtn", 3, "click"], [1, "lightBoxContainer"], [1, "lightBoxImage", 3, "src"]], template: function WhisperFromDeepSeaComponent_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "div", 0);
     \u0275\u0275element(1, "app-tool-bar", 1)(2, "app-projects-tool-bar", 2);
@@ -54134,45 +54106,31 @@ _WhisperFromDeepSeaComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineCompo
     \u0275\u0275elementStart(73, "div", 20)(74, "h1");
     \u0275\u0275text(75, "Galleries");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(76, "div", 21)(77, "div", 22)(78, "div", 23)(79, "img", 24);
-    \u0275\u0275listener("click", function WhisperFromDeepSeaComponent_Template_img_click_79_listener() {
-      return ctx.onPreviewImage("../../../assets/images/deep-sea/whisper1.JPG");
-    });
-    \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(80, "div", 23)(81, "img", 24);
-    \u0275\u0275listener("click", function WhisperFromDeepSeaComponent_Template_img_click_81_listener() {
-      return ctx.onPreviewImage("../../../assets/images/deep-sea/whisper2.JPG");
-    });
-    \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(82, "div", 23)(83, "img", 24);
-    \u0275\u0275listener("click", function WhisperFromDeepSeaComponent_Template_img_click_83_listener() {
-      return ctx.onPreviewImage("../../../assets/images/deep-sea/whisper3.JPG");
-    });
-    \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(84, "div", 23)(85, "img", 24);
-    \u0275\u0275listener("click", function WhisperFromDeepSeaComponent_Template_img_click_85_listener() {
-      return ctx.onPreviewImage("../../../assets/images/deep-sea/whisper4.JPG");
-    });
-    \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(86, "div", 23)(87, "img", 24);
-    \u0275\u0275listener("click", function WhisperFromDeepSeaComponent_Template_img_click_87_listener() {
-      return ctx.onPreviewImage("../../../assets/images/deep-sea/whisper5.JPG");
-    });
-    \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(88, "div", 23)(89, "img", 24);
-    \u0275\u0275listener("click", function WhisperFromDeepSeaComponent_Template_img_click_89_listener() {
-      return ctx.onPreviewImage("../../../assets/images/deep-sea/whisper6.JPG");
-    });
-    \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(90, "div", 23)(91, "img", 24);
-    \u0275\u0275listener("click", function WhisperFromDeepSeaComponent_Template_img_click_91_listener() {
-      return ctx.onPreviewImage("../../../assets/images/deep-sea/whisper7.JPG");
-    });
-    \u0275\u0275elementEnd()()()();
+    \u0275\u0275elementStart(76, "div", 21)(77, "div", 22)(78, "div", 23);
+    \u0275\u0275element(79, "img", 8);
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(80, "div", 23);
+    \u0275\u0275element(81, "img", 8);
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(82, "div", 23);
+    \u0275\u0275element(83, "img", 8);
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(84, "div", 23);
+    \u0275\u0275element(85, "img", 8);
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(86, "div", 23);
+    \u0275\u0275element(87, "img", 8);
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(88, "div", 23);
+    \u0275\u0275element(89, "img", 8);
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(90, "div", 23);
+    \u0275\u0275element(91, "img", 8);
+    \u0275\u0275elementEnd()()();
     \u0275\u0275elementStart(92, "div");
     \u0275\u0275text(93, "\u2726 \u2726 \u2726 slide left/right to see more \u2726 \u2726 \u2726");
     \u0275\u0275elementEnd()()();
-    \u0275\u0275template(94, WhisperFromDeepSeaComponent_div_94_Template, 4, 3, "div", 25);
+    \u0275\u0275template(94, WhisperFromDeepSeaComponent_div_94_Template, 4, 3, "div", 24);
     \u0275\u0275elementEnd();
     \u0275\u0275element(95, "app-sunlight-zone-bg");
     \u0275\u0275elementEnd();

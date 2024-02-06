@@ -2638,9 +2638,6 @@ a:active {
   height: 440px;
   width: 300px;
 }
-.slide > img:hover {
-  cursor: pointer;
-}
 .slide:nth-child(1) {
   margin-left: 0px;
 }

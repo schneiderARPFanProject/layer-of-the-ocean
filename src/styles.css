@@ -367,9 +367,9 @@ a:link, a:visited, a:hover, a:active {
   height: 440px;
   width: 300px;
 }
-/*.slide > img:hover {
+.slide > img:hover {
   cursor: pointer;
-}*/
+}
 .slide:nth-child(1) {
   margin-left: 0px;
 }

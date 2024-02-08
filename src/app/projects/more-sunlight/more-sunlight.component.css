@@ -17,3 +17,141 @@
 #walkingwithschnei .subProjectsProfile {
   content: url("../../../assets/images/more-sunlight/walkingwithschnei.JPG");
 }
+
+#dancegroup .subProjectsProfile {
+  content: url("../../../assets/images/projects-close-icon.PNG");
+}
+
+
+.slide-wrapper {
+  width: 1230px; /* 300px*4 + 10px*3 ;*/
+}
+/*.slide:nth-child(1) > img {
+  content: url("../../../assets/images/amiore/amil1.JPG");
+}
+.slide:nth-child(2) > img {
+  content: url("../../../assets/images/amiore/amil2.JPG");
+}
+.slide:nth-child(3) > img {
+  content: url("../../../assets/images/amiore/amil3.JPG");
+}
+.slide:nth-child(4) > img {
+  content: url("../../../assets/images/amiore/amil4.JPG");
+}
+.slide:nth-child(5) > img {
+  content: url("../../../assets/images/amiore/amil5.JPG");
+}
+.slide:nth-child(6) > img {
+  content: url("../../../assets/images/amiore/amil6.JPG");
+}*/
+.slide:nth-child(1) > img {
+  content: url("../../../assets/images/more-sunlight/walk1.JPG");
+}
+.slide:nth-child(2) > img {
+  content: url("../../../assets/images/more-sunlight/walk2.JPG");
+}
+.slide:nth-child(3) > img {
+  content: url("../../../assets/images/more-sunlight/dance1.JPG");
+}
+.slide:nth-child(4) > img {
+  content: url("../../../assets/images/more-sunlight/dance2.JPG");
+}
+.previewAmil1 {
+  content: url("../../../assets/images/amiore/amil1.JPG");
+}
+.previewAmil2 {
+  content: url("../../../assets/images/amiore/amil2.JPG");
+}
+.previewAmil3 {
+  content: url("../../../assets/images/amiore/amil3.JPG");
+}
+.previewAmil4 {
+  content: url("../../../assets/images/amiore/amil4.JPG");
+}
+.previewAmil5 {
+  content: url("../../../assets/images/amiore/amil5.JPG");
+}
+.previewAmil6 {
+  content: url("../../../assets/images/amiore/amil6.JPG");
+}
+.previewWalk1 {
+  content: url("../../../assets/images/more-sunlight/walk1.JPG");
+}
+.previewWalk2 {
+  content: url("../../../assets/images/more-sunlight/walk2.JPG");
+}
+.previewDance1 {
+  content: url("../../../assets/images/more-sunlight/dance1.JPG");
+}
+.previewDance2 {
+  content: url("../../../assets/images/more-sunlight/dance2.JPG");
+}
+
+
+
+/* pc small */
+@media only screen
+  and (max-height: 600px)
+  and (orientation: landscape),
+only screen
+  and (min-width: 768px)
+  and (max-width: 1024px),
+/* iPad */
+only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 1),
+only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 2),
+only screen
+  and (min-device-width: 1112px)
+  and (max-device-width: 1112px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 2),
+only screen
+  and (min-device-width: 1366px)
+  and (max-device-width: 1366px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  .slide-wrapper {
+    width: 950px; /* 230px*4 + 10px*3 ;*/
+  }
+}
+
+/* pc extra small */
+@media only screen
+  and (max-height: 400px)
+  and (orientation: landscape),
+only screen
+  and (min-width: 390px)
+  and (max-width: 768px)
+  and (orientation: landscape),
+/* Phone */
+only screen
+  and (device-width: 360px)
+  and (device-height: 640px)
+  and (-webkit-device-pixel-ratio: 4)
+  and (orientation: landscape),
+only screen
+  and (min-device-width: 390px)
+  and (max-device-width: 844px)
+  and (-webkit-min-device-pixel-ratio: 4)
+  and (orientation: landscape),
+only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape),
+only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+  .slide-wrapper {
+    width: 575px; /* 140px*4 + 5px*3 ;*/
+  }
+}

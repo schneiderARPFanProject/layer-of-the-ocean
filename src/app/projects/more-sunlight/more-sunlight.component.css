@@ -24,36 +24,36 @@
 
 
 .slide-wrapper {
-  width: 1230px; /* 300px*4 + 10px*3 ;*/
+  width: 1850px; /* 300px*6 + 10px*5 ;*/
 }
 /*.slide:nth-child(1) > img {
   content: url("../../../assets/images/amiore/amil1.JPG");
 }
 .slide:nth-child(2) > img {
   content: url("../../../assets/images/amiore/amil2.JPG");
+}*/
+.slide:nth-child(1) > img {
+  content: url("../../../assets/images/more-sunlight/mum1.JPG");
 }
-.slide:nth-child(3) > img {
-  content: url("../../../assets/images/amiore/amil3.JPG");
-}
-.slide:nth-child(4) > img {
-  content: url("../../../assets/images/amiore/amil4.JPG");
-}
+.slide:nth-child(2) > img {
+  content: url("../../../assets/images/more-sunlight/mum2.JPG");
+}/*
 .slide:nth-child(5) > img {
   content: url("../../../assets/images/amiore/amil5.JPG");
 }
 .slide:nth-child(6) > img {
   content: url("../../../assets/images/amiore/amil6.JPG");
 }*/
-.slide:nth-child(1) > img {
+.slide:nth-child(3) > img {
   content: url("../../../assets/images/more-sunlight/walk1.JPG");
 }
-.slide:nth-child(2) > img {
+.slide:nth-child(4) > img {
   content: url("../../../assets/images/more-sunlight/walk2.JPG");
 }
-.slide:nth-child(3) > img {
+.slide:nth-child(5) > img {
   content: url("../../../assets/images/more-sunlight/dance1.JPG");
 }
-.slide:nth-child(4) > img {
+.slide:nth-child(6) > img {
   content: url("../../../assets/images/more-sunlight/dance2.JPG");
 }
 .previewAmil1 {
@@ -62,11 +62,11 @@
 .previewAmil2 {
   content: url("../../../assets/images/amiore/amil2.JPG");
 }
-.previewAmil3 {
-  content: url("../../../assets/images/amiore/amil3.JPG");
+.previewMum1 {
+  content: url("../../../assets/images/more-sunlight/mum1.JPG");
 }
-.previewAmil4 {
-  content: url("../../../assets/images/amiore/amil4.JPG");
+.previewMum2 {
+  content: url("../../../assets/images/more-sunlight/mum2.JPG");
 }
 .previewAmil5 {
   content: url("../../../assets/images/amiore/amil5.JPG");
@@ -118,7 +118,7 @@ only screen
   and (orientation: landscape)
   and (-webkit-min-device-pixel-ratio: 2) {
   .slide-wrapper {
-    width: 950px; /* 230px*4 + 10px*3 ;*/
+    width: 1430px; /* 230px*6 + 10px*5 ;*/
   }
 }
 
@@ -152,6 +152,6 @@ only screen
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: landscape) {
   .slide-wrapper {
-    width: 575px; /* 140px*4 + 5px*3 ;*/
+    width: 865px; /* 140px*6 + 5px*5 ;*/
   }
 }

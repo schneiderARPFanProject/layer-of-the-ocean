@@ -101,7 +101,11 @@ body::after {
             url("assets/images/more-sunlight/mummum.JPG")
             url("assets/images/more-sunlight/rodkenforsnd.JPG")
             url("assets/images/more-sunlight/sweethoney.JPG")
-            url("assets/images/more-sunlight/walkingwithschnei.JPG");
+            url("assets/images/more-sunlight/walkingwithschnei.JPG")
+            url("assets/images/more-sunlight/walk1.JPG")
+            url("assets/images/more-sunlight/walk2.JPG")
+            url("assets/images/more-sunlight/dance1.JPG")
+            url("assets/images/more-sunlight/dance2.JPG");
 }
 a:link, a:visited, a:hover, a:active {
   color: white;

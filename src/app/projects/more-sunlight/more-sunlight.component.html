@@ -82,6 +82,70 @@
           <div class="subProjectsTag">#WalkingwithSchnei</div>
         </div>
       </div>
+      <div class="subProjects" id="dancegroup">
+        <a class="subProjectsProfile" href="https://x.com/Thamboon888/status/1755438991145664564?s=20" target="_blank"><img src="#" /></a>
+        <div class="subProjectsDetail">
+          <h2>ชมรมเต้นโรงเรียนน้ำผึ้งหวาน<br>Sweet Honey Dance Club</h2>
+          <div>
+            <span class="subProjectTitle">แบ่งปันมื้ออาหารให้ท้องอิ่มอร่อยกับคนไร้บ้าน</span><br><br>
+            <div class="subProjectInfo">
+              <div><b>LOCATION</b></div>
+              <div>:</div>
+              <div>-</div>
+              <div><b>DATE</b></div>
+              <div>:</div>
+              <div>8 FEB 2024</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="galleriesDiv">
+        <h1>Galleries</h1>
+        <div class="slideshow">
+          <div class="slide-wrapper">
+<!--            <div class="slide" matTooltip="RODKENFORSND" matTooltipPosition="above" matTooltipShowDelay="0">-->
+<!--              <img src="#" (click)="onPreviewImage('previewAmil1')" />-->
+<!--            </div>-->
+<!--            <div class="slide" matTooltip="RODKENFORSND" matTooltipPosition="above" matTooltipShowDelay="0">-->
+<!--              <img src="#" (click)="onPreviewImage('previewAmil2')" />-->
+<!--            </div>-->
+<!--            <div class="slide" matTooltip="Mum-Mum Na Krub Sud Suay" matTooltipPosition="above" matTooltipShowDelay="0">-->
+<!--              <img src="#" (click)="onPreviewImage('previewAmil3')" />-->
+<!--            </div>-->
+<!--            <div class="slide" matTooltip="Mum-Mum Na Krub Sud Suay" matTooltipPosition="above" matTooltipShowDelay="0">-->
+<!--              <img src="#" (click)="onPreviewImage('previewAmil4')" />-->
+<!--            </div>-->
+<!--            <div class="slide" matTooltip="สวัสดีค่ะ พวกเราแม่น้ำผึ้งตัวจริง" matTooltipPosition="above" matTooltipShowDelay="0">-->
+<!--              <img src="#" (click)="onPreviewImage('previewAmil5')" />-->
+<!--            </div>-->
+<!--            <div class="slide" matTooltip="สวัสดีค่ะ พวกเราแม่น้ำผึ้งตัวจริง" matTooltipPosition="above" matTooltipShowDelay="0">-->
+<!--              <img src="#" (click)="onPreviewImage('previewAmil6')" />-->
+<!--            </div>-->
+            <div class="slide" matTooltip="WalkingwithSchnei" matTooltipPosition="above" matTooltipShowDelay="0">
+              <img src="#" (click)="onPreviewImage('previewWalk1')" />
+            </div>
+            <div class="slide" matTooltip="WalkingwithSchnei" matTooltipPosition="above" matTooltipShowDelay="0">
+              <img src="#" (click)="onPreviewImage('previewWalk2')" />
+            </div>
+            <div class="slide" matTooltip="ชมรมเต้นโรงเรียนน้ำผึ้งหวาน Sweet Honey Dance Club" matTooltipPosition="above" matTooltipShowDelay="0">
+              <img src="#" (click)="onPreviewImage('previewDance1')" />
+            </div>
+            <div class="slide" matTooltip="ชมรมเต้นโรงเรียนน้ำผึ้งหวาน Sweet Honey Dance Club" matTooltipPosition="above" matTooltipShowDelay="0">
+              <img src="#" (click)="onPreviewImage('previewDance2')" />
+            </div>
+          </div>
+        </div>
+        <div>✦ ✦ ✦ slide left/right to see more ✦ ✦ ✦</div>
+      </div>
+    </div>
+    <div *ngIf="showPreview"
+         [@animation]="{value: 'visible'}"
+         class="lightBox"
+         (click)="onClosePreview()">
+      <img class="closeBtn" />
+      <div class="lightBoxContainer" >
+        <img class="lightBoxImage" [ngClass]="[lightBoxImageClass]" src="#" (click)="$event.stopPropagation()"/>
+      </div>
     </div>
   </div>
   <app-sunlight-zone-bg></app-sunlight-zone-bg>
